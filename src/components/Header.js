@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SocialComponent from './SocialComponent.js';
 
 import '../App.css';
 
@@ -7,9 +8,7 @@ class Header extends Component {
     return (
       <div className="appHeader">
         <img src={this.props.logo} className="appLogo" alt="logo" />
-        <h2>
-        	github
-        </h2>
+        <SocialComponent />
       </div>
     );
   }

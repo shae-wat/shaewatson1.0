@@ -8,6 +8,8 @@
 }
 
 .appHeader {
+  display: flex;
+  justify-content: space-between;
   background-color: #222;
   height: 150px;
   padding: 20px;

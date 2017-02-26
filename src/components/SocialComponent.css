@@ -1,0 +1,28 @@
+.socialComponent {
+	display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  margin: 15px;
+  width: 250px;
+}
+
+.socialComponent__github {
+  background: url(../images/social_github.png);
+  width: 128px;
+  height: 128px;
+  cursor: pointer;
+}
+
+.socialComponent__linkedin {
+  background: url(../images/social_linkedin.png);
+  width: 128px;
+  height: 128px;
+  cursor: pointer;
+}
+
+.socialComponent__twitter {
+  background: url(../images/social_twitter.png);
+  width: 128px;
+  height: 128px;
+  cursor: pointer;
+}
