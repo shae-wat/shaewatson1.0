@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 
-import './Component3.css';
+import './Component.css';
 
 class Component3 extends Component {
 	constructor(props) {
