@@ -1,7 +1,5 @@
 .App {
   text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .appLogo {
@@ -12,7 +10,7 @@
 .appHeader {
   display: flex;
   justify-content: space-between;
-  background-color: #222;
+  background-color: #3b444b;
   padding: 25px;
   color: #ddd;
 }
@@ -32,7 +30,7 @@
   bottom: 0;
   display: flex;
   justify-content: space-between;
-  background-color: #3b444b;
+  background-color: #222;
   padding: 10px;
   color: white;
 }
