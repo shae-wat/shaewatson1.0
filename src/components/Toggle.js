@@ -17,13 +17,13 @@ class Toggle extends Component {
           <TabButton
             id='1'
             tab={this.props.tab}
-            text='Node.js/Javascript'
+            text='React/Redux'
             handleClick={this.props.handleToggle}
           />
           <TabButton
             id='2'
             tab={this.props.tab}
-            text='React/Redux'
+            text='Node.js/Javascript'
             handleClick={this.props.handleToggle}
           />
           <TabButton

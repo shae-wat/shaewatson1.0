@@ -13,7 +13,8 @@ class Component1 extends Component {
 
     return (
       <div className='content'>
-        Discuss use of Node.js in Selenium Tests, bot/lambda functions
+        Showcase react work (screen shots that link to FS and Civil)
+        one paragraph about react/frontend journey
       </div>
     );
   }
