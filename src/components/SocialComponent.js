@@ -6,9 +6,21 @@ class SocialComponent extends Component {
   render() {
     return (
       <div className="socialComponent">
-      	<div className='socialComponent__github' />
-      	<div className='socialComponent__linkedin' />
-      	<div className='socialComponent__twitter' />
+      	<a 
+      		className='socialComponent__github' 
+      		href='https://github.com/shae-wat' 
+      		target='_blank'
+  		  />
+        <a 
+          className='socialComponent__linkedin' 
+          href='https://www.linkedin.com/in/shaelynwatson/' 
+          target='_blank'
+        />
+        <a 
+          className='socialComponent__twitter' 
+          href='https://twitter.com/shae_wat' 
+          target='_blank'
+        />
       </div>
     );
   }

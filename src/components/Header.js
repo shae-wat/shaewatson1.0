@@ -7,7 +7,10 @@ class Header extends Component {
   render() {
     return (
       <div className="appHeader">
-        <img src={this.props.logo} className="appLogo" alt="logo" />
+	      <div className="headline">
+	        <img src={this.props.logo} className="appLogo" alt="logo" />
+	        <h1>Shaelyn Watson</h1>
+        </div>
         <SocialComponent />
       </div>
     );
