@@ -12,7 +12,7 @@ class Component2 extends Component {
     if (this.props.activeTab !== '2') return null;
 
     return (
-      <div>
+      <div className='content'>
         Showcase react work (screen shots that link to FS and Civil)
         one paragraph about react/frontend journey
       </div>

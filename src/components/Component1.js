@@ -12,7 +12,7 @@ class Component1 extends Component {
     if (this.props.activeTab !== '1') return null;
 
     return (
-      <div>
+      <div className='content'>
         Discuss use of Node.js in Selenium Tests, bot/lambda functions
       </div>
     );

@@ -12,7 +12,7 @@ class Component3 extends Component {
     if (this.props.activeTab !== '3') return null;
 
     return (
-      <div>
+      <div className='content'>
         talk about design theories/implementation
       </div>
     );
