@@ -11,7 +11,6 @@ class Component1 extends Component {
   render() {
     if (this.props.activeTab !== '1') return null;
 
-
     return (
       <div>
         Discuss use of Node.js in Selenium Tests, bot/lambda functions

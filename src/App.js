@@ -4,6 +4,9 @@ import './App.css';
 import Header from './components/Header.js';
 import Toggle from './components/Toggle.js';
 import Component1 from './components/Component1.js';
+import Component2 from './components/Component2.js';
+import Component3 from './components/Component3.js';
+import Footer from './components/Footer.js';
 
 class App extends Component {
   constructor(props) {
@@ -24,6 +27,13 @@ class App extends Component {
         <Component1 
           activeTab={this.state.activeTab}
         />
+        <Component2 
+          activeTab={this.state.activeTab}
+        />
+        <Component3 
+          activeTab={this.state.activeTab}
+        />
+        <Footer />
       </div>
     );
   }

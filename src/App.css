@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .appLogo {
@@ -12,7 +14,7 @@
   justify-content: space-between;
   background-color: #222;
   padding: 25px;
-  color: white;
+  color: #ddd;
 }
 
 .App-intro {
@@ -22,6 +24,17 @@
 .headline {
   display: flex;
   flex-direction: row;
+}
+
+.appFooter {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #3b444b;
+  padding: 10px;
+  color: white;
 }
 
 @keyframes App-logo-spin {
