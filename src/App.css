@@ -10,9 +10,9 @@
 .appHeader {
   display: flex;
   justify-content: space-between;
-  background-color: #222;
+  background-color: #3b444b;
   padding: 25px;
-  color: white;
+  color: #ddd;
 }
 
 .App-intro {
@@ -22,6 +22,14 @@
 .headline {
   display: flex;
   flex-direction: row;
+}
+
+.appFooter {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222;
+  padding: 10px;
+  color: white;
 }
 
 @keyframes App-logo-spin {

@@ -7,7 +7,8 @@ import './Toggle.css';
 class Toggle extends Component {
   render() {
     let tabBackground = classNames('tabBackground', {
-      ['rightActive']: this.props.tab === '2',
+      ['middleActive']: this.props.tab === '2',
+      ['lastActive']: this.props.tab === '3',
     });
 
     return (
@@ -16,13 +17,19 @@ class Toggle extends Component {
           <TabButton
             id='1'
             tab={this.props.tab}
-            text='Node.js/Javascript'
+            text='React/Redux'
             handleClick={this.props.handleToggle}
           />
           <TabButton
             id='2'
             tab={this.props.tab}
-            text='React/Redux'
+            text='Node.js/Javascript'
+            handleClick={this.props.handleToggle}
+          />
+          <TabButton
+            id='3'
+            tab={this.props.tab}
+            text='CSS/SCSS'
             handleClick={this.props.handleToggle}
           />
           <div className={tabBackground}></div>
