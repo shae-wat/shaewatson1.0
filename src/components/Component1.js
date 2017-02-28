@@ -58,10 +58,10 @@ class Component1 extends Component {
                 dispatch('LOGIN');
               </code>
               <code>
-                test.it('actions: log in', this.props.actions.login())
+                test.it('actions: log in', this.props.actions.login());
               </code>
                <code>
-                test.it('reducers: log in', 'LOGIN')
+                test.it('reducers: log in', dispatch('LOGIN'));
               </code>
             </div>
           </div>

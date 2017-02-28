@@ -21,21 +21,44 @@ class Component3 extends Component {
           </div>
           <div className='component1_box info'>
             <b>
-              End to end testing with browser automation
+              Implementing Design
             </b>  
             <p>
-              Node.js can be used to implement end to end testing for an application,
-              ensuring the health of UI features such as login. 
-              I demonstrate the use of selenium's webdriver as a test runner within a Node.js application
-              in my blog post
-              <a 
-                href='https://medium.com/@shaewat/local-user-interface-testing-with-selenium-and-node-js-75be104c729f' 
-                target='_blank'
-                className='space-around'
-              >
-                Local User Interface Testing with Selenium and Node.js
-              </a>
-              .
+              In my work as a front end engineer, I see myself as the keystone between the backend and design.
+              When implementing a given mock design, I make use of *css flexbox.
+
+            </p>
+          </div>
+        </div>
+
+        <div className='component1_section'>
+          <div className='component1_box info'>
+            <b>
+              Flexbox and Viewports
+            </b>  
+            <p>
+              It has always been an expectation in my work to handle page layout across all viewport sizes.
+              This typically entails flipping the <code>flex-direction</code> property of a list of elements
+              from row to column. It is best practice to have font-size reduction defined globally.
+            </p>
+          </div>
+          <div className='component1_box'>
+            <div className='ui-test'/>
+            <p className='subtext'>Selenium Test Run on the Sauce Labs Platform</p>
+          </div>
+        </div>
+
+        <div className='component1_section'>
+          <div className='component1_box'>
+            <div className='ui-test'/>
+            <p className='subtext'>Selenium Test Run on the Sauce Labs Platform</p>
+          </div>
+          <div className='component1_box info'>
+            <b>
+              SCSS
+            </b>  
+            <p>
+              Allows *nesting of media queries
             </p>
           </div>
         </div>
