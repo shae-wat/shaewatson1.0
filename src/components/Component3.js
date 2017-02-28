@@ -17,23 +17,25 @@ class Component3 extends Component {
         <div className='component1_section'>
           <div className='component1_box info space-top'>
             <b>
-              Viewport Considerations
+              Everything should look good on everything.
             </b>  
             <p>
               It has always been an expectation in my work to handle page layout across all viewport sizes.
-              In some cases, the design calls for information to be displayed differently based on viewport size.
+
             </p>
             <p>  
-              In the examples on the right, the mobile view shows only the article title and the replying commenter's user handle.
-              The mobile user is given an option to click <code>READ MORE</code> to show more text content.
-              The desktop view, in contrast, shows the text content by default.
+              In some cases, the design calls for information to be displayed differently based on the viewport.
+              In the associated examples, I made a user interface that does just that.
+              The mobile user is given an option to click <code>READ MORE</code> to show more text content 
+              beneath the titles.
+              The desktop view, in contrast, shows the text content beneath the titles by default.
             </p>
           </div>
           <div className='component1_box'>
-            <img className='image' src={require('../images/ui_mobile.png')}/>
-            <p className='subtext'>Mobile View</p>
             <img className='image' src={require('../images/ui_desktop.png')}/>
             <p className='subtext'>Desktop View</p>
+            <img className='image' src={require('../images/ui_mobile.png')}/>
+            <p className='subtext'>Mobile View</p>
           </div>
         </div>
 

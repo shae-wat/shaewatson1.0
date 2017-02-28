@@ -48,7 +48,7 @@ class Component2 extends Component {
           </div>
           <div className='component_gisttext_box info space-top'>
             <b>
-              Cross Browser Testing
+              Cross browser testing
             </b> 
             <p>
               I took the use of a Javascript webdriver further by running it on a platform 
@@ -69,13 +69,13 @@ class Component2 extends Component {
         <div className='component1_section'>
           <div className='component_gisttext_box info space-top'>
             <b>
-              Automate End to End Test Runs
+              Bot bots bots
             </b>  
             <p>
               The Civil Slack had a bot that could run Javascript and require npm packages.
               I trained it to kick off test runs for the multi-platform selenium tests 
               from Slack with the command <code>run selenium</code>,
-              which would then trigger the bot's script that ultimately makes Codeship kick off a test run on the Sauce Labs platform.
+              which would then trigger the bot's script that ran a given test suite on the Sauce Labs platform.
             </p>
           </div>
           <div className='component_gist_box'>

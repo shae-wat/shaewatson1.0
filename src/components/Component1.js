@@ -17,15 +17,16 @@ class Component1 extends Component {
         <div className='component1_section'>
           <div className='component1_box'>
             <div className='monster'/>
-            <p className='subtext'>Animated Sprite Component</p>
+            <p className='subtext'>Animated Component</p>
           </div>
           <div className='component1_box info'>
             <b>
               The best part of React is thinking in React.
             </b>  
             <p>
-              Breaking the UI into a hierarchy of independent and customizable components
-              is an organized way to build what ultimately ends up as a single page application. 
+              Breaking the user interface into a hierarchy of independent and customizable parts
+              is an organized way to build a single page application. React accomplishes this through its
+              use of components.
             </p>
             <p>
               It's very satisfying to build a component that will be used repeatedly throughout an app
@@ -45,8 +46,8 @@ class Component1 extends Component {
               Actions can update the store by dispatching calls to pure functions that post updates to the store.
             </p>
             <p>
-              Actions can be evoked when a component loads or is called after a specific user interaction.
-              Testing for an application with a Redux store is accomplished by testing the actions and reducers of the app.
+              Actions can be evoked when a component loads or can be called after a specific user interaction.
+              Testing an application with a Redux store is accomplished by writing tests for the actions and reducers of the app.
             </p>
           </div>
           <div className='component1_box codebox'>
