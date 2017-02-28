@@ -21,13 +21,17 @@ class Component3 extends Component {
             <div className='css-desktop'/>
             <p className='subtext'>Desktop View</p>
           </div>
-          <div className='component1_box info'>
+          <div className='component1_box info space-top'>
             <b>
               Viewport Considerations
             </b>  
             <p>
-              I see the work of a front end engineer as the keystone between design and backend functionality.
               It has always been an expectation in my work to handle page layout across all viewport sizes.
+            </p>
+            <p>
+              In some cases, the design calls for information to be displayed differently based on viewport size.
+              In the examples on the right, the mobile view shows only the article title and the replying commenter's handle.
+              The user must click <code>READ MORE</code> to expand the more detailed excerpts shown in the desktop view.
             </p>
           </div>
         </div>

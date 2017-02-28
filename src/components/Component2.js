@@ -15,7 +15,7 @@ class Component2 extends Component {
       <div className='component1_content'>
 
         <div className='component1_section'>
-          <div className='component1_box info'>
+          <div className='component1_box info space-top'>
             <b>
               End to end testing with browser automation
             </b>  
@@ -45,7 +45,7 @@ class Component2 extends Component {
             <div className='sauce-dash'/>
             <p className='subtext'>A Selenium Test Run Across Multiple Browsers on Sauce Labs</p>
           </div>
-          <div className='component1_box info'>
+          <div className='component1_box info space-top'>
             <b>
               Cross-Browser Testing
             </b> 
