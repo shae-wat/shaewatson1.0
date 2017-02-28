@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import Gist from './EmbeddedGist.js';
 
 import './Component.css';
 
@@ -35,15 +36,15 @@ class Component2 extends Component {
             </p>
           </div>
           <div className='component1_box'>
-            <div className='ui-test'/>
-            <p className='subtext'>Selenium Test Run on the Sauce Labs Platform</p>
+            <Gist gist="shae-wat/7c485b3e2ceb844433358de3694821e7" />
+            <p className='subtext'>Selenium Test for Login Functionality</p>
           </div>
         </div>
 
         <div className='component1_section'>
           <div className='component1_box'>
-            <div className='sauce-dash'/>
-            <p className='subtext'>A Selenium Test Run Across Multiple Browsers on Sauce Labs</p>
+            <Gist gist="shae-wat/7e795a66676492a324b53ef9bebe27f0" />
+            <p className='subtext'>Multi-Platform User Interface Testing with Selenium and Node.js</p>
           </div>
           <div className='component1_box info space-top'>
             <b>

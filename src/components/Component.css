@@ -73,35 +73,35 @@
 }
 
 .ui-test {
-  background: url(../images/ui_test.png);
+  background: url(../images/ui_test.png) no-repeat;
   display: inline-block;
   width: 500px;
   height: 429px;
 }
 
 .sauce-dash {
-  background: url(../images/sauce_dashboard.png);
+  background: url(../images/sauce_dashboard.png) no-repeat;
   display: inline-block;
   width: 500px;
   height: 273px;
 }
 
 .css-desktop {
-  background: url(../images/ui_desktop.png);
+  background: url(../images/ui_desktop.png) no-repeat;
   display: inline-block;
   width: 500px;
   height: 170px;
 }
 
 .css-mobile {
-  background: url(../images/ui_mobile.png);
+  background: url(../images/ui_mobile.png) no-repeat;
   display: inline-block;
   width: 500px;
   height: 273px;
 }
 
 .mocha_login {
-  background: url('https://gist.github.com/shae-wat/7c485b3e2ceb844433358de3694821e7.js');
+  background: url('https://gist.github.com/shae-wat/7c485b3e2ceb844433358de3694821e7.js') no-repeat;
   display: inline-block;
   width: 500px;
   height: 273px;
@@ -130,10 +130,10 @@
 
 @media (max-width: 550px){
   .component1_section_box {
-    padding: 10px;
+    padding: 15px;
   }
 
   .component1_box {
-    padding: 10px;
+    padding: 15px;
   }
 }
