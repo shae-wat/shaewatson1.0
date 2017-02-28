@@ -19,6 +19,24 @@
   line-height: 1.5em;
 }
 
+.component_gisttext_box {
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 35px;
+  box-sizing: border-box;
+  width: 28%;
+  line-height: 1.5em;
+}
+
+.component_gist_box {
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 35px;
+  box-sizing: border-box;
+  width: 68%;
+  line-height: 1.5em;
+}
+
 .codebox {
   padding-left: 0px;
   padding-right: 0px
@@ -72,39 +90,11 @@
   animation: play .6s steps(10) infinite;
 }
 
-.ui-test {
-  background: url(../images/ui_test.png) no-repeat;
-  display: inline-block;
-  width: 500px;
-  height: 429px;
-}
 
-.sauce-dash {
-  background: url(../images/sauce_dashboard.png) no-repeat;
+.image {
   display: inline-block;
-  width: 500px;
-  height: 273px;
-}
-
-.css-desktop {
-  background: url(../images/ui_desktop.png) no-repeat;
-  display: inline-block;
-  width: 500px;
-  height: 170px;
-}
-
-.css-mobile {
-  background: url(../images/ui_mobile.png) no-repeat;
-  display: inline-block;
-  width: 500px;
-  height: 273px;
-}
-
-.mocha_login {
-  background: url('https://gist.github.com/shae-wat/7c485b3e2ceb844433358de3694821e7.js') no-repeat;
-  display: inline-block;
-  width: 500px;
-  height: 273px;
+  width: 90%;
+  height: auto;
 }
 
 
@@ -114,12 +104,33 @@
    100% { background-position-x: -1900px; }
 }
 
-@media (max-width: 950px){
+@media (max-width: 850px){
   .component1_section {
     flex-direction: column;
   }
 
+  .section_wrap_reverse {
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+  }
+
   .component1_box {
+    padding: 35px;
+    width: 98%;
+    margin-top: 15px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .component_gisttext_box {
+    padding: 35px;
+    width: 98%;
+    margin-top: 15px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .component_gist_box {
     padding: 35px;
     width: 98%;
     margin-top: 15px; 
@@ -134,6 +145,14 @@
   }
 
   .component1_box {
+    padding: 15px;
+  }
+
+  .component_gisttext_box {
+    padding: 15px;
+  }
+
+  .component_gist_box {
     padding: 15px;
   }
 }
