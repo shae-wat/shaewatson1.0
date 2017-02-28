@@ -24,9 +24,9 @@ class Component1 extends Component {
               The best part of React is thinking in React.
             </b>  
             <p>
-              Breaking the user interface into a hierarchy of independent and customizable parts
-              is an organized way to build a single page application. React accomplishes this through its
-              use of components.
+              An organized way to build a single page application is to break the user interface
+              into a hierarchy of independent and customizable parts.
+              React accomplishes this through its use of components.
             </p>
             <p>
               It's very satisfying to build a component that will be used repeatedly throughout an app

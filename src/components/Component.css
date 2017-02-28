@@ -35,6 +35,7 @@
   box-sizing: border-box;
   width: 68%;
   line-height: 1.5em;
+  max-height: 800px;
 }
 
 .codebox {
