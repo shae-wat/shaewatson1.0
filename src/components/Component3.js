@@ -15,12 +15,6 @@ class Component3 extends Component {
       <div className='component1_content'>
 
         <div className='component1_section'>
-          <div className='component1_box'>
-            <div className='css-mobile'/>
-            <p className='subtext'>Mobile View</p>
-            <div className='css-desktop'/>
-            <p className='subtext'>Desktop View</p>
-          </div>
           <div className='component1_box info space-top'>
             <b>
               Viewport Considerations
@@ -34,6 +28,12 @@ class Component3 extends Component {
               The mobile user is given an option to click <code>READ MORE</code> to show more text content.
               The desktop view, in contrast, shows the text content by default.
             </p>
+          </div>
+          <div className='component1_box'>
+            <div className='css-mobile'/>
+            <p className='subtext'>Mobile View</p>
+            <div className='css-desktop'/>
+            <p className='subtext'>Desktop View</p>
           </div>
         </div>
 

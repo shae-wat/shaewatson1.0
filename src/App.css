@@ -10,6 +10,7 @@
 .appHeader {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   background-color: #3b444b;
   padding: 25px;
   color: #ddd;
@@ -35,4 +36,12 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media (max-width: 550px){
+  .appHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: .6em;
+  }
 }
