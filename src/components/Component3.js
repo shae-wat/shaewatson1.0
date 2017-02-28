@@ -30,9 +30,9 @@ class Component3 extends Component {
             </p>
           </div>
           <div className='component1_box'>
-            <div className='css-mobile'/>
+            <img className='image' src={require('../images/ui_mobile.png')}/>
             <p className='subtext'>Mobile View</p>
-            <div className='css-desktop'/>
+            <img className='image' src={require('../images/ui_desktop.png')}/>
             <p className='subtext'>Desktop View</p>
           </div>
         </div>
