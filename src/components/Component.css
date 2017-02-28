@@ -107,7 +107,23 @@
   height: 273px;
 }
 
+
+
 @keyframes play {
    0% { background-position-x: 0px; }
    100% { background-position-x: -1900px; }
+}
+
+@media (max-width: 800px){
+  .component1_section {
+    flex-direction: column;
+  }
+
+  .component1_box {
+    padding: 35px;
+    width: 98%;
+    margin-top: 15px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

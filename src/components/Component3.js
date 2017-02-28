@@ -27,11 +27,12 @@ class Component3 extends Component {
             </b>  
             <p>
               It has always been an expectation in my work to handle page layout across all viewport sizes.
-            </p>
-            <p>
               In some cases, the design calls for information to be displayed differently based on viewport size.
-              In the examples on the right, the mobile view shows only the article title and the replying commenter's handle.
-              The user must click <code>READ MORE</code> to expand the more detailed excerpts shown in the desktop view.
+            </p>
+            <p>  
+              In the examples on the right, the mobile view shows only the article title and the replying commenter's user handle.
+              The mobile user is given an option to click <code>READ MORE</code> to show more text content.
+              The desktop view, in contrast, shows the text content by default.
             </p>
           </div>
         </div>

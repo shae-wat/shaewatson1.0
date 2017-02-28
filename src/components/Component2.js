@@ -47,11 +47,11 @@ class Component2 extends Component {
           </div>
           <div className='component1_box info space-top'>
             <b>
-              Cross-Browser Testing
+              Cross Browser Testing
             </b> 
             <p>
               I took the use of a Javascript webdriver further by running it on a platform 
-              that allows for cross-browser testing accross multiple platforms.
+              that allows for cross browser testing accross multiple platforms.
               This is described in my blog post
               <a 
                 href='https://medium.com/@shaewat/multi-platform-user-interface-testing-with-selenium-and-node-js-567b8fb624e8' 
