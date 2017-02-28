@@ -43,9 +43,12 @@ class Component2 extends Component {
         <div className='component1_section'>
           <div className='component1_box'>
             <div className='sauce-dash'/>
-            <p className='subtext'>A Selenium Test Runs on Multiple Browsers within the Sauce Labs Platform</p>
+            <p className='subtext'>A Selenium Test Run Across Multiple Browsers on Sauce Labs</p>
           </div>
           <div className='component1_box info'>
+            <b>
+              Cross-Browser Testing
+            </b> 
             <p>
               I took the use of a Javascript webdriver further by running it on a platform 
               that allows for cross-browser testing accross multiple platforms.

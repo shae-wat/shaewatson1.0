@@ -46,6 +46,11 @@
   font-size: 17px;
 }
 
+.codeblock-subtext {
+  margin-top: 100px;
+  font-size: 12px;
+}
+
 .component1_section_box {
   margin: 15px;
   border: 2px solid #ddd;
@@ -67,14 +72,35 @@
   background: url(../images/ui_test.png);
   display: inline-block;
   width: 500px;
-  height: 285px;
+  height: 429px;
 }
 
 .sauce-dash {
   background: url(../images/sauce_dashboard.png);
   display: inline-block;
   width: 500px;
-  height: 285px;
+  height: 273px;
+}
+
+.css-desktop {
+  background: url(../images/ui_desktop.png);
+  display: inline-block;
+  width: 500px;
+  height: 170px;
+}
+
+.css-mobile {
+  background: url(../images/ui_mobile.png);
+  display: inline-block;
+  width: 500px;
+  height: 273px;
+}
+
+.mocha_login {
+  background: url('https://gist.github.com/shae-wat/7c485b3e2ceb844433358de3694821e7.js');
+  display: inline-block;
+  width: 500px;
+  height: 273px;
 }
 
 @keyframes play {

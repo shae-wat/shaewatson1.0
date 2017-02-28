@@ -16,49 +16,18 @@ class Component3 extends Component {
 
         <div className='component1_section'>
           <div className='component1_box'>
-            <div className='ui-test'/>
-            <p className='subtext'>Selenium Test Run on the Sauce Labs Platform</p>
+            <div className='css-mobile'/>
+            <p className='subtext'>Mobile View</p>
+            <div className='css-desktop'/>
+            <p className='subtext'>Desktop View</p>
           </div>
           <div className='component1_box info'>
             <b>
-              Implementing Design
+              Viewport Considerations
             </b>  
             <p>
-              In my work as a front end engineer, I see myself as the keystone between the backend and design.
-              When implementing a given mock design, I make use of *css flexbox.
-
-            </p>
-          </div>
-        </div>
-
-        <div className='component1_section'>
-          <div className='component1_box info'>
-            <b>
-              Flexbox and Viewports
-            </b>  
-            <p>
+              I see the work of a front end engineer as the keystone between design and backend functionality.
               It has always been an expectation in my work to handle page layout across all viewport sizes.
-              This typically entails flipping the <code>flex-direction</code> property of a list of elements
-              from row to column. It is best practice to have font-size reduction defined globally.
-            </p>
-          </div>
-          <div className='component1_box'>
-            <div className='ui-test'/>
-            <p className='subtext'>Selenium Test Run on the Sauce Labs Platform</p>
-          </div>
-        </div>
-
-        <div className='component1_section'>
-          <div className='component1_box'>
-            <div className='ui-test'/>
-            <p className='subtext'>Selenium Test Run on the Sauce Labs Platform</p>
-          </div>
-          <div className='component1_box info'>
-            <b>
-              SCSS
-            </b>  
-            <p>
-              Allows *nesting of media queries
             </p>
           </div>
         </div>

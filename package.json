@@ -7,8 +7,10 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "gist-embed": "^2.6.0",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-gist": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
