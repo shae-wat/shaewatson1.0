@@ -12,9 +12,6 @@ class Component2 extends Component {
   render() {
     if (this.props.activeTab !== '2') return null;
 
-    // let gist = (<Gist gistId={`7c485b3e2ceb844433358de3694821e7`}/>);
-    // console.log('gist', gist)
-
     return (
       <div className='component1_content'>
 
@@ -39,7 +36,7 @@ class Component2 extends Component {
             </p>
           </div>
           <div className='component1_box'>
-            <Gist gist="shae-wat/7c485b3e2ceb844433358de3694821e7" file="login.mocha.js" />
+            <Gist gist="shae-wat/7c485b3e2ceb844433358de3694821e7" />
             <p className='subtext'>Selenium Test for Login Functionality</p>
           </div>
         </div>
