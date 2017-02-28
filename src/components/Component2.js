@@ -17,40 +17,47 @@ class Component2 extends Component {
         <div className='component1_section'>
           <div className='component1_box info'>
             <b>
-              End to end testing.
+              End to end testing with browser automation
             </b>  
             <p>
-              Node.js, blog
-            </p>
-            <p>
-              Sauce Labs, blog
+              Node.js can be used to implement end to end testing for an application,
+              ensuring the health of UI features such as login. 
+              I demonstrate the use of selenium's webdriver as a test runner within a Node.js application
+              in my blog post
+              <a 
+                href='https://medium.com/@shaewat/local-user-interface-testing-with-selenium-and-node-js-75be104c729f' 
+                target='_blank'
+                className='space-around'
+              >
+                Local User Interface Testing with Selenium and Node.js
+              </a>
+              .
             </p>
           </div>
           <div className='component1_box'>
-            
+            <div className='ui-test'/>
+            <p className='subtext'>Selenium Test Run on the Sauce Labs Platform</p>
           </div>
         </div>
 
         <div className='component1_section'>
           <div className='component1_box'>
-            <div className='codeblock'>
-              <code>
-                this.props.actions.login();
-              </code>
-               <code>
-                dispatch('LOGIN');
-              </code>
-            </div>
+            <div className='sauce-dash'/>
+            <p className='subtext'>A Selenium Test Runs on Multiple Browsers within the Sauce Labs Platform</p>
           </div>
           <div className='component1_box info'>
-            <b>
-              Node.js as scripting language
-            </b>  
             <p>
-              AWS Lambda
-            </p>
-            <p>
-              Bots
+              I took the use of a Javascript webdriver further by running it on a platform 
+              that allows for cross-browser testing accross multiple platforms.
+              This is described in my blog post
+              <a 
+                href='https://medium.com/@shaewat/multi-platform-user-interface-testing-with-selenium-and-node-js-567b8fb624e8' 
+                target='_blank'
+                className='space-around'
+              >
+                Multi-Platform User Interface Testing with Selenium and Node.js
+              </a>
+              .
             </p>
           </div>
         </div>

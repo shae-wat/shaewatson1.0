@@ -63,6 +63,20 @@
   animation: play .6s steps(10) infinite;
 }
 
+.ui-test {
+  background: url(../images/ui_test.png);
+  display: inline-block;
+  width: 500px;
+  height: 285px;
+}
+
+.sauce-dash {
+  background: url(../images/sauce_dashboard.png);
+  display: inline-block;
+  width: 500px;
+  height: 285px;
+}
+
 @keyframes play {
    0% { background-position-x: 0px; }
    100% { background-position-x: -1900px; }
