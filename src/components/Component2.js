@@ -23,6 +23,8 @@ class Component2 extends Component {
             <p>
               Javascript can be used to implement end to end testing for an application,
               ensuring the health of UI features such as login. 
+            </p>
+            <p>
               I demonstrate the use of selenium's webdriver as a test runner within a Node.js application
               in my blog post
               <a 
@@ -53,6 +55,8 @@ class Component2 extends Component {
             <p>
               I took the use of a Javascript webdriver further by running it on a platform 
               that allows for cross browser testing accross multiple platforms.
+            </p>
+            <p>
               This is described in my blog post
               <a 
                 href='https://medium.com/@shaewat/multi-platform-user-interface-testing-with-selenium-and-node-js-567b8fb624e8' 
@@ -74,8 +78,11 @@ class Component2 extends Component {
             <p>
               The Civil Slack had a bot that could run Javascript and require npm packages.
               I trained it to kick off test runs for the multi-platform selenium tests 
-              from Slack with the command <code>run selenium</code>,
-              which would then trigger the bot's script that ran a given test suite on the Sauce Labs platform.
+              from Slack with the command <code>run sauce</code>,
+              which would then trigger the bot's script to run.
+            </p>
+            <p>
+              The script shown here ran a given test suite on the Sauce Labs platform.
             </p>
           </div>
           <div className='component_gist_box'>
