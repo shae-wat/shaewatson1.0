@@ -16,7 +16,7 @@ class Component2 extends Component {
       <div className='component1_content'>
 
         <div className='component1_section'>
-          <div className='component_gisttext_box info space-top'>
+          <div className='component_gisttext_box_lg info'>
             <b>
               End to end testing with browser automation
             </b>  
@@ -36,8 +36,11 @@ class Component2 extends Component {
               </a>
               .
             </p>
+            <img className='image image-padding-top' src={require('../images/ui_test.png')}/>
+            <p className='subtext'>Sauce Labs Test Results</p>
           </div>
-          <div className='component_gist_box'>
+          <div className='component_gist_box_lg'>
+            <div className='space-top-sm' />
             <Gist gist="shae-wat/7c485b3e2ceb844433358de3694821e7" />
             <p className='subtext'>Selenium Test for Login Functionality</p>
           </div>

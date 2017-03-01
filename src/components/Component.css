@@ -10,49 +10,37 @@
   margin: 15px 0; 
 }
 
-.component1_box {
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  padding: 35px;
-  box-sizing: border-box;
-  width: 48%;
-  line-height: 1.5em;
-}
-
-.component_gisttext_box {
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  padding: 35px;
-  box-sizing: border-box;
-  width: 30%;
-  line-height: 1.5em;
-}
-
-.component_gist_box {
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  padding: 35px;
-  box-sizing: border-box;
-  width: 66%;
-  line-height: 1.5em;
-}
-
-.component_gisttext_box_lg {
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  padding: 35px;
-  box-sizing: border-box;
-  width: 42%;
-  line-height: 1.5em;
-}
-
+.component1_box,
+.component_gisttext_box,
+.component_gist_box,
+.component_gisttext_box_lg,
 .component_gist_box_lg {
   border: 2px solid #ddd;
   border-radius: 5px;
   padding: 35px;
   box-sizing: border-box;
-  width: 54%;
   line-height: 1.5em;
+}
+
+.component1_box {
+  width: 48%;
+}
+
+.component_gisttext_box {
+  width: 30%;
+}
+
+.component_gist_box {
+  width: 66%;
+}
+
+.component_gisttext_box_lg {
+  width: 42%;
+}
+
+.component_gist_box_lg {
+  padding: auto;
+  width: 54%;
 }
 
 .codebox {
@@ -62,6 +50,10 @@
 
 .info {
   text-align: left;
+}
+
+.center-vertically {
+  align-self: center;
 }
 
 .subtext {
@@ -76,6 +68,10 @@
 
 .space-top {
   padding-top: 100px;
+}
+
+.space-top-sm {
+  padding-top: 40px;
 }
 
 .codeblock {
@@ -111,9 +107,13 @@
 
 
 .image {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   width: 90%;
   height: auto;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .image-padding-top {
@@ -144,7 +144,10 @@
     margin-right: auto;
   }
 
-  .component_gisttext_box {
+  .component_gisttext_box,
+  .component_gist_box,
+  .component_gisttext_box_lg,
+  .component_gist_box_lg {
     padding: 35px;
     width: 98%;
     margin-top: 15px; 
@@ -152,12 +155,8 @@
     margin-right: auto;
   }
 
-  .component_gist_box {
-    padding: 35px;
-    width: 98%;
-    margin-top: 15px; 
-    margin-left: auto;
-    margin-right: auto;
+  .space-top-sm {
+    padding-top: 0px;
   }
 }
 
