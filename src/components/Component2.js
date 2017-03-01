@@ -38,7 +38,7 @@ class Component2 extends Component {
             </p>
           </div>
           <div className='component_gist_box'>
-            <Gist gist="shae-wat/7c485b3e2ceb844433358de3694821e7" style={{maxHeight: '200px'}}/>
+            <Gist gist="shae-wat/7c485b3e2ceb844433358de3694821e7" />
             <p className='subtext'>Selenium Test for Login Functionality</p>
           </div>
         </div>
