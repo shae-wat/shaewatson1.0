@@ -38,17 +38,17 @@ class Component2 extends Component {
             </p>
           </div>
           <div className='component_gist_box'>
-            <Gist gist="shae-wat/7c485b3e2ceb844433358de3694821e7" />
+            <Gist gist="shae-wat/7c485b3e2ceb844433358de3694821e7" style={{maxHeight: '200px'}}/>
             <p className='subtext'>Selenium Test for Login Functionality</p>
           </div>
         </div>
 
         <div className='component1_section section_wrap_reverse'>
-          <div className='component_gist_box'>
+          <div className='component_gist_box_lg'>
             <Gist gist="shae-wat/7e795a66676492a324b53ef9bebe27f0" />
             <p className='subtext'>Multi-Platform User Interface Testing with Selenium and Node.js</p>
           </div>
-          <div className='component_gisttext_box info space-top'>
+          <div className='component_gisttext_box_lg info space-top'>
             <b>
               Cross browser testing
             </b> 
@@ -67,6 +67,8 @@ class Component2 extends Component {
               </a>
               .
             </p>
+            <img className='image image-padding-top' src={require('../images/sauce_dashboard.png')}/>
+            <p className='subtext'>Sauce Labs Cross Browser Test Results</p>
           </div>
         </div>
 

@@ -29,7 +29,7 @@ class Component3 extends Component {
             </p>
             <p>
               The mobile user is given an option to click <code>READ MORE</code> to show more text content 
-              beneath the titles.
+              beneath the article title and username.
               The desktop view, in contrast, shows the text content beneath the titles by default.
             </p>
           </div>

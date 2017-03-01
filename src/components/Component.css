@@ -24,7 +24,7 @@
   border-radius: 5px;
   padding: 35px;
   box-sizing: border-box;
-  width: 28%;
+  width: 30%;
   line-height: 1.5em;
 }
 
@@ -33,7 +33,25 @@
   border-radius: 5px;
   padding: 35px;
   box-sizing: border-box;
-  width: 68%;
+  width: 66%;
+  line-height: 1.5em;
+}
+
+.component_gisttext_box_lg {
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 35px;
+  box-sizing: border-box;
+  width: 42%;
+  line-height: 1.5em;
+}
+
+.component_gist_box_lg {
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 35px;
+  box-sizing: border-box;
+  width: 54%;
   line-height: 1.5em;
 }
 
@@ -49,6 +67,7 @@
 .subtext {
   font-size: .7em;
   color: #777;
+  text-align: center;
 }
 
 .space-around {
@@ -97,6 +116,9 @@
   height: auto;
 }
 
+.image-padding-top {
+  padding-top: 50px;
+}
 
 
 @keyframes play {
