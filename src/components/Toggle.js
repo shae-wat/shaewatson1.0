@@ -29,7 +29,7 @@ class Toggle extends Component {
           <TabButton
             id='3'
             tab={this.props.tab}
-            text='CSS/SCSS'
+            text='CSS/Design'
             handleClick={this.props.handleToggle}
           />
           <div className={tabBackground}></div>
