@@ -29,8 +29,65 @@ class Component1 extends Component {
               React accomplishes this through its use of components.
             </p>
             <p>
-              It's very satisfying to build a component that will be used repeatedly throughout an app
-              and to extend the functionality of a complicated component in a controlled way.
+              Once a component is built, it can be used anywhere in an app.
+            </p>
+          </div>
+        </div>
+
+        <div className='component1_section'>
+          <div className='component1_box info'>
+            <b>
+              Extend functionality in a controlled way.
+            </b>  
+            <p>
+              Sometimes, a lot of functionality is demanded of a component. While components
+              should always be refactored into multiple components before growing too large,
+              some cases require sorting through options and processing steps.
+            </p>
+            <p>
+              a component that rendered Chart.js charts.
+              Analytics data was processed by the charts.
+              Multiple chart types were able to be rendered based on the type
+              prop supplied to the component.
+            </p>
+          </div>
+          <div className='component1_box codebox'>
+            <div className='codeblock'>
+               <code>
+                {`<Chart type='pie'/>`}
+              </code>
+              <code>
+                {`<Chart type='bar'/>`}
+              </code>
+              <code>
+                {`<Chart type='stackedBar'/>`}
+              </code>
+               <code>
+                {`<Chart type='bar'/>`}
+              </code>
+            </div>
+          </div>
+        </div>
+
+        <div className='component1_section section_wrap_reverse'>
+          <div className='component1_box'>
+            <img className='image' src={require('../images/react_dropdown_closed.png')}/>
+            <img className='image' src={require('../images/react_dropdown_adn.png')}/>
+            <p className='subtext'>Dropdown Component</p>
+          </div>
+          <div className='component1_box info'>
+            <b>
+              Build components to be used repeatedly.
+            </b>  
+            <p>
+              React components are designed to be reusable. I maintain a strict practice of 
+              making components completely
+              self-containing in their functionality, while making sure they are 
+              reusable through expected input.
+            </p>
+            <p>
+              An example of this is a custom dropdown selector I built. It is extendable in its options
+              and size, while maintaining its functionality.
             </p>
           </div>
         </div>
