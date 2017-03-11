@@ -31,7 +31,7 @@ class Component1 extends Component {
             <p>
               Once a component is built, it can be used anywhere in an app.
               It's very satisfying to build a component that will be used repeatedly
-              throughout an app and to easily add capabilities or features.
+              and to easily add capabilities or features at any time.
             </p>
           </div>
         </div>
@@ -39,7 +39,7 @@ class Component1 extends Component {
         <div className='component1_section'>
           <div className='component1_box info'>
             <b>
-              Extend functionality in a controlled way.
+              Components extend functionality in a controlled way.
             </b>  
             <p>
               Sometimes, a lot of functionality is demanded of a component. While components
@@ -48,10 +48,9 @@ class Component1 extends Component {
               and handle data processing steps.
             </p>
             <p>
-              For example, I have made a component that rendered Chart.js charts.
-              This component grew in complexity with many functions returning processed analytics data
+              For example, I have made a component that rendered Chart.js canvas charts.
+              This component grew in complexity with many helper functions processing analytics data
               depending on options passed to the component.
-              Multiple chart types were able to be rendered.
             </p>
           </div>
           <div className='component1_box codebox'>
@@ -86,7 +85,6 @@ class Component1 extends Component {
 
         <div className='component1_section section_wrap_reverse'>
           <div className='component1_box'>
-            <img className='image image-dropdown' src={require('../images/react_dropdown_closed.png')}/>
             <img className='image image-dropdown' src={require('../images/react_dropdown_adn.png')}/>
             <p className='subtext'>Dropdown Component</p>
           </div>
@@ -101,7 +99,7 @@ class Component1 extends Component {
               reusable through expected input.
             </p>
             <p>
-              An example of this is a custom dropdown selector I built. It is extendable in its options,
+              An example of this is a custom dropdown selector I built. It is dynamic in its options,
               since it expects an array of key value pairs as props.
               Beyond that, it maintains its styles and its functionality of showing open and closed views
               of the options. Upon the user selecting an option, the click handler supplied
