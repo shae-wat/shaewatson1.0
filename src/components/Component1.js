@@ -58,26 +58,22 @@ class Component1 extends Component {
                <code>
                 {`<Chart 
                     type='pie' 
-                    query='platforms' 
-                  />`}
+                    query='reactions'/>`}
               </code>
               <code>
                 {`<Chart 
                     type='bar' 
-                    query='flags' 
-                  />`}
+                    query='platforms'/>`}
               </code>
               <code>
                 {`<Chart 
                   type='stackedBar'
-                  query='reactions'
-                  />`}
+                  query='flags'/>`}
               </code>
               <code>
                 {`<Chart 
                   type='line'
-                  query='interactions'
-                  />`}
+                  query='reads'/>`}
               </code>
             </div>
           </div>
