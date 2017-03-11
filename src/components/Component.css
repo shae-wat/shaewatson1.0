@@ -119,6 +119,9 @@
   padding-top: 50px;
 }
 
+.image-dropdown {
+  max-width: 325px;
+}
 
 @keyframes play {
    0% { background-position-x: 0px; }
