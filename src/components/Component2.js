@@ -12,11 +12,16 @@ class Component2 extends Component {
   render() {
     if (this.props.activeTab !== '2') return null;
 
+    let arr = [1, 2, [3, 4]];
+
     return (
       <div className='component1_content'>
 
         <div className='component1_section'>
           <div className='component_gisttext_box_lg info'>
+            <p>
+              {this.flattenArray(arr)}
+            </p>
             <b>
               End to end testing with browser automation
             </b>  
@@ -99,6 +104,21 @@ class Component2 extends Component {
 
       </div>
     );
+  }
+
+  flattenArray = (arr) => {
+    let array = [].concat(arr);  //copy
+    console.log('copied array', arr)
+    for (let i = 0; i < arr.length; i++) {
+      console.log('!!!for', arr[i])
+      if (typeof arr[i] === 'number') {
+        array.push(arr[i])
+      }
+      else {
+        array.push(arr.splice(i, 1, ...arr[i]))
+      }
+    }
+    return array;
   }
 
 }

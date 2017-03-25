@@ -131,7 +131,7 @@ code {
    100% { background-position-x: -1900px; }
 }
 
-@media (max-width: 850px){
+@media screen and (max-width: 850px){
   .component1_section {
     flex-direction: column;
   }
@@ -158,7 +158,7 @@ code {
   }
 }
 
-@media (max-width: 550px){
+@media screen and (max-width: 550px){
   .component1_section_box,
   .component1_box, 
   .component_gisttext_box,
