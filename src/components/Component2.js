@@ -12,28 +12,23 @@ class Component2 extends Component {
   render() {
     if (this.props.activeTab !== '2') return null;
 
-    let arr = [1, 2, [3, 4]];
-
     return (
       <div className='component1_content'>
 
         <div className='component1_section'>
           <div className='component_gisttext_box_lg info'>
-            <p>
-              {this.flattenArray(arr)}
-            </p>
             <b>
               End to end testing with browser automation
-            </b>  
+            </b>
             <p>
               Javascript can be used to implement end to end testing for an application,
-              ensuring the health of interface features such as login. 
+              ensuring the health of interface features such as login.
             </p>
             <p>
               I demonstrate the use of selenium's webdriver as a test runner within a Node.js application
               in my blog post
-              <a 
-                href='https://medium.com/@shaewat/local-user-interface-testing-with-selenium-and-node-js-75be104c729f' 
+              <a
+                href='https://medium.com/@shaewat/local-user-interface-testing-with-selenium-and-node-js-75be104c729f'
                 target='_blank'
                 className='space-around'
               >
@@ -59,15 +54,15 @@ class Component2 extends Component {
           <div className='component_gisttext_box_lg info space-top'>
             <b>
               Cross browser testing
-            </b> 
+            </b>
             <p>
-              I took the use of a Javascript webdriver further by running it on a platform 
+              I took the use of a Javascript webdriver further by running it on a platform
               that allows for cross browser testing spanning multiple platforms.
             </p>
             <p>
               This is described in my blog post
-              <a 
-                href='https://medium.com/@shaewat/multi-platform-user-interface-testing-with-selenium-and-node-js-567b8fb624e8' 
+              <a
+                href='https://medium.com/@shaewat/multi-platform-user-interface-testing-with-selenium-and-node-js-567b8fb624e8'
                 target='_blank'
                 className='space-around'
               >
@@ -84,10 +79,10 @@ class Component2 extends Component {
           <div className='component_gisttext_box info space-top'>
             <b>
               Bot bots bots
-            </b>  
+            </b>
             <p>
               The Civil Slack had a bot that could run Javascript and import npm packages.
-              I trained it to kick off test runs for the multi-platform selenium tests 
+              I trained it to kick off test runs for the multi-platform selenium tests
               from Slack with the command <code>run sauce</code>.
               Internally, this command would run the script that kicks off a Codeship build,
               and the Codeship build was configured to run the desired test suite.
@@ -104,21 +99,6 @@ class Component2 extends Component {
 
       </div>
     );
-  }
-
-  flattenArray = (arr) => {
-    let array = [].concat(arr);  //copy
-    console.log('copied array', arr)
-    for (let i = 0; i < arr.length; i++) {
-      console.log('!!!for', arr[i])
-      if (typeof arr[i] === 'number') {
-        array.push(arr[i])
-      }
-      else {
-        array.push(arr.splice(i, 1, ...arr[i]))
-      }
-    }
-    return array;
   }
 
 }
