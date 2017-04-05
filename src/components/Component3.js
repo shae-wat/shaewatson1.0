@@ -12,28 +12,28 @@ class Component3 extends Component {
     if (this.props.activeTab !== '3') return null;
 
     return (
-      <div className='component1_content'>
+      <div className='component_content'>
 
-        <div className='component1_section'>
-          <div className='component1_box info space-top'>
+        <div className='component_section'>
+          <div className='component_box info space-top'>
             <b>
               Everything should look good on everything.
-            </b>  
+            </b>
             <p>
               It has always been an expectation in my work to handle page layout across all viewport sizes.
 
             </p>
-            <p>  
+            <p>
               In some cases, the design calls for information to be displayed differently based on the viewport.
               In the associated examples, I made a user interface that does just that.
             </p>
             <p>
-              The mobile user is given an option to click <code>READ MORE</code> to show more text content 
+              The mobile user is given an option to click <code>READ MORE</code> to show more text content
               beneath the article title and username.
               The desktop view, in contrast, shows the text content beneath the titles by default.
             </p>
           </div>
-          <div className='component1_box'>
+          <div className='component_box'>
             <img className='image' src={require('../images/ui_desktop.png')}/>
             <p className='subtext'>Desktop View</p>
             <img className='image' src={require('../images/ui_mobile.png')}/>
