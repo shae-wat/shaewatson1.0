@@ -13,22 +13,22 @@ class Component2 extends Component {
     if (this.props.activeTab !== '2') return null;
 
     return (
-      <div className='component1_content'>
+      <div className='component_content'>
 
-        <div className='component1_section'>
+        <div className='component_section'>
           <div className='component_gisttext_box_lg info'>
             <b>
-              End to end testing with browser automation
-            </b>  
+              End to end testing is accomplished with browser automation.
+            </b>
             <p>
               Javascript can be used to implement end to end testing for an application,
-              ensuring the health of interface features such as login. 
+              ensuring the health of interface features such as login.
             </p>
             <p>
               I demonstrate the use of selenium's webdriver as a test runner within a Node.js application
               in my blog post
-              <a 
-                href='https://medium.com/@shaewat/local-user-interface-testing-with-selenium-and-node-js-75be104c729f' 
+              <a
+                href='https://medium.com/@shaewat/local-user-interface-testing-with-selenium-and-node-js-75be104c729f'
                 target='_blank'
                 className='space-around'
               >
@@ -46,23 +46,26 @@ class Component2 extends Component {
           </div>
         </div>
 
-        <div className='component1_section section_wrap_reverse'>
+        <div className='component_section section_wrap_reverse'>
           <div className='component_gist_box_lg'>
             <Gist gist="shae-wat/7e795a66676492a324b53ef9bebe27f0" />
             <p className='subtext'>Multi-Platform User Interface Testing with Selenium and Node.js</p>
           </div>
           <div className='component_gisttext_box_lg info space-top'>
             <b>
-              Cross browser testing
-            </b> 
+              End to end testing is most powerful when it runs across the defined
+							supported browsers and platforms for an app.
+            </b>
             <p>
-              I took the use of a Javascript webdriver further by running it on a platform 
-              that allows for cross browser testing spanning multiple platforms.
+              I took the use of a Javascript webdriver further by connecting it to the
+							Sauce Labs platform, allowing for cross-browser testing spanning multiple platforms.
+							In this way, one can test updates across defined supported browsers before
+							deployment.
             </p>
             <p>
               This is described in my blog post
-              <a 
-                href='https://medium.com/@shaewat/multi-platform-user-interface-testing-with-selenium-and-node-js-567b8fb624e8' 
+              <a
+                href='https://medium.com/@shaewat/multi-platform-user-interface-testing-with-selenium-and-node-js-567b8fb624e8'
                 target='_blank'
                 className='space-around'
               >
@@ -75,20 +78,21 @@ class Component2 extends Component {
           </div>
         </div>
 
-        <div className='component1_section'>
+        <div className='component_section'>
           <div className='component_gisttext_box info space-top'>
             <b>
-              Bot bots bots
-            </b>  
+              A Javascript-loving bot can run end to end tests.
+            </b>
             <p>
               The Civil Slack had a bot that could run Javascript and import npm packages.
-              I trained it to kick off test runs for the multi-platform selenium tests 
+              I trained it to kick off test runs for the multi-platform selenium tests
               from Slack with the command <code>run sauce</code>.
-              Internally, this command would run the script that kicks off a Codeship build,
-              and the Codeship build was configured to run the desired test suite.
+              Internally, this command would run the script that kicks off a Codeship build.
             </p>
             <p>
-              The script shown here ran a given test suite on the Sauce Labs platform.
+              The script shown here kicked off end to end testing on the Sauce Labs platform.
+							It is configured to run a desired test suite based on parameters
+							requested of the user by the bot.
             </p>
           </div>
           <div className='component_gist_box'>

@@ -12,17 +12,17 @@ class Component1 extends Component {
     if (this.props.activeTab !== '1') return null;
 
     return (
-      <div className='component1_content'>
+      <div className='component_content'>
 
-        <div className='component1_section'>
-          <div className='component1_box'>
+        <div className='component_section'>
+          <div className='component_box'>
             <div className='monster'/>
             <p className='subtext'>Animated Component</p>
           </div>
-          <div className='component1_box info'>
+          <div className='component_box info'>
             <b>
               The best part of React is thinking in React.
-            </b>  
+            </b>
             <p>
               An organized way to build a single page application is to break the user interface
               into a hierarchy of independent and customizable parts.
@@ -36,11 +36,11 @@ class Component1 extends Component {
           </div>
         </div>
 
-        <div className='component1_section'>
-          <div className='component1_box info'>
+        <div className='component_section'>
+          <div className='component_box info'>
             <b>
               Components extend functionality in a controlled way.
-            </b>  
+            </b>
             <p>
               Sometimes, a lot of functionality is demanded of a component. While components
               should always be refactored into multiple components before growing too large,
@@ -53,25 +53,25 @@ class Component1 extends Component {
               depending on options passed to the component.
             </p>
           </div>
-          <div className='component1_box codebox'>
+          <div className='component_box codebox'>
             <div className='codeblock'>
                <code>
-                {`<Chart 
-                    type='pie' 
+                {`<Chart
+                    type='pie'
                     query='reactions'/>`}
               </code>
               <code>
-                {`<Chart 
-                    type='bar' 
+                {`<Chart
+                    type='bar'
                     query='platforms'/>`}
               </code>
               <code>
-                {`<Chart 
+                {`<Chart
                   type='stackedBar'
                   query='flags'/>`}
               </code>
               <code>
-                {`<Chart 
+                {`<Chart
                   type='line'
                   query='reads'/>`}
               </code>
@@ -79,19 +79,19 @@ class Component1 extends Component {
           </div>
         </div>
 
-        <div className='component1_section section_wrap_reverse'>
-          <div className='component1_box'>
+        <div className='component_section section_wrap_reverse'>
+          <div className='component_box'>
             <img className='image image-dropdown' src={require('../images/react_dropdown_adn.png')}/>
             <p className='subtext'>Dropdown Component</p>
           </div>
-          <div className='component1_box info'>
+          <div className='component_box info'>
             <b>
               Build components to be used repeatedly.
-            </b>  
+            </b>
             <p>
-              React components are designed to be reusable. I maintain a strict practice of 
+              React components are designed to be reusable. I maintain a strict practice of
               making components completely
-              self-containing in their functionality, while making sure they are 
+              self-containing in their functionality, while making sure they are
               reusable through expected input.
             </p>
             <p>
@@ -104,11 +104,11 @@ class Component1 extends Component {
           </div>
         </div>
 
-        <div className='component1_section'>
-          <div className='component1_box info'>
+        <div className='component_section'>
+          <div className='component_box info'>
             <b>
               Redux organizes app state.
-            </b>  
+            </b>
             <p>
               Redux stores the state of an application as an object tree, defining a single source of truth for that app.
               This store can be referenced by React components as read-only props.
@@ -119,7 +119,7 @@ class Component1 extends Component {
               Testing an application with a Redux store is accomplished by writing tests for the actions and reducers of the app.
             </p>
           </div>
-          <div className='component1_box codebox'>
+          <div className='component_box codebox'>
             <div className='codeblock'>
               <code>
                 this.props.actions.login();
@@ -137,22 +137,22 @@ class Component1 extends Component {
           </div>
         </div>
 
-        <div className='component1_section_box'>
+        <div className='component_section_box'>
           <p>
-            As a front end engineer, I have worked on teams building React/Redux applications since July 2015. 
+            As a front end engineer, I have worked on teams building React/Redux applications since July 2015.
           </p>
           <p>
-            I have contributed to consumer and admin-facing applications at 
-            <a 
-              href='https://beta.flightstats.com/flight-tracker/search' 
+            I have contributed to consumer and admin-facing applications at
+            <a
+              href='https://beta.flightstats.com/flight-tracker/search'
               target='_blank'
               className='space-around'
             >
-              FlightStats, Inc. 
+              FlightStats, Inc.
             </a>
-            and 
-            <a 
-              href='https://www.getcivil.com/' 
+            and
+            <a
+              href='https://www.getcivil.com/'
               target='_blank'
               className='space-around'
             >
@@ -162,10 +162,10 @@ class Component1 extends Component {
         </div>
 
 
-        <div className='component1_section_box'>
+        <div className='component_section_box'>
           I lead monthly React.js
-          <a 
-            href='https://github.com/shae-wat/react-workshops' 
+          <a
+            href='https://github.com/shae-wat/react-workshops'
             target='_blank'
             className='space-around'
           >
