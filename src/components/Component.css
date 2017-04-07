@@ -1,3 +1,6 @@
+@import 'SlotMachine.css';
+@import 'Button.css';
+
 .component_content {
   display: flex;
   flex-direction: column;
@@ -95,7 +98,7 @@ code {
   margin: 15px;
   border: 2px solid #ddd;
   border-radius: 5px;
-  padding: 35px 135px;
+  padding: 35px;
   box-sizing: border-box;
   line-height: 1.5em;
 }
@@ -112,8 +115,6 @@ code {
 .image {
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: auto;
   margin-left: auto;
   margin-right: auto;
 }
