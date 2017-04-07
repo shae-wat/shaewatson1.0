@@ -44,6 +44,9 @@ class Component3 extends Component {
         </div>
 
 				<div className='component_section_box'>
+					<b>
+						Web content should be playful and delightful.
+					</b>
 					<SlotMachine
 	          numSlots={threeSlots.numSlots}
 	          slotOptions={threeSlots.slotOptions}

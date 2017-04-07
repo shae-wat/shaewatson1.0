@@ -122,8 +122,16 @@ code {
   padding-top: 50px;
 }
 
+.image-padding-bottom {
+  padding-bottom: 30px;
+}
+
 .image-dropdown {
   max-width: 325px;
+}
+
+.image-lrg-section {
+  width: 30%;
 }
 
 @keyframes play {
@@ -155,6 +163,10 @@ code {
 
   .space-top-sm {
     padding-top: 0px;
+  }
+
+  .image-lrg-section {
+    width: 50%;
   }
 }
 

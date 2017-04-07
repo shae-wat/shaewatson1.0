@@ -95,6 +95,11 @@
 }
 
 @media (max-width: 900px) {
+  .slots-interface {
+    margin: 0px;
+    padding: 5px;
+  }
+
   .slots {
     flex-direction: column;
   }

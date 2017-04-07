@@ -163,7 +163,8 @@ class Component1 extends Component {
 
 
         <div className='component_section_box'>
-          I lead monthly React.js
+					<img className='image image-lrg-section image-padding-bottom' src={require('../images/react-workshop.jpg')}/>
+					I lead monthly React.js
           <a
             href='https://github.com/shae-wat/react-workshops'
             target='_blank'
