@@ -1,6 +1,3 @@
-@import 'SlotMachine.css';
-@import 'Button.css';
-
 .component_content {
   display: flex;
   flex-direction: column;

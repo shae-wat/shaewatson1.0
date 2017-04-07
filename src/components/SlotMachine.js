@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 import Slots from './Slots.js';
 import Button from './Button.js';
-import '../App.css';
+import './SlotMachine.css';
 
 class SlotMachine extends Component {
   constructor(props) {
