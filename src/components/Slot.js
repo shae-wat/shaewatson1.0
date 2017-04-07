@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 
-import '../App.css';
+import './SlotMachine.css';
 
 class Slot extends Component {
   render() {
