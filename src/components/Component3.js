@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import SlotMachine from './SlotMachine.js';
 
+import threeSlots from '../slots-three.json';
 import './Component.css';
 
 class Component3 extends Component {
@@ -40,6 +42,16 @@ class Component3 extends Component {
             <p className='subtext'>Mobile View</p>
           </div>
         </div>
+
+				<div className='component_section_box'>
+					<b>
+						Web content should be playful and delightful.
+					</b>
+					<SlotMachine
+	          numSlots={threeSlots.numSlots}
+	          slotOptions={threeSlots.slotOptions}
+	        />
+				</div>
 
       </div>
     );

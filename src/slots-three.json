@@ -1,0 +1,20 @@
+{
+	"numSlots": 3,
+  "slotOptions": [
+    [
+      {"option": "Coffee Maker", "value": "coffee", "type":"maker"},
+      {"option": "Teapot", "value": "tea", "type":"maker"},
+      {"option": "Espresso Machine", "value": "espresso", "type":"maker"}
+    ],
+    [
+      {"option": "Coffee Filter", "value": "coffee", "type":"filter"},
+      {"option": "Tea Strainer", "value": "tea", "type":"filter"},
+      {"option": "Espresso Tamper", "value": "espresso", "type":"filter"}
+    ],
+    [
+      {"option": "Coffee Grounds", "value": "coffee", "type":"material"},
+      {"option": "Loose Tea", "value": "tea", "type":"material"},
+      {"option": "Ground Espresso Beans", "value": "espresso", "type":"material"}
+    ]
+  ]
+}

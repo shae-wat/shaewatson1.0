@@ -95,7 +95,7 @@ code {
   margin: 15px;
   border: 2px solid #ddd;
   border-radius: 5px;
-  padding: 35px 135px;
+  padding: 35px;
   box-sizing: border-box;
   line-height: 1.5em;
 }
@@ -112,18 +112,26 @@ code {
 .image {
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: auto;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  height: auto;
 }
 
 .image-padding-top {
   padding-top: 50px;
 }
 
+.image-padding-bottom {
+  padding-bottom: 30px;
+}
+
 .image-dropdown {
   max-width: 325px;
+}
+
+.image-lrg-section {
+  width: 30%;
 }
 
 @keyframes play {
@@ -155,6 +163,10 @@ code {
 
   .space-top-sm {
     padding-top: 0px;
+  }
+
+  .image-lrg-section {
+    width: 50%;
   }
 }
 

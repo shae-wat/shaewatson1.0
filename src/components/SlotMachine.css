@@ -1,0 +1,200 @@
+.slots-interface {
+  margin: 5px 20px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  padding: 25px 35px;
+  border: 2px solid #a5a5a5;
+}
+
+.slots {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 35px;
+  border: 2px solid #a5a5a5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  line-height: 1.5em;
+  background-color: #777;
+}
+
+.interface {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0px auto;
+}
+
+.slot {
+  z-index: 50;
+  border: 2px solid #a5a5a5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 20px;
+}
+
+.modal {
+  position: absolute;
+  z-index: 200;
+  bottom: 20px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #a5a5a5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-message {
+  margin-right: 25px;
+}
+
+.modal-bkg {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: .8;
+}
+
+.slot-image {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+}
+
+.slot-spinning {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  animation: spin .6s steps(10) infinite;
+}
+
+.spinning-slot {
+  background-color: #280d08;
+  padding-bottom: 39px;
+}
+
+@keyframes spin {
+   0% { background-position-y: 0px; }
+   100% { background-position-y: -600px; }
+}
+
+@media (max-width: 900px) {
+  .slots-interface {
+    margin: 0px;
+    padding: 5px;
+  }
+
+  .slots {
+    flex-direction: column;
+  }
+
+  .modal {
+    bottom: 10px;
+    left: 10%;
+    width: 80%;
+    height: 30%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: .9em;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .slots-interface {
+    margin: 5px;
+    padding: 10px 15px;
+    border: 2px solid #a5a5a5;
+  }
+
+  .slots {
+    padding: 5px;
+  }
+
+  .slot {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .modal {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  h1 {
+    font-size: .9em;
+  }
+
+  h2 {
+    font-size: .9em;
+  }
+}
+
+.color-espresso {
+  background-color: #280d08;
+  color: #fff;
+}
+.color-coffee {
+  background-color: #775e4b;
+  color: #fff;
+}
+.color-tea {
+  background-color: #d1e182;
+}
+
+.spinning-maker {
+  background: url(https://ibin.co/3EubXYDmVoCg.png);
+}
+.spinning-filter {
+  background: url(https://ibin.co/3EubKkYy7WnS.png);
+}
+.spinning-material {
+  background: url(https://ibin.co/3EubnA65csGg.png);
+}
+
+.coffee-maker {
+  background: url(https://ibin.co/3EuUt6wHFcsw.png);
+}
+.tea-maker {
+  background: url(https://ibin.co/3EuauDAqQn0D.png);
+}
+.espresso-maker {
+  background: url(https://ibin.co/3EuaBsPFVr2O.png);
+}
+.coffee-filter {
+  background: url(https://ibin.co/3EuZSICzNtx2.png);
+}
+.tea-filter {
+  background: url(https://ibin.co/3EuafE0rvGtd.png);
+}
+.espresso-filter {
+  background: url(https://ibin.co/3EuZzO6bQ6vR.png);
+}
+.coffee-material {
+  background: url(https://ibin.co/3EuZhu5IUvHk.png);
+}
+.tea-material {
+  background: url(https://ibin.co/3Eub7dXzQRyk.png);
+}
+.espresso-material {
+  background: url(https://ibin.co/3EuaRAvOJzhR.png);
+}
