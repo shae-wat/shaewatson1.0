@@ -184,3 +184,11 @@ code {
     padding: 15px;
   }
 }
+
+.show {
+  display: initial;
+}
+
+.hide {
+  display: none;
+}

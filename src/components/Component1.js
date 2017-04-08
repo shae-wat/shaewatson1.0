@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import loader from '../images/loader.gif';
 import {Tweet} from 'react-twitter-widgets';
 
 import './Component.css';
@@ -7,10 +8,18 @@ import './Component.css';
 class Component1 extends Component {
 	constructor(props) {
     super(props);
+		this.state = {
+			loading: true,
+		}
   }
 
   render() {
     if (this.props.activeTab !== '1') return null;
+
+		let loaderClass = classNames({
+			['show']: this.state.loading,
+			['hide']: !this.state.loading,
+		});
 
     return (
       <div className='component_content'>
@@ -140,13 +149,17 @@ class Component1 extends Component {
 
 				<div className='component_section section_wrap_reverse'>
 					<div className='component_box center-horizontally'>
+						<img
+							src={loader}
+							className={loaderClass}
+						/>
 						<Tweet
 							tweetId='796537445428830208'
 							className='center-horizontally'
 							options={{
 								width: '100%',
 						 	}}
-							onLoad={() => console.log('remove spinner')}
+							onLoad={this.removeLoader}
 						/>
 					</div>
 					<div className='component_box info space-top'>
@@ -201,6 +214,12 @@ class Component1 extends Component {
       </div>
     );
   }
+
+	removeLoader = () => {
+		this.setState({
+			loading: false,
+		});
+	}
 
 }
 
