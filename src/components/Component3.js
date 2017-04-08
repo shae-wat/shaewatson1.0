@@ -43,10 +43,17 @@ class Component3 extends Component {
           </div>
         </div>
 
-				<div className='component_section_box'>
+				<div className='component_section_box info'>
 					<b>
 						Web content should be playful and delightful.
 					</b>
+					<p>
+						This is achieved by simple design and clever animations when handling time.
+					</p>
+					<p>
+						This Slot Machine component that I made exemplifies this.
+						Click SPIN to start!
+					</p>
 					<SlotMachine
 	          numSlots={threeSlots.numSlots}
 	          slotOptions={threeSlots.slotOptions}

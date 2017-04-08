@@ -139,8 +139,15 @@ class Component1 extends Component {
         </div>
 
 				<div className='component_section section_wrap_reverse'>
-					<div className='component_box'>
-						<Tweet tweetId='796537445428830208'/>
+					<div className='component_box center-horizontally'>
+						<Tweet
+							tweetId='796537445428830208'
+							className='center-horizontally'
+							options={{
+								width: '100%',
+						 	}}
+							onLoad={() => console.log('remove spinner')}
+						/>
 					</div>
 					<div className='component_box info space-top'>
 						<b>
@@ -156,6 +163,12 @@ class Component1 extends Component {
 		          workshops
 		          </a>
 		          for Women Who Code Portland.
+							I run hands-on React.js workshops for our members and have grown the interest
+							and aptitude of our community for Javascript and React.
+						</p>
+						<p>
+							Workshop projects include demonstrating the use of Chart.js as a React component
+							and making React components animated with CSS.
 						</p>
 					</div>
 				</div>

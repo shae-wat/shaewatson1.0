@@ -22,37 +22,15 @@ class SlotMachine extends Component {
       message = (<h2>Spinning...</h2>);
     }
     if (this.state.showResult){
-      switch (_.uniq(this.state.spinResult).length) {
-        case 1:
-          let drink = `
-            a cup of
-            ${_.nth(_.head(this.props.slotOptions), _.head(this.state.spinResult)).value}
-          `.trim();
-          let winningExclaimation = `You just won ${drink}!`
-          let winningStatement = `All the components of the drink aligned, which means you get ${drink}!`
-          message = (
-            <div>
-              <h2>
-                {winningExclaimation}
-              </h2>
-              <p>
-               {winningStatement}
-              </p>
-            </div>
-          );
-          break;
-        default:
-          message = (
-            <div>
-              <h3>
-                Better luck next time!
-              </h3>
-              <p>
-                More components need to align in order to win a drink.
-              </p>
-            </div>
-          );
-          break;
+      if (_.uniq(this.state.spinResult).length === 1) {
+        let drink = `
+          a cup of
+          ${_.nth(_.head(this.props.slotOptions), _.head(this.state.spinResult)).value}
+        `.trim();
+        message = (<h2>You just won {drink}!</h2>);
+      }
+      else {
+        message = (<h2>Better luck next time!</h2>);
       }
     }
 

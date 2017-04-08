@@ -60,6 +60,11 @@ code {
   align-self: center;
 }
 
+.center-horizontally {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .subtext {
   font-size: .7em;
   color: #777;
@@ -107,7 +112,6 @@ code {
   height: 240px;
   animation: play .6s steps(10) infinite;
 }
-
 
 .image {
   display: flex;
