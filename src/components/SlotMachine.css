@@ -1,9 +1,9 @@
 .slots-interface {
-  margin: 5px 20px;
   background-color: #e6e6e6;
   border-radius: 5px;
   padding: 25px 35px;
   border: 2px solid #a5a5a5;
+  text-align: center;
 }
 
 .slots {

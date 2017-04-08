@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import loader from '../images/loader.gif';
 
 class EmbeddedGist extends Component {
 
@@ -12,7 +13,7 @@ class EmbeddedGist extends Component {
         src: ""
         };
   }
-    
+
   // The Gist JSON data includes a stylesheet to add to the page
   // to make it look correct. `addStylesheet` ensures we only add
   // the stylesheet one time.
@@ -23,11 +24,11 @@ class EmbeddedGist extends Component {
       link.type = "text/css";
       link.rel = "stylesheet";
       link.href = href;
-  
+
       document.head.appendChild(link);
     }
   }
-  
+
   componentDidMount() {
     // Create a JSONP callback that will set our state
     // with the data that comes back from the Gist site
@@ -54,7 +55,7 @@ class EmbeddedGist extends Component {
 
   render() {
     if (this.state.loading) {
-      return <div>Loading...</div>;
+      return <img src={loader}/>;
     } else {
       return <div dangerouslySetInnerHTML={{__html: this.state.src}} />;
     }

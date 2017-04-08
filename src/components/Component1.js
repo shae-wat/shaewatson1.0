@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import loader from '../images/loader.gif';
+import {Tweet} from 'react-twitter-widgets';
 
 import './Component.css';
 
 class Component1 extends Component {
 	constructor(props) {
     super(props);
+		this.state = {
+			loading: true,
+		}
   }
 
   render() {
     if (this.props.activeTab !== '1') return null;
+
+		let loaderClass = classNames({
+			['show']: this.state.loading,
+			['hide']: !this.state.loading,
+		});
 
     return (
       <div className='component_content'>
@@ -137,6 +147,46 @@ class Component1 extends Component {
           </div>
         </div>
 
+				<div className='component_section section_wrap_reverse'>
+					<div className='component_box center-horizontally'>
+						<img
+							src={loader}
+							className={loaderClass}
+						/>
+						<Tweet
+							tweetId='796537445428830208'
+							className='center-horizontally'
+							options={{
+								width: '100%',
+						 	}}
+							onLoad={this.removeLoader}
+						/>
+					</div>
+					<div className='component_box info space-top'>
+						<b>
+							Sharing the good news.
+						</b>
+						<p>
+							I lead monthly React.js
+		          <a
+		            href='https://github.com/shae-wat/react-workshops'
+		            target='_blank'
+		            className='space-around'
+		          >
+		          workshops
+		          </a>
+		          for Women Who Code Portland.
+							I run hands-on React.js workshops for our members and have grown the interest
+							and aptitude of our community for Javascript and React.
+						</p>
+						<p>
+							Workshop projects include demonstrating the use of Chart.js as a React component
+							and making React components animated with CSS.
+						</p>
+					</div>
+				</div>
+
+
         <div className='component_section_box'>
           <p>
             As a front end engineer, I have worked on teams building React/Redux applications since July 2015.
@@ -161,23 +211,15 @@ class Component1 extends Component {
           </p>
         </div>
 
-
-        <div className='component_section_box'>
-					<img className='image image-lrg-section image-padding-bottom' src={require('../images/react-workshop.jpg')}/>
-					I lead monthly React.js
-          <a
-            href='https://github.com/shae-wat/react-workshops'
-            target='_blank'
-            className='space-around'
-          >
-          workshops
-          </a>
-          for Women Who Code Portland.
-        </div>
-
       </div>
     );
   }
+
+	removeLoader = () => {
+		this.setState({
+			loading: false,
+		});
+	}
 
 }
 
