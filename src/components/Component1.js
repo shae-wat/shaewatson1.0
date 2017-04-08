@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import {Tweet} from 'react-twitter-widgets';
 
 import './Component.css';
 
@@ -137,6 +138,29 @@ class Component1 extends Component {
           </div>
         </div>
 
+				<div className='component_section section_wrap_reverse'>
+					<div className='component_box'>
+						<Tweet tweetId='796537445428830208'/>
+					</div>
+					<div className='component_box info space-top'>
+						<b>
+							Sharing the good news.
+						</b>
+						<p>
+							I lead monthly React.js
+		          <a
+		            href='https://github.com/shae-wat/react-workshops'
+		            target='_blank'
+		            className='space-around'
+		          >
+		          workshops
+		          </a>
+		          for Women Who Code Portland.
+						</p>
+					</div>
+				</div>
+
+
         <div className='component_section_box'>
           <p>
             As a front end engineer, I have worked on teams building React/Redux applications since July 2015.
@@ -159,20 +183,6 @@ class Component1 extends Component {
               Civil Co.
             </a>
           </p>
-        </div>
-
-
-        <div className='component_section_box'>
-					<img className='image image-lrg-section image-padding-bottom' src={require('../images/react-workshop.jpg')}/>
-					I lead monthly React.js
-          <a
-            href='https://github.com/shae-wat/react-workshops'
-            target='_blank'
-            className='space-around'
-          >
-          workshops
-          </a>
-          for Women Who Code Portland.
         </div>
 
       </div>
