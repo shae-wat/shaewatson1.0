@@ -35,39 +35,6 @@
   padding: 20px;
 }
 
-.modal {
-  position: absolute;
-  z-index: 200;
-  bottom: 20px;
-  left: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
-  background-color: #fff;
-  border: 2px solid #a5a5a5;
-  border-radius: 5px;
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.modal-message {
-  margin-right: 25px;
-}
-
-.modal-bkg {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #000;
-  opacity: .8;
-}
-
 .slot-image {
   display: flex;
   justify-content: center;
@@ -103,19 +70,6 @@
   .slots {
     flex-direction: column;
   }
-
-  .modal {
-    bottom: 10px;
-    left: 10%;
-    width: 80%;
-    height: 30%;
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: .9em;
-  }
-
 }
 
 @media (max-width: 450px) {
@@ -132,20 +86,6 @@
   .slot {
     margin: 10px;
     padding: 10px;
-  }
-
-  .modal {
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-
-  h1 {
-    font-size: .9em;
-  }
-
-  h2 {
-    font-size: .9em;
   }
 }
 
