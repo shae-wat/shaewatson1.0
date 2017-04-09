@@ -15,6 +15,22 @@ class Component3 extends Component {
 
     return (
       <div className='component_content'>
+				<div className='component_section_box info'>
+					<b>
+						Web content should be playful and delightful.
+					</b>
+					<p>
+						This is achieved by simple design and clever animations when handling time.
+					</p>
+					<p>
+						This Slot Machine component that I made exemplifies this.
+						Click SPIN to start!
+					</p>
+					<SlotMachine
+	          numSlots={threeSlots.numSlots}
+	          slotOptions={threeSlots.slotOptions}
+	        />
+				</div>
 
         <div className='component_section'>
           <div className='component_box info space-top'>
@@ -23,7 +39,6 @@ class Component3 extends Component {
             </b>
             <p>
               It has always been an expectation in my work to handle page layout across all viewport sizes.
-
             </p>
             <p>
               In some cases, the design calls for information to be displayed differently based on the viewport.
@@ -42,23 +57,6 @@ class Component3 extends Component {
             <p className='subtext'>Mobile View</p>
           </div>
         </div>
-
-				<div className='component_section_box info'>
-					<b>
-						Web content should be playful and delightful.
-					</b>
-					<p>
-						This is achieved by simple design and clever animations when handling time.
-					</p>
-					<p>
-						This Slot Machine component that I made exemplifies this.
-						Click SPIN to start!
-					</p>
-					<SlotMachine
-	          numSlots={threeSlots.numSlots}
-	          slotOptions={threeSlots.slotOptions}
-	        />
-				</div>
 
       </div>
     );
