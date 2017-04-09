@@ -70,6 +70,10 @@
   .slots {
     flex-direction: column;
   }
+
+  .slot-message {
+    font-size: .95em;
+  }
 }
 
 @media (max-width: 450px) {
@@ -86,6 +90,10 @@
   .slot {
     margin: 10px;
     padding: 10px;
+  }
+
+  .slot-message {
+    font-size: .9em;
   }
 }
 

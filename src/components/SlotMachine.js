@@ -17,9 +17,9 @@ class SlotMachine extends Component {
   }
 
   render() {
-    let message = (<h3>Spin to win a drink!</h3>);
+    let message = (<h3 className='slot-message'>Spin to win a drink!</h3>);
     if (_.last(this.state.spinning)) {
-      message = (<h3>Spinning...</h3>);
+      message = (<h3 className='slot-message'>Spinning...</h3>);
     }
     if (this.state.showResult){
       if (_.uniq(this.state.spinResult).length === 1) {
@@ -27,10 +27,10 @@ class SlotMachine extends Component {
           a cup of
           ${_.nth(_.head(this.props.slotOptions), _.head(this.state.spinResult)).value}
         `.trim();
-        message = (<h3>You just won {drink}!</h3>);
+        message = (<h3 className='slot-message'>You just won {drink}!</h3>);
       }
       else {
-        message = (<h3>Better luck next time!</h3>);
+        message = (<h3 className='slot-message'>Better luck next time!</h3>);
       }
     }
 
