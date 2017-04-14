@@ -7,6 +7,7 @@ class Button extends Component {
   render() {
     let button = classNames('button', {
       ['button-disabled']: this.props.disabled,
+      ['button-secondary']: this.props.buttonType === 'secondary',
     });
 
     return (

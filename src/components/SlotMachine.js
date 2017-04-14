@@ -50,6 +50,7 @@ class SlotMachine extends Component {
             text={this.state.showResult ? 'Play Again' : 'Spin'}
             handleClick={this.state.showResult ? this.handlePlayAgain : this.handleSpin}
             disabled={_.last(this.state.spinning)}
+            buttonType={this.state.showResult ? 'secondary' : 'primary'}
           />
         </section>
       </section>

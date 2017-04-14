@@ -14,6 +14,10 @@
   margin: 0 20px;
 }
 
+.button-secondary {
+  background-color: #005AFF;
+}
+
 .button:hover {
   opacity: .9;
 }
