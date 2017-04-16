@@ -66,6 +66,33 @@ class Component3 extends Component {
           </div>
         </div>
 
+				<div className='component_section'>
+					<div className='component_box'>
+						<img
+							className='image'
+							src={require('../images/Cerevisiae_heatShock.png')}
+							role='presentation'
+						/>
+						<p className='subtext'>Visualized Stress Response of Yeast to Heat Shock</p>
+					</div>
+					<div className='component_box info space-top'>
+						<b>
+							Front End Engineering is about sitting between backend data
+							and the business needs of a product.
+						</b>
+						<p>
+							I got into front end engineering in college while working in the
+							University of Texas at Austin’s Functional Genomics Research Stream.
+						</p>
+						<p>
+							After micropipetting for a few months, I was drawn to visualizing the
+							data produced by the lab. Thus began my career of sitting between backend data
+							and the business needs of a product.
+						</p>
+					</div>
+				</div>
+
+
       </div>
     );
   }
