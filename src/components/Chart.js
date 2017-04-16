@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Chart from 'chart.js';
+import ChartJS from 'chart.js';
 
 import './Component.css';
 
@@ -28,7 +28,7 @@ class Chart extends Component {
     if (this.chart) {
       this.chart.destroy();
     }
-    this.chart = new Chart(this.chartElement, {
+    this.chart = new ChartJS(this.chartElement, {
       type: 'line',
       data: {
           labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
