@@ -36,7 +36,11 @@ class Component2 extends Component {
               </a>
               .
             </p>
-            <img className='image image-padding-top' src={require('../images/ui_test.png')}/>
+            <img
+							className='image image-padding-top'
+							src={require('../images/ui_test.png')}
+							role='presentation'
+						/>
             <p className='subtext'>Sauce Labs Test Results</p>
           </div>
           <div className='component_gist_box_lg'>
@@ -73,7 +77,11 @@ class Component2 extends Component {
               </a>
               .
             </p>
-            <img className='image image-padding-top' src={require('../images/sauce_dashboard.png')}/>
+            <img
+							className='image image-padding-top'
+							src={require('../images/sauce_dashboard.png')}
+							role='presentation'
+						/>
             <p className='subtext'>Sauce Labs Cross Browser Test Results</p>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
-import styles from './Toggle.css';
+import './Toggle.css';
 
 class TabButton extends Component {
   render() {

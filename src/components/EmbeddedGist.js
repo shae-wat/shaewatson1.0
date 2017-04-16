@@ -55,7 +55,7 @@ class EmbeddedGist extends Component {
 
   render() {
     if (this.state.loading) {
-      return <img src={loader}/>;
+      return <img src={loader} role="presentation"/>;
     } else {
       return <div dangerouslySetInnerHTML={{__html: this.state.src}} />;
     }

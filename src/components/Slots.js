@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 
 import Slot from './Slot.js';
-import Button from './Button.js';
-
 import './SlotMachine.css';
 
 class Slots extends Component {
