@@ -91,7 +91,11 @@ class Component1 extends Component {
 
         <div className='component_section section_wrap_reverse'>
           <div className='component_box'>
-            <img className='image image-dropdown' src={require('../images/react_dropdown_adn.png')}/>
+            <img
+							className='image image-dropdown'
+							src={require('../images/react_dropdown_adn.png')}
+							role='presentation'
+						/>
             <p className='subtext'>Dropdown Component</p>
           </div>
           <div className='component_box info'>
@@ -152,6 +156,7 @@ class Component1 extends Component {
 						<img
 							src={loader}
 							className={loaderClass}
+							role='presentation'
 						/>
 						<Tweet
 							tweetId='796537445428830208'

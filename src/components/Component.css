@@ -192,3 +192,11 @@ code {
 .hide {
   display: none;
 }
+
+.chart-container {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+  height: 400px;
+}
