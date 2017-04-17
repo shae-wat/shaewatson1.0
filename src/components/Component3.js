@@ -61,11 +61,11 @@ class Component3 extends Component {
 					</div>
 					<div className='component_box info space-top'>
 						<b>
-							Implementing a front end is about sitting between backend data
+							Implementing a front end is about sitting between back end data
 							and the business needs of a product.
 						</b>
 						<p>
-							I got into design and visualization in college while working in the
+							I got into design and visualization during college while working in the
 							<a
 								href='http://fg.cns.utexas.edu/fg/home.html'
 								target='_blank'

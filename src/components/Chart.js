@@ -17,8 +17,9 @@ class Chart extends Component {
       <div className='chart-container'>
         <canvas
           ref={(r)=>{this.chartElement=r;}}
-          width="400"
-          height="400"
+          width="300"
+          height="200"
+          style={{width: '100%', height: 'auto', maxHeight: '350px'}}
         />
       </div>
     );
