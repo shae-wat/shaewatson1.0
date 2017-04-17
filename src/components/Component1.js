@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import loader from '../images/loader.gif';
 import {Tweet} from 'react-twitter-widgets';
+import Chart from './Chart.js';
 
 import './Component.css';
 
@@ -25,10 +26,10 @@ class Component1 extends Component {
       <div className='component_content'>
 
         <div className='component_section'>
-          <div className='component_box'>
-            <div className='monster'/>
-            <p className='subtext'>Animated Component</p>
-          </div>
+					<div className='component_box'>
+						<div className='monster'/>
+						<p className='subtext'>Animated Component</p>
+					</div>
           <div className='component_box info'>
             <b>
               The best part of React is thinking in React.
@@ -46,48 +47,36 @@ class Component1 extends Component {
           </div>
         </div>
 
-        <div className='component_section'>
-          <div className='component_box info'>
-            <b>
-              Components extend functionality in a controlled way.
-            </b>
-            <p>
-              Sometimes, a lot of functionality is demanded of a component. While components
-              should always be refactored into multiple components before growing too large,
-              some cases require a smart component that can sort through options
-              and handle data processing steps.
-            </p>
-            <p>
-              For example, I have made a component that rendered Chart.js canvas charts.
-              This component grew in complexity with many helper functions processing analytics data
-              depending on options passed to the component.
-            </p>
-          </div>
-          <div className='component_box codebox'>
-            <div className='codeblock'>
-               <code>
-                {`<Chart
-                    type='pie'
-                    query='reactions'/>`}
-              </code>
-              <code>
-                {`<Chart
-                    type='bar'
-                    query='platforms'/>`}
-              </code>
-              <code>
-                {`<Chart
-                  type='stackedBar'
-                  query='flags'/>`}
-              </code>
-              <code>
-                {`<Chart
-                  type='line'
-                  query='reads'/>`}
-              </code>
-            </div>
-          </div>
-        </div>
+				<div className='component_section'>
+					<div className='component_box info'>
+						<b>
+							Extend functionality in a controlled way through components.
+						</b>
+						<p>
+							Sometimes, a lot of functionality is demanded of a component. While components
+							should always be refactored into multiple components before growing too large,
+							some cases require a smart component that can handle options
+							and data processing steps.
+						</p>
+						<p>
+							For example, I have extended the functionality of a component that
+							rendered Chart.js canvas charts.
+							This component grew in complexity with helper functions processing analytics data
+							depending on options passed to the component.
+						</p>
+						<div className='codeblock space-top-sm'>
+							 <code>
+								{`<Chart
+										type='line'
+										title='Users'
+										query='active_users'/>`}
+							</code>
+						</div>
+					</div>
+					<div className='component_box codebox'>
+						<Chart />
+					</div>
+				</div>
 
         <div className='component_section section_wrap_reverse'>
           <div className='component_box'>
@@ -119,36 +108,36 @@ class Component1 extends Component {
         </div>
 
         <div className='component_section'>
-          <div className='component_box info'>
-            <b>
-              Redux organizes app state.
-            </b>
-            <p>
-              Redux stores the state of an application as an object tree, defining a single source of truth for that app.
-              This store can be referenced by React components as read-only props.
-              Actions can update the store by dispatching calls to pure functions that post updates to the store.
-            </p>
-            <p>
-              Actions can be evoked when a component loads or can be called after a specific user interaction.
-              Testing an application with a Redux store is accomplished by writing tests for the actions and reducers of the app.
-            </p>
-          </div>
-          <div className='component_box codebox'>
-            <div className='codeblock'>
-              <code>
-                this.props.actions.login();
-              </code>
-               <code>
-                dispatch('LOGIN');
-              </code>
-              <code>
-                test.it('actions: log in', this.props.actions.login());
-              </code>
-               <code>
-                test.it('reducers: log in', dispatch('LOGIN'));
-              </code>
-            </div>
-          </div>
+					<div className='component_box info'>
+						<b>
+							Redux organizes app state.
+						</b>
+						<p>
+							Redux stores the state of an application as an object tree, defining a single source of truth for that app.
+							This store can be referenced by React components as read-only props.
+							Actions can update the store by dispatching calls to pure functions that post updates to the store.
+						</p>
+						<p>
+							Actions can be evoked when a component loads or can be called after a specific user interaction.
+							Testing an application with a Redux store is accomplished by writing tests for the actions and reducers of the app.
+						</p>
+					</div>
+					<div className='component_box codebox'>
+						<div className='codeblock'>
+							<code>
+								this.props.actions.login();
+							</code>
+							 <code>
+								dispatch('LOGIN');
+							</code>
+							<code>
+								test.it('actions: log in', this.props.actions.login());
+							</code>
+							 <code>
+								test.it('reducers: log in', dispatch('LOGIN'));
+							</code>
+						</div>
+					</div>
         </div>
 
 				<div className='component_section section_wrap_reverse'>
@@ -163,7 +152,7 @@ class Component1 extends Component {
 							className='center-horizontally'
 							options={{
 								width: '100%',
-						 	}}
+							}}
 							onLoad={this.removeLoader}
 						/>
 					</div>

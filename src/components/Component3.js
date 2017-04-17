@@ -15,22 +15,6 @@ class Component3 extends Component {
 
     return (
       <div className='component_content'>
-				<div className='component_section_box info'>
-					<b>
-						Web content should be playful and delightful.
-					</b>
-					<p>
-						This is achieved by simple design and clever animations when handling time.
-					</p>
-					<p>
-						This Slot Machine component that I made exemplifies this.
-						Click SPIN to start!
-					</p>
-					<SlotMachine
-	          numSlots={threeSlots.numSlots}
-	          slotOptions={threeSlots.slotOptions}
-	        />
-				</div>
 
         <div className='component_section'>
           <div className='component_box info space-top'>
@@ -65,6 +49,55 @@ class Component3 extends Component {
             <p className='subtext'>Mobile View</p>
           </div>
         </div>
+
+				<div className='component_section section_wrap_reverse'>
+					<div className='component_box'>
+						<img
+							className='image'
+							src={require('../images/Cerevisiae_heatShock.png')}
+							role='presentation'
+						/>
+						<p className='subtext'>Generalized Visualization of Stress Response of Yeast to Heat Shock</p>
+					</div>
+					<div className='component_box info space-top'>
+						<b>
+							Implementing a front end is about sitting between backend data
+							and the business needs of a product.
+						</b>
+						<p>
+							I got into design and visualization in college while working in the
+							<a
+								href='http://fg.cns.utexas.edu/fg/home.html'
+								target='_blank'
+								className='space-around'
+							>
+								University of Texas at Austin’s Functional Genomics Research Stream.
+							</a>
+						</p>
+						<p>
+							After micropipetting for a few months, I was drawn to visualizing the
+							data of the lab in order to parse meaning from the gigabytes of
+							numbers produced by next generation sequencing technology.
+						</p>
+					</div>
+				</div>
+
+				<div className='component_section_box info'>
+					<b>
+						Web content should be playful and delightful.
+					</b>
+					<p>
+						This is achieved by simple design and clever animations when handling time.
+					</p>
+					<p>
+						This Slot Machine component that I made exemplifies this.
+						Click SPIN to start!
+					</p>
+					<SlotMachine
+						numSlots={threeSlots.numSlots}
+						slotOptions={threeSlots.slotOptions}
+					/>
+				</div>
 
       </div>
     );
