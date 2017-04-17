@@ -50,7 +50,7 @@ class Component3 extends Component {
           </div>
         </div>
 
-				<div className='component_section'>
+				<div className='component_section section_wrap_reverse'>
 					<div className='component_box'>
 						<img
 							className='image'
@@ -66,7 +66,13 @@ class Component3 extends Component {
 						</b>
 						<p>
 							I got into design and visualization in college while working in the
-							University of Texas at Austin’s Functional Genomics Research Stream.
+							<a
+								href='http://fg.cns.utexas.edu/fg/home.html'
+								target='_blank'
+								className='space-around'
+							>
+								University of Texas at Austin’s Functional Genomics Research Stream.
+							</a>
 						</p>
 						<p>
 							After micropipetting for a few months, I was drawn to visualizing the
