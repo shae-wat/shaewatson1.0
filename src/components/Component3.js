@@ -15,22 +15,6 @@ class Component3 extends Component {
 
     return (
       <div className='component_content'>
-				<div className='component_section_box info'>
-					<b>
-						Web content should be playful and delightful.
-					</b>
-					<p>
-						This is achieved by simple design and clever animations when handling time.
-					</p>
-					<p>
-						This Slot Machine component that I made exemplifies this.
-						Click SPIN to start!
-					</p>
-					<SlotMachine
-	          numSlots={threeSlots.numSlots}
-	          slotOptions={threeSlots.slotOptions}
-	        />
-				</div>
 
         <div className='component_section'>
           <div className='component_box info space-top'>
@@ -73,25 +57,41 @@ class Component3 extends Component {
 							src={require('../images/Cerevisiae_heatShock.png')}
 							role='presentation'
 						/>
-						<p className='subtext'>Visualized Stress Response of Yeast to Heat Shock</p>
+						<p className='subtext'>Generalized Visualization of Stress Response of Yeast to Heat Shock</p>
 					</div>
 					<div className='component_box info space-top'>
 						<b>
-							Front End Engineering is about sitting between backend data
+							Implementing a front end is about sitting between backend data
 							and the business needs of a product.
 						</b>
 						<p>
-							I got into front end engineering in college while working in the
+							I got into design and visualization in college while working in the
 							University of Texas at Austin’s Functional Genomics Research Stream.
 						</p>
 						<p>
 							After micropipetting for a few months, I was drawn to visualizing the
-							data produced by the lab. Thus began my career of sitting between backend data
-							and the business needs of a product.
+							data of the lab in order to parse meaning from the gigabytes of
+							numbers produced by next generation sequencing technology.
 						</p>
 					</div>
 				</div>
 
+				<div className='component_section_box info'>
+					<b>
+						Web content should be playful and delightful.
+					</b>
+					<p>
+						This is achieved by simple design and clever animations when handling time.
+					</p>
+					<p>
+						This Slot Machine component that I made exemplifies this.
+						Click SPIN to start!
+					</p>
+					<SlotMachine
+						numSlots={threeSlots.numSlots}
+						slotOptions={threeSlots.slotOptions}
+					/>
+				</div>
 
       </div>
     );
