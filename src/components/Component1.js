@@ -26,6 +26,10 @@ class Component1 extends Component {
       <div className='component_content'>
 
         <div className='component_section'>
+					<div className='component_box'>
+						<div className='monster'/>
+						<p className='subtext'>Animated Component</p>
+					</div>
           <div className='component_box info'>
             <b>
               The best part of React is thinking in React.
@@ -41,69 +45,36 @@ class Component1 extends Component {
               and to easily add capabilities or features at any time.
             </p>
           </div>
-					<div className='component_box'>
-						<div className='monster'/>
-						<p className='subtext'>Animated Component</p>
-					</div>
         </div>
 
 				<div className='component_section'>
-					<div className='component_box codebox'>
-						<Chart />
-					</div>
 					<div className='component_box info'>
 						<b>
-							Components can make data approachable.
-						</b>
-						<p>
-							Admin analytics work
-						</p>
-						<p>
-							Data processing
-						</p>
-					</div>
-				</div>
-
-				<div className='component_section'>
-					<div className='component_box info'>
-						<b>
-							Components extend functionality in a controlled way.
+							Extend functionality in a controlled way through components.
 						</b>
 						<p>
 							Sometimes, a lot of functionality is demanded of a component. While components
 							should always be refactored into multiple components before growing too large,
-							some cases require a smart component that can sort through options
-							and handle data processing steps.
+							some cases require a smart component that can handle options
+							and data processing steps.
 						</p>
 						<p>
-							For example, I have made a component that rendered Chart.js canvas charts.
-							This component grew in complexity with many helper functions processing analytics data
+							For example, I have extended the functionality of a component that
+							rendered Chart.js canvas charts.
+							This component grew in complexity with helper functions processing analytics data
 							depending on options passed to the component.
 						</p>
-					</div>
-					<div className='component_box codebox'>
-						<div className='codeblock'>
+						<div className='codeblock space-top-sm'>
 							 <code>
 								{`<Chart
-										type='pie'
-										query='reactions'/>`}
-							</code>
-							<code>
-								{`<Chart
-										type='bar'
-										query='platforms'/>`}
-							</code>
-							<code>
-								{`<Chart
-									type='stackedBar'
-									query='flags'/>`}
-							</code>
-							<code>
-								{`<Chart
-									type='line'
-									query='reads'/>`}
+										type='line'
+										title='Users'
+										query='active_users'/>`}
 							</code>
 						</div>
+					</div>
+					<div className='component_box codebox'>
+						<Chart />
 					</div>
 				</div>
 
