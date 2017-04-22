@@ -109,9 +109,11 @@ class Component3 extends Component {
 							easy to keep a consistant experience of the design as
 							the site grows and changes. The solidity of the front end
 							implementation becomes apparent when
-							viewing the site on different machines and browsers.
+							viewing the site on different machines
+							and over time as content is added and removed.
 						</p>
 						<p>
+							I especially enjoyed working for
 							<a
 	              href='https://www.oroxleather.com/'
 	              target='_blank'
@@ -119,7 +121,7 @@ class Component3 extends Component {
 	            >
 	              Orox Leather
 	            </a>
-							is a family-owned leather shop in Portland, Oregon.
+							in Portland, Oregon.
 							They sell unique, fine leather products and needed their Shopify
 							theme to reflect that. When implementing the requested design,
 							I made sure it would last a long time by ensuring the CSS worked
@@ -136,7 +138,7 @@ class Component3 extends Component {
 					</div>
 				</div>
 
-				<div className='component_section'>
+				<div className='component_section section_wrap_reverse'>
 					<div className='component_box center-horizontally'>
 						<img
 							src={loader}
