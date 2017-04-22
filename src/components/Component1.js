@@ -68,8 +68,8 @@ class Component1 extends Component {
 							 <code>
 								{`<Chart
 										type='line'
-										title='Users'
-										query='active_users'/>`}
+										title='New Users'
+										query='new_users'/>`}
 							</code>
 						</div>
 					</div>
@@ -106,6 +106,37 @@ class Component1 extends Component {
             </p>
           </div>
         </div>
+
+				<div className='component_section'>
+					<div className='component_box info space-top'>
+						<b>
+							Update results instantly.
+						</b>
+						<p>
+							React elements are cheap to create, and can be used to render items
+							on a webpage such as
+							a list of results. In a filtering scenario where a user is narrowing
+							down their view of flight arrivals and departures based on multiple criteria,
+							local logic is used to constuct a new list of results and statistics
+							to display.
+						</p>
+						<p>
+							The React DOM then handles updating the DOM to match the React elements.
+							This gives the user an experience of seeing an instantly updated list of
+							flight results and statistics with each filter they add or remove.
+							For the developer, React makes this easy and allows focus on the
+							actual filter logic instead of the DOM updating.
+						</p>
+					</div>
+					<div className='component_box'>
+						<img
+							className='image'
+							src={require('../images/depArr.png')}
+							role='presentation'
+						/>
+            <p className='subtext'>Departures and Arrivals App</p>
+					</div>
+				</div>
 
         <div className='component_section'>
 					<div className='component_box info'>

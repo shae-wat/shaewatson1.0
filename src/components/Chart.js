@@ -34,14 +34,16 @@ class Chart extends Component {
       data: {
           labels: ["Mon", "Tues", "Wed", "Thurs", "Fri"],
           datasets: [{
-              label: 'Number of Users',
-              data: [12, 19, 3, 5, 2],
+              data: [2, 5, 3, 19, 12],
               backgroundColor: 'rgba(59, 68, 75, 0.2)',
               borderColor: 'rgba(59,68,75,1)',
               borderWidth: 1,
           }]
       },
       options: {
+        legend: {
+          display: false,
+        },
         scales: {
           yAxes: [{
             ticks: {
@@ -51,7 +53,7 @@ class Chart extends Component {
         },
         title: {
           display: true,
-          text: 'Users',
+          text: 'New Users',
           position: 'bottom',
           fontSize: 20,
         },

@@ -57,11 +57,11 @@ class Component3 extends Component {
 							src={require('../images/Cerevisiae_heatShock.png')}
 							role='presentation'
 						/>
-						<p className='subtext'>Generalized Visualization of Stress Response of Yeast to Heat Shock</p>
+						<p className='subtext'>Generalized Visualization of Changes in Yeast Gene Expression to Heat Shock</p>
 					</div>
-					<div className='component_box info space-top'>
+					<div className='component_box info space-top-sm'>
 						<b>
-							Implementing a front end is about sitting between back end data
+							Implementing a front end is about sitting between data
 							and the business needs of a product.
 						</b>
 						<p>
@@ -79,8 +79,35 @@ class Component3 extends Component {
 							data of the lab in order to parse meaning from the gigabytes of
 							numbers produced by next generation sequencing technology.
 						</p>
+						<p>
+							The software I wrote drew presentable images of computational results,
+							removing noise and allowing researchers to see the results of
+							their work in an intuitive way where patterns could be recognized.
+						</p>
 					</div>
 				</div>
+
+				<div className='component_section'>
+					<div className='component_box info space-top'>
+						<b>
+							Consistancy defines a brand.
+						</b>
+						<p>
+							Orox Leather
+						</p>
+						<p>
+						</p>
+					</div>
+					<div className='component_box'>
+						<img
+							className='image'
+							src={require('../images/orox-homepage.png')}
+							role='presentation'
+						/>
+						<p className='subtext'>Orox Leather Homepage</p>
+					</div>
+				</div>
+
 
 				<div className='component_section_box info'>
 					<b>
