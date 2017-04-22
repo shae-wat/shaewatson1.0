@@ -110,22 +110,22 @@ class Component1 extends Component {
 				<div className='component_section'>
 					<div className='component_box info space-top'>
 						<b>
-							Update results instantly.
+							See results update instantly.
 						</b>
 						<p>
-							React elements are cheap to create, and can be used to render items
+							React elements are cheap to create and can be used to render items
 							on a webpage such as
 							a list of results. In a filtering scenario where a user is narrowing
 							down their view of flight arrivals and departures based on multiple criteria,
-							local logic is used to constuct a new list of results and statistics
+							logic is used to construct a new list of results and statistics
 							to display.
 						</p>
 						<p>
-							The React DOM then handles updating the DOM to match the React elements.
+							The React DOM then handles updating the DOM to match the constructed React elements.
 							This gives the user an experience of seeing an instantly updated list of
 							flight results and statistics with each filter they add or remove.
-							For the developer, React makes this easy and allows focus on the
-							actual filter logic instead of the DOM updating.
+							React makes this easy for the developer, allowing focus on the
+							actual filter logic instead of updating the DOM.
 						</p>
 					</div>
 					<div className='component_box'>

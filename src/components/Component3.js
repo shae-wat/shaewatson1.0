@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import SlotMachine from './SlotMachine.js';
+import loader from '../images/loader.gif';
+import {Tweet} from 'react-twitter-widgets';
 
 import threeSlots from '../slots-three.json';
 import './Component.css';
@@ -8,10 +10,19 @@ import './Component.css';
 class Component3 extends Component {
 	constructor(props) {
     super(props);
+
+		this.state = {
+			loading: true,
+		}
   }
 
   render() {
     if (this.props.activeTab !== '3') return null;
+
+		let loaderClass = classNames({
+			['show']: this.state.loading,
+			['hide']: !this.state.loading,
+		});
 
     return (
       <div className='component_content'>
@@ -90,12 +101,22 @@ class Component3 extends Component {
 				<div className='component_section'>
 					<div className='component_box info space-top'>
 						<b>
-							Consistancy defines a brand.
+							A brand emerges from consistant and polished styling.
 						</b>
 						<p>
-							Orox Leather
+							As a front end engineer, I am usually given a design to implement.
+							It is then up to me to design the code in a way that it is
+							easy to keep a consistant experience of the design as
+							the site grows and changes. The solidity of the front end
+							implementation becomes apparent when
+							viewing the site on different machines and browsers.
 						</p>
 						<p>
+							Orox Leather is a family-owned leather shop in Portland, Oregon.
+							They sell unique, fine leather products and needed their Shopify
+							theme to reflect that. When implementing the requested design,
+							I made sure it would last a long time by ensuring the CSS worked
+							across all viewports seamlessly.
 						</p>
 					</div>
 					<div className='component_box'>
@@ -105,6 +126,38 @@ class Component3 extends Component {
 							role='presentation'
 						/>
 						<p className='subtext'>Orox Leather Homepage</p>
+					</div>
+				</div>
+
+				<div className='component_section'>
+					<div className='component_box center-horizontally'>
+						<img
+							src={loader}
+							className={loaderClass}
+							role='presentation'
+						/>
+						<Tweet
+							tweetId='855888597035044864'
+							className='center-horizontally'
+							options={{
+								width: '100%',
+							}}
+							onLoad={this.removeLoader}
+						/>
+					</div>
+					<div className='component_box info space-top'>
+						<b>
+							Do something good with your space on the web.
+						</b>
+						<p>
+							Protect your users. Believe in your users. Build something
+							on the web that will make the world a better, more enabled,
+							and more informed place.
+						</p>
+						<p>
+							Stand up for a better world. And while you are at it,
+							keep your site up using servers running on renewable energy.
+						</p>
 					</div>
 				</div>
 
@@ -129,6 +182,12 @@ class Component3 extends Component {
       </div>
     );
   }
+
+	removeLoader = () => {
+		this.setState({
+			loading: false,
+		});
+	}
 
 }
 
