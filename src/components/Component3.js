@@ -112,7 +112,14 @@ class Component3 extends Component {
 							viewing the site on different machines and browsers.
 						</p>
 						<p>
-							Orox Leather is a family-owned leather shop in Portland, Oregon.
+							<a
+	              href='https://www.oroxleather.com/'
+	              target='_blank'
+	              className='space-around'
+	            >
+	              Orox Leather
+	            </a>
+							is a family-owned leather shop in Portland, Oregon.
 							They sell unique, fine leather products and needed their Shopify
 							theme to reflect that. When implementing the requested design,
 							I made sure it would last a long time by ensuring the CSS worked
