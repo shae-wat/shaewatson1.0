@@ -28,7 +28,7 @@ class Component3 extends Component {
       <div className='component_content'>
 
 				<div className='component_section section_wrap_reverse'>
-					<div className='component_box'>
+					<div className='component_box full-width-mobile'>
 						<img
 							className='image'
 							src={require('../images/Cerevisiae_heatShock.png')}
@@ -94,7 +94,7 @@ class Component3 extends Component {
 							clean, consistent, and intelligently designed CSS.
 						</p>
 					</div>
-					<div className='component_box'>
+					<div className='component_box full-width-mobile'>
 						<img
 							className='image'
 							src={require('../images/orox-homepage.png')}
@@ -105,7 +105,7 @@ class Component3 extends Component {
 				</div>
 
 				<div className='component_section section_wrap_reverse'>
-					<div className='component_box'>
+					<div className='component_box full-width-mobile'>
 						<img
 							className='image'
 							src={require('../images/flight_ticket.png')}
@@ -151,7 +151,7 @@ class Component3 extends Component {
 							The desktop view, in contrast, shows the text content beneath the titles by default.
 						</p>
 					</div>
-					<div className='component_box'>
+					<div className='component_box full-width-mobile'>
 						<img
 							className='image'
 							src={require('../images/ui_desktop.png')}

@@ -43,7 +43,7 @@ class Component2 extends Component {
 						/>
             <p className='subtext'>Sauce Labs Test Results</p>
           </div>
-          <div className='component_gist_box_lg'>
+          <div className='component_gist_box_lg full-width-mobile'>
             <div className='space-top-sm' />
             <Gist gist="shae-wat/7c485b3e2ceb844433358de3694821e7" />
             <p className='subtext'>Selenium Test for Login Functionality</p>
@@ -51,7 +51,7 @@ class Component2 extends Component {
         </div>
 
         <div className='component_section section_wrap_reverse'>
-          <div className='component_gist_box_lg'>
+          <div className='component_gist_box_lg full-width-mobile'>
             <Gist gist="shae-wat/7e795a66676492a324b53ef9bebe27f0" />
             <p className='subtext'>Multi-Platform User Interface Testing with Selenium and Node.js</p>
           </div>
@@ -103,7 +103,7 @@ class Component2 extends Component {
 							requested of the user by the bot.
             </p>
           </div>
-          <div className='component_gist_box'>
+          <div className='component_gist_box full-width-mobile'>
             <Gist gist="shae-wat/7648aee013a49e4b1a296e3cddd637e7" />
             <p className='subtext'>Script that kicks off Codeship build for Slack Bot </p>
           </div>

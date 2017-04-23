@@ -73,7 +73,7 @@ class Component1 extends Component {
 							</code>
 						</div>
 					</div>
-					<div className='component_box codebox'>
+					<div className='component_box full-width-mobile'>
 						<Chart />
 					</div>
 				</div>
@@ -128,7 +128,7 @@ class Component1 extends Component {
 							actual filter logic instead of updating the DOM.
 						</p>
 					</div>
-					<div className='component_box'>
+					<div className='component_box full-width-mobile'>
 						<img
 							className='image'
 							src={require('../images/depArr.png')}
