@@ -172,7 +172,7 @@ class Component1 extends Component {
         </div>
 
 				<div className='component_section section_wrap_reverse'>
-					<div className='component_box center-horizontally'>
+					<div className='component_box'>
 						<img
 							src={loader}
 							className={loaderClass}
