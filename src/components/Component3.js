@@ -124,8 +124,8 @@ class Component3 extends Component {
 							in Portland, Oregon.
 							They sell unique, fine leather products and needed their Shopify
 							theme to reflect that. When implementing the requested design,
-							I made sure it would last a long time by ensuring the CSS worked
-							across all viewports seamlessly.
+							I made sure it would last a long time by writing
+							clean, consistent, and intelligently designed CSS.
 						</p>
 					</div>
 					<div className='component_box'>
@@ -164,8 +164,8 @@ class Component3 extends Component {
 							and more informed place.
 						</p>
 						<p>
-							Stand up for a better world. And while you are at it,
-							keep your site up using servers running on renewable energy.
+							Stand up for a better world. Make your jobs green and
+							keep your site up on servers running on renewable energy!
 						</p>
 					</div>
 				</div>
