@@ -15,7 +15,7 @@ class DropdownComponent extends Component {
 export default DropdownComponent;
 
 
-{/* <DropdownComponent
+/* <DropdownComponent
   options = {
     'farm-to-table': 'Farm to Table',
     'cold-pressed': 'Cold Pressed',
@@ -23,4 +23,4 @@ export default DropdownComponent;
     bicycle: 'Bicycle',
   }
   handleOptionSelect = {()=>{}}
-/> */}
+/> */
