@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import ChartJS from 'chart.js';
 
-import './Component.css';
-
 class Chart extends Component {
   componentDidMount(){
     this.createChart();
@@ -13,8 +11,17 @@ class Chart extends Component {
   }
 
   render() {
+    const chartContainer = {
+      display: 'block',
+      marginRight: 'auto',
+      marginLeft: 'auto',
+      padding: '10px',
+      width: '85%',
+      height: '85%',
+    }
+
     return (
-      <div className='chart-container'>
+      <div className={chartContainer}>
         <canvas
           ref={(r)=>{this.chartElement=r;}}
           width="300"

@@ -147,15 +147,6 @@ code {
   display: none;
 }
 
-.chart-container {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 10px;
-  width: 85%;
-  height: 85%;
-}
-
 @keyframes play {
    0% { background-position-x: 0px; }
    100% { background-position-x: -1900px; }
