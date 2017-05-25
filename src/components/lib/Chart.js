@@ -21,7 +21,7 @@ class Chart extends Component {
     }
 
     return (
-      <div className={chartContainer}>
+      <div style={chartContainer}>
         <canvas
           ref={(r)=>{this.chartElement=r;}}
           width="300"

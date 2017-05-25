@@ -1,11 +1,17 @@
 import React from 'react';
 import SocialComponent from './SocialComponent.js';
 
-import '../../App.css';
-
 const Footer = function(props){
+  const appFooter = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    background: '#222',
+    padding: '10px',
+    color: 'white',
+  }
+
   return (
-    <div className="appFooter">
+    <div style={appFooter}>
       <SocialComponent />
     </div>
   );
