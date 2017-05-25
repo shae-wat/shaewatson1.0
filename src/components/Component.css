@@ -43,6 +43,10 @@
   width: 54%;
 }
 
+.dropdown-component {
+  height: 250px;
+}
+
 .codebox {
   padding-left: 0px;
   padding-right: 0px
@@ -129,10 +133,6 @@ code {
 
 .image-padding-bottom {
   padding-bottom: 30px;
-}
-
-.image-dropdown {
-  max-width: 325px;
 }
 
 .image-lrg-section {
