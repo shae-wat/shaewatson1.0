@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import SlotMachine from './SlotMachine.js';
+import SlotMachine from './slot-machine/SlotMachine.js';
 import loader from '../images/loader.gif';
 import {Tweet} from 'react-twitter-widgets';
 

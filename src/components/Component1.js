@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import loader from '../images/loader.gif';
 import {Tweet} from 'react-twitter-widgets';
-import Chart from './Chart.js';
+import Chart from './lib/Chart.js';
 
 import './Component.css';
 

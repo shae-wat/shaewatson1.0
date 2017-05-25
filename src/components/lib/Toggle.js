@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
-import TabButton from './TabButton.js';
 
 import './Toggle.css';
 
@@ -42,6 +41,23 @@ class Toggle extends Component {
 Toggle.propTypes = {
   tab: PropTypes.string.isRequired,
   handleToggle: PropTypes.func.isRequired,
+};
+
+const TabButton = function(props){
+  let isSelected = (props.tab === props.id);
+
+  return (
+    <div onClick={()=>props.handleClick(props.id)}
+      className={classNames('tab', {['tabActive']: isSelected})}>
+      {props.text}
+    </div>
+  );
+}
+
+TabButton.propTypes = {
+  tab: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default Toggle;

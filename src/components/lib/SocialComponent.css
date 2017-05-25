@@ -1,27 +1,27 @@
 .socialComponent {
 	display: flex;
   flex-direction: row;
-  justify-content: space-between; 
+  justify-content: space-between;
   margin: 15px;
   width: 150px;
 }
 
 .socialComponent__github {
-  background: url(../images/social_github.png);
+  background: url(../../images/social_github.png);
   width: 35px;
   height: 35px;
   cursor: pointer;
 }
 
 .socialComponent__linkedin {
-  background: url(../images/social_linkedin.png);
+  background: url(../../images/social_linkedin.png);
   width: 35px;
   height: 35px;
   cursor: pointer;
 }
 
 .socialComponent__twitter {
-  background: url(../images/social_twitter.png);
+  background: url(../../images/social_twitter.png);
   width: 35px;
   height: 35px;
   cursor: pointer;

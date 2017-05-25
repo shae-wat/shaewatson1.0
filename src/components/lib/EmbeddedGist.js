@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import loader from '../images/loader.gif';
+import loader from '../../images/loader.gif';
 
 class EmbeddedGist extends Component {
 
