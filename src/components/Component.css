@@ -48,6 +48,10 @@
   justify-content: center;
 }
 
+.image-dropdown {
+  max-width: 325px;
+}
+
 .codebox {
   padding-left: 0px;
   padding-right: 0px

@@ -93,16 +93,11 @@ class Component1 extends Component {
 
         <section className='component_section section_wrap_reverse'>
           <div className='component_box'>
-						<div className='dropdown-component'>
-							<DropdownComponent
-							  options={dropdownOptions}
-							  handleSelect={(index)=>{
-									this.setState({ selectedDropdownIndex: index })
-								}}
-								selectedOption={this.state.selectedDropdownIndex}
-							/>
-						</div>
-						{dropdownMessage}
+						<img
+							className='image image-dropdown'
+							src={require('../images/react_dropdown_adn.png')}
+							role='presentation'
+						/>
             <p className='subtext'>Dropdown Component</p>
           </div>
           <div className='component_box info'>
@@ -113,15 +108,18 @@ class Component1 extends Component {
               React components are designed to be reusable. I maintain a strict practice of
               making components completely
               self-containing in their functionality, while making sure they are
-              reusable through expected input.
+              reusable through expected props.
             </p>
-            <p>
-              An example of this is a custom dropdown selector I built. It is dynamic in its options,
-              since it expects an array of key value pairs as props.
-              Beyond that, it maintains its styles and its functionality of showing open and closed views
-              of the options. Upon the user selecting an option, the click handler supplied
-              to the component is triggered.
-            </p>
+						<div className='dropdown-component'>
+							<DropdownComponent
+							  options={dropdownOptions}
+							  handleSelect={(index)=>{
+									this.setState({ selectedDropdownIndex: index })
+								}}
+								selectedOption={this.state.selectedDropdownIndex}
+							/>
+						</div>
+						{dropdownMessage}
           </div>
         </section>
 
