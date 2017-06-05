@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import _ from 'lodash';
 import loader from '../images/loader.gif';
 import {Tweet} from 'react-twitter-widgets';
 import Chart from './lib/Chart.js';
+import DropdownComponent from './lib/DropdownComponent.js';
 
 import './Component.css';
 
@@ -11,6 +13,7 @@ class Component1 extends Component {
     super(props);
 		this.state = {
 			loading: true,
+			selectedDropdownIndex: 0,
 		}
   }
 
@@ -22,10 +25,20 @@ class Component1 extends Component {
 			['hide']: !this.state.loading,
 		});
 
+		const dropdownOptions = [
+			{value: 'farm', label: 'Farm to Table'},
+			{value: 'pressed', label: 'Cold Pressed'},
+			{value: 'local', label: 'Local'},
+			{value: 'bicycle', label: 'Bicycle'},
+			{value: 'organic', label: 'Organic'},
+		];
+		let selected = _.get(dropdownOptions[this.state.selectedDropdownIndex], 'label');
+		let dropdownMessage = (<h3>You have selected: {selected}</h3>);
+
     return (
       <div className='component_content'>
 
-        <div className='component_section'>
+        <section className='component_section'>
 					<div className='component_box'>
 						<div className='monster'/>
 						<p className='subtext'>Animated Component</p>
@@ -45,9 +58,9 @@ class Component1 extends Component {
               and to easily add capabilities or features at any time.
             </p>
           </div>
-        </div>
+        </section>
 
-				<div className='component_section'>
+				<section className='component_section'>
 					<div className='component_box info'>
 						<b>
 							Extend functionality in a controlled way through components.
@@ -76,11 +89,11 @@ class Component1 extends Component {
 					<div className='component_box full-width-mobile'>
 						<Chart />
 					</div>
-				</div>
+				</section>
 
-        <div className='component_section section_wrap_reverse'>
+        <section className='component_section section_wrap_reverse'>
           <div className='component_box'>
-            <img
+						<img
 							className='image image-dropdown'
 							src={require('../images/react_dropdown_adn.png')}
 							role='presentation'
@@ -95,19 +108,22 @@ class Component1 extends Component {
               React components are designed to be reusable. I maintain a strict practice of
               making components completely
               self-containing in their functionality, while making sure they are
-              reusable through expected input.
+              reusable through expected props.
             </p>
-            <p>
-              An example of this is a custom dropdown selector I built. It is dynamic in its options,
-              since it expects an array of key value pairs as props.
-              Beyond that, it maintains its styles and its functionality of showing open and closed views
-              of the options. Upon the user selecting an option, the click handler supplied
-              to the component is triggered.
-            </p>
+						<div className='dropdown-component'>
+							<DropdownComponent
+							  options={dropdownOptions}
+							  handleSelect={(index)=>{
+									this.setState({ selectedDropdownIndex: index })
+								}}
+								selectedOption={this.state.selectedDropdownIndex}
+							/>
+						</div>
+						{dropdownMessage}
           </div>
-        </div>
+        </section>
 
-				<div className='component_section'>
+				<section className='component_section'>
 					<div className='component_box info space-top'>
 						<b>
 							See results update instantly.
@@ -136,9 +152,9 @@ class Component1 extends Component {
 						/>
             <p className='subtext'>Departures and Arrivals App</p>
 					</div>
-				</div>
+				</section>
 
-        <div className='component_section'>
+        <section className='component_section'>
 					<div className='component_box info'>
 						<b>
 							Redux organizes app state.
@@ -169,9 +185,9 @@ class Component1 extends Component {
 							</code>
 						</div>
 					</div>
-        </div>
+        </section>
 
-				<div className='component_section section_wrap_reverse'>
+				<section className='component_section section_wrap_reverse'>
 					<div className='component_box'>
 						<img
 							src={loader}
@@ -209,10 +225,10 @@ class Component1 extends Component {
 							and making React components animated with CSS.
 						</p>
 					</div>
-				</div>
+				</section>
 
 
-        <div className='component_section_box'>
+        <section className='component_section_box'>
           <p>
             As a front end engineer, I have worked on teams building React/Redux applications since July 2015.
           </p>
@@ -234,7 +250,7 @@ class Component1 extends Component {
               Civil Co.
             </a>
           </p>
-        </div>
+        </section>
 
       </div>
     );

@@ -15,7 +15,7 @@ class Component2 extends Component {
     return (
       <div className='component_content'>
 
-        <div className='component_section'>
+        <section className='component_section'>
           <div className='component_gisttext_box_lg info'>
             <b>
               End to end testing is accomplished with browser automation.
@@ -48,9 +48,9 @@ class Component2 extends Component {
             <Gist gist="shae-wat/7c485b3e2ceb844433358de3694821e7" />
             <p className='subtext'>Selenium Test for Login Functionality</p>
           </div>
-        </div>
+        </section>
 
-        <div className='component_section section_wrap_reverse'>
+        <section className='component_section section_wrap_reverse'>
           <div className='component_gist_box_lg full-width-mobile'>
             <Gist gist="shae-wat/7e795a66676492a324b53ef9bebe27f0" />
             <p className='subtext'>Multi-Platform User Interface Testing with Selenium and Node.js</p>
@@ -84,9 +84,9 @@ class Component2 extends Component {
 						/>
             <p className='subtext'>Sauce Labs Cross Browser Test Results</p>
           </div>
-        </div>
+        </section>
 
-        <div className='component_section'>
+        <section className='component_section'>
           <div className='component_gisttext_box info space-top'>
             <b>
               A Javascript-loving bot can run end to end tests.
@@ -107,7 +107,7 @@ class Component2 extends Component {
             <Gist gist="shae-wat/7648aee013a49e4b1a296e3cddd637e7" />
             <p className='subtext'>Script that kicks off Codeship build for Slack Bot </p>
           </div>
-        </div>
+        </section>
 
       </div>
     );

@@ -27,7 +27,7 @@ class Component3 extends Component {
     return (
       <div className='component_content'>
 
-				<div className='component_section section_wrap_reverse'>
+				<section className='component_section section_wrap_reverse'>
 					<div className='component_box full-width-mobile'>
 						<img
 							className='image'
@@ -62,9 +62,9 @@ class Component3 extends Component {
 							their work in an intuitive way where patterns could be recognized.
 						</p>
 					</div>
-				</div>
+				</section>
 
-				<div className='component_section'>
+				<section className='component_section'>
 					<div className='component_box info space-top'>
 						<b>
 							A brand emerges from consistent and polished styling.
@@ -102,9 +102,9 @@ class Component3 extends Component {
 						/>
 						<p className='subtext'>Orox Leather Homepage</p>
 					</div>
-				</div>
+				</section>
 
-				<div className='component_section section_wrap_reverse'>
+				<section className='component_section section_wrap_reverse'>
 					<div className='component_box full-width-mobile'>
 						<img
 							className='image'
@@ -131,9 +131,9 @@ class Component3 extends Component {
 							can give the design the impression of being simpler than it really is.
 						</p>
 					</div>
-				</div>
+				</section>
 
-				<div className='component_section'>
+				<section className='component_section'>
 					<div className='component_box info space-top'>
 						<b>
 							Everything should look good on everything.
@@ -165,9 +165,9 @@ class Component3 extends Component {
 						/>
 						<p className='subtext'>Mobile View</p>
 					</div>
-				</div>
+				</section>
 
-				<div className='component_section section_wrap_reverse'>
+				<section className='component_section section_wrap_reverse'>
 					<div className='component_box'>
 						<img
 							src={loader}
@@ -197,10 +197,10 @@ class Component3 extends Component {
 							keep your site up on servers running on renewable energy!
 						</p>
 					</div>
-				</div>
+				</section>
 
 
-				<div className='component_section_box info'>
+				<section className='component_section_box info'>
 					<b>
 						Web content should be playful and delightful.
 					</b>
@@ -215,7 +215,7 @@ class Component3 extends Component {
 						numSlots={threeSlots.numSlots}
 						slotOptions={threeSlots.slotOptions}
 					/>
-				</div>
+				</section>
 
       </div>
     );
