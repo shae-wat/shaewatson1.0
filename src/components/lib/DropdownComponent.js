@@ -19,6 +19,7 @@ class DropdownComponent extends Component {
       <DropdownOption
         key={_.get(selectedOptionObj, 'value')}
         label={_.get(selectedOptionObj, 'label')}
+        handleOpenClick={this.handleOpenClick}
       />
     );
 
@@ -58,8 +59,14 @@ class DropdownComponent extends Component {
   }
 
   handleClick = (e) => {
+    console.log('handleClick');
     this.setState({ open: false });
     this.props.handleSelect(parseInt(e.target.id));
+  }
+
+  handleOpenClick = () => {
+    console.log('handleOpenClick');
+    this.setState({ open: true });
   }
 }
 
@@ -73,7 +80,7 @@ const DropdownOption = function(props){
     <div
       id={props.index}
       className={optionComponent}
-      onClick={props.handleSelect}
+      onClick={props.expanded ? props.handleSelect : props.handleOpenClick}
     >
       {props.label}
     </div>
