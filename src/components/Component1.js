@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import _ from 'lodash';
 import loader from '../images/loader.gif';
 import {Tweet} from 'react-twitter-widgets';
 import Chart from './lib/Chart.js';
@@ -12,6 +13,7 @@ class Component1 extends Component {
     super(props);
 		this.state = {
 			loading: true,
+			selectedDropdownIndex: 0,
 		}
   }
 
@@ -22,6 +24,16 @@ class Component1 extends Component {
 			['show']: this.state.loading,
 			['hide']: !this.state.loading,
 		});
+
+		const dropdownOptions = [
+			{value: 'farm', label: 'Farm to Table'},
+			{value: 'pressed', label: 'Cold Pressed'},
+			{value: 'local', label: 'Local'},
+			{value: 'bicycle', label: 'Bicycle'},
+			{value: 'organic', label: 'Organic'},
+		];
+		let selected = _.get(dropdownOptions[this.state.selectedDropdownIndex], 'label');
+		let dropdownMessage = (<h3>You have selected: {selected}</h3>);
 
     return (
       <div className='component_content'>
@@ -83,16 +95,14 @@ class Component1 extends Component {
           <div className='component_box'>
 						<div className='dropdown-component'>
 							<DropdownComponent
-							  options={[
-									{value: 'farm', label: 'Farm to Table'},
-									{value: 'pressed', label: 'Cold Pressed'},
-									{value: 'local', label: 'Local'},
-									{value: 'bicycle', label: 'Bicycle'},
-							  ]}
-							  handleSelect={()=>{}}
-								selectedOption='farm'
+							  options={dropdownOptions}
+							  handleSelect={(index)=>{
+									this.setState({ selectedDropdownIndex: index })
+								}}
+								selectedOption={this.state.selectedDropdownIndex}
 							/>
 						</div>
+						{dropdownMessage}
             <p className='subtext'>Dropdown Component</p>
           </div>
           <div className='component_box info'>
