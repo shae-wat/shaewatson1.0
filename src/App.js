@@ -3,9 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/lib/Header.js';
 import Toggle from './components/lib/Toggle.js';
-import Component1 from './components/Component1.js';
+import TechBabbleIndex from './components/techBabble/index'
 import Component2 from './components/Component2.js';
-import Component3 from './components/Component3.js';
+import Component3 from './components/featuredWork/Component3.js';
 import Footer from './components/lib/Footer.js';
 
 class App extends Component {
@@ -24,7 +24,7 @@ class App extends Component {
           tab={this.state.activeTab}
           handleToggle={this.handleToggle}
         />
-        <Component1
+        <TechBabbleIndex
           activeTab={this.state.activeTab}
         />
         <Component2

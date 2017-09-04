@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 
 import Slots from './Slots.js';
-import Button from '../lib/Button.js';
+import Button from '../../lib/Button.js';
 import './SlotMachine.css';
 
 class SlotMachine extends Component {
