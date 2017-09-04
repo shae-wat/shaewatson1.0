@@ -144,6 +144,10 @@ code {
   width: 30%;
 }
 
+.dark-background {
+  background: #ddd;
+}
+
 .show {
   display: initial;
 }

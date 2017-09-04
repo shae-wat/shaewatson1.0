@@ -125,7 +125,7 @@ class Component3 extends Component {
 				</section>
 
 
-				<section className='component_section'>
+				<section className='component_section section_wrap_reverse'>
 					<div className='component_box full-width-mobile'>
 						<img
 							className='image'
