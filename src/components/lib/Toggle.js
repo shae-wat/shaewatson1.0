@@ -22,7 +22,7 @@ class Toggle extends Component {
           <TabButton
             id='2'
             tab={this.props.tab}
-            text='Javascript/Node.js'
+            text='Current Work'
             handleClick={this.props.handleToggle}
           />
           <TabButton

@@ -16,7 +16,6 @@ class TechBabbleIndex extends Component {
   }
 
   render() {
-    console.log('$$$this.props', this.props);
     if (this.props.activeTab !== '3') return null;
 
 		let loaderClass = classNames({
@@ -116,7 +115,21 @@ class TechBabbleIndex extends Component {
 					</div>
 				</section>
 
-				<section className='component_section section_wrap_reverse'>
+				<section className='component_section'>
+					<div className='component_box info space-top'>
+						<b>
+							Do something good with your space on the web.
+						</b>
+						<p>
+							Protect your users. Believe in your users. Build something
+							on the web that will make the world a better, more enabled,
+							and more informed place.
+						</p>
+						<p>
+							Stand up for a better world. Make your jobs green and
+							keep your site up on servers running on renewable energy!
+						</p>
+					</div>
 					<div className='component_box'>
 						<img
 							src={loader}
@@ -131,20 +144,6 @@ class TechBabbleIndex extends Component {
 							}}
 							onLoad={this.removeLoader}
 						/>
-					</div>
-					<div className='component_box info space-top'>
-						<b>
-							Do something good with your space on the web.
-						</b>
-						<p>
-							Protect your users. Believe in your users. Build something
-							on the web that will make the world a better, more enabled,
-							and more informed place.
-						</p>
-						<p>
-							Stand up for a better world. Make your jobs green and
-							keep your site up on servers running on renewable energy!
-						</p>
 					</div>
 				</section>
 
