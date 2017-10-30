@@ -125,10 +125,6 @@ class TechBabbleIndex extends Component {
 							on the web that will make the world a better, more enabled,
 							and more informed place.
 						</p>
-						<p>
-							Stand up for a better world. Make your jobs green and
-							keep your site up on servers running on renewable energy!
-						</p>
 					</div>
 					<div className='component_box'>
 						<img
