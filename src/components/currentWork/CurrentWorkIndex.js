@@ -20,7 +20,10 @@ class Component2 extends Component {
               Updating the mortgage industry
             </b>
             <p>
-              Mortgages are hard. Technology is hard.
+              The mortgage process is arduous and has not moved into the
+							new online space created by modern technology. Behind the scenes,
+							processing a loan application is a difficult task to break down and
+							manage amongst a group of loan officers.
             </p>
             <p>
 							At Clara I am delivering a UI that makes it easier for
@@ -28,11 +31,18 @@ class Component2 extends Component {
               process while directly interfacing with an internal, task-based
               mortgage underwriting process.
             </p>
+						<div className='dark-background'>
+							<img
+								className='image'
+								src={require('../../images/clara-logo.svg')}
+								role='presentation'
+							/>
+						</div>
           </div>
-          <div className='component_box dark-background'>
+          <div className='component_box'>
 						<img
 							className='image'
-							src={require('../../images/clara-logo.svg')}
+							src={require('../../images/clara_bopo.png')}
 							role='presentation'
 						/>
 					</div>
@@ -44,7 +54,7 @@ class Component2 extends Component {
 							{`yarn run build:wordpress-affordability-calculator`}
 						</code>
 						 <code>
-							{`<script src="https://s3.amazonaws.com/static.com/affordability-calculator.js"></script>`}
+							{`<script src="https://s3.com/calculator.js"></script>`}
 						</code>
 					</div>
 					<div className='component_box info'>
@@ -53,8 +63,8 @@ class Component2 extends Component {
 						</b>
 						<p>
 							A skill I keep reusing in my work at small, scrappy companies,
-							is compiling React components into javascript that can be
-							plugged in pages on marketing websites. At Clara, I used this skill
+							is compiling React components into Javascript that can be
+							plugged into marketing websites. At Clara, I used this skill
 							again when I was tasked with featuring an existing React mortgage
 							calculator on a
 							<a
@@ -69,11 +79,11 @@ class Component2 extends Component {
 						<p>
 							Putting this calculator on the Wordpress site required a webpack
 							compilation configuration that enabled the React component to be
-							built to a javascript file, which I then hosted on s3.
+							built to a Javascript file, which I then hosted on s3.
 							Referencing the hosted, publically viewable file in a script tag made it
 							simple to plug in the calculator to the marketing site page.
 							Hosting the file in this way also allows an engineer to update the
-							component by rebuilding and pushing the new javascript to s3
+							component by rebuilding and pushing the new build to s3
 							without having to touch the Wordpress site.
 						</p>
 					</div>

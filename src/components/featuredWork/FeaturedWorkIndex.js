@@ -94,9 +94,11 @@ class Component3 extends Component {
 							Custom Dropdown Menu
 						</b>
 						<p>
-							At Civil, our commenting app could be customized to match the colors
-							of the hosting newspaper. Because of this, we wanted a dropdown menu
-							that could also inherit these colors.
+							As a third party Javascript app, the commenting app I contributed to
+							could be customized to match the colors
+							of the hosting newspaper. Because of this, it was a nice touch
+							that the comments' dropdown menu
+							could also inherit the host site colors.
 						</p>
 						<div className='dropdown-component'>
 							<DropdownComponent
