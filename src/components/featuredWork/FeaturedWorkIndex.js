@@ -40,26 +40,47 @@ class Component3 extends Component {
     return (
       <div className='component_content'>
 
-				<section className='component_section_box info'>
-					<b>
-						Slot Machine Game
-					</b>
-					<p>
-						Web content should be playful and delightful.
-						This is achieved by simple design and clever animations when handling time.
-					</p>
-					<p>
-						This Slot Machine component that I made exemplifies the use of CSS
-						animation and design to achieve the game experience.
-						Click SPIN to start!
-					</p>
-					<SlotMachine
-						numSlots={threeSlots.numSlots}
-						slotOptions={threeSlots.slotOptions}
-					/>
+				<section className='component_section section_wrap_reverse'>
+					<div className='component_box info space-top'>
+						<b>
+							Orox Leather Branded Website
+						</b>
+						<p>
+							As a front end engineer, I am usually given a design to implement.
+							It is then up to me to format the code implementation in a way that is
+							simple to extend and change while keeping a consistent
+							experience of the visual design. The solidity of a front end
+							implementation becomes apparent as the site is used on different machines
+							and over time as content changes.
+						</p>
+						<p>
+							In my early career, I especially enjoyed styling the
+							<a
+								href='https://www.oroxleather.com/'
+								target='_blank'
+								className='space-around'
+							>
+								Orox Leather
+							</a>
+							website.
+							Orox sells unique, fine leather products and needed a Shopify
+							theme to reflect their unique and special style. I made changes to the
+							existing theme to match their requested design updates,
+							making sure my updates would last a long time by writing
+							clean, consistent, and intelligently designed CSS.
+						</p>
+					</div>
+					<div className='component_box full-width-mobile'>
+						<img
+							className='image'
+							src={require('../../images/orox-homepage.png')}
+							role='presentation'
+						/>
+						<p className='subtext'>Orox Leather Homepage (June 2017)</p>
+					</div>
 				</section>
 
-				<section className='component_section section_wrap_reverse'>
+				<section className='component_section'>
 					<div className='component_box'>
 						<img
 							className='image image-dropdown'
@@ -90,20 +111,21 @@ class Component3 extends Component {
 					</div>
 				</section>
 
-				<section className='component_section'>
+				<section className='component_section section_wrap_reverse'>
 					<div className='component_box info space-top'>
 						<b>
-							Different views for different experiences
+							Different views for different device experiences
 						</b>
 						<p>
-							It has always been an expectation in my work to handle page layout across all viewport sizes.
+							It has always been an expectation in my work to handle page
+							layout across all viewport sizes.
+							In some cases, the design calls for information to be displayed
+							differently based on the viewport.
+							In the "Rate Comment" examples, I made a user interface that does just that.
 						</p>
 						<p>
-							In some cases, the design calls for information to be displayed differently based on the viewport.
-							In the associated examples, I made a user interface that does just that.
-						</p>
-						<p>
-							The mobile user is given an option to click <code>READ MORE</code> to show more text content
+							The mobile user is given an option to click <code>READ MORE</code> to
+							show more text content
 							beneath the article title and username.
 							The desktop view, in contrast, shows the text content beneath the titles by default.
 						</p>
@@ -125,14 +147,14 @@ class Component3 extends Component {
 				</section>
 
 
-				<section className='component_section section_wrap_reverse'>
+				<section className='component_section'>
 					<div className='component_box full-width-mobile'>
 						<img
 							className='image'
 							src={require('../../images/depArr.png')}
 							role='presentation'
 						/>
-						<p className='subtext'>Departures and Arrivals App</p>
+						<p className='subtext'>Departures and Arrivals App (2016)</p>
 					</div>
 					<div className='component_box info space-top'>
 						<b>
@@ -140,67 +162,51 @@ class Component3 extends Component {
 						</b>
 						<p>
 							React elements are cheap to create and can be used to render items
-							on a webpage such as
+							expected to re-render on a webpage such as
 							a list of results. On the FlightStats Departures and Arrivals page,
-							a user has several filters that can be applied to see a list of departing
-							and arriving flights.
+							the rows of the results table are all React components that render
+							with different colors depending on the flight status.
 						</p>
 						<p>
-							Updating the list based on the filter state in a React component
-							gives the user an experience of seeing an instantly updated list of
-							flight results and airport statistics.
+							On the departures and arrivals page,
+							several filters can be applied to see a list of relevant departing
+							and arriving flights.
+							The experience of seeing an instantly updated results list of
+							flight statuses and airport statistics based on filters
+							prevents information overload for users. Not waiting for a
+							reload builds user confidence, and is possible by triggering a
+							simple and cheap reload of the results on filter selection.
 						</p>
 					</div>
+				</section>
+
+				<section className='component_section_box info'>
+					<b>
+						Slot Machine Game
+					</b>
+					<p>
+						Web content should be playful and delightful.
+						This is achieved by simple design and clever animations when handling time.
+					</p>
+					<p>
+						This Slot Machine component that I made exemplifies the use of CSS
+						animation and design to achieve the game experience.
+						Click SPIN to start!
+					</p>
+					<SlotMachine
+						numSlots={threeSlots.numSlots}
+						slotOptions={threeSlots.slotOptions}
+					/>
 				</section>
 
 				<section className='component_section'>
-					<div className='component_box info space-top'>
-						<b>
-							Orox Leather Branded Website
-						</b>
-						<p>
-							As a front end engineer, I am usually given a design to implement.
-							It is then up to me to design the code in a way that it is
-							easy to keep a consistent experience of the design as
-							the site grows and changes. The solidity of the front end
-							implementation becomes apparent when
-							viewing the site on different machines
-							and over time as content is added and removed.
-						</p>
-						<p>
-							I especially enjoyed working for
-							<a
-								href='https://www.oroxleather.com/'
-								target='_blank'
-								className='space-around'
-							>
-								Orox Leather
-							</a>
-							in Portland, Oregon.
-							They sell unique, fine leather products and needed their Shopify
-							theme to reflect that. I updated the theme to match the requested design,
-							making sure it would last a long time by writing
-							clean, consistent, and intelligently designed CSS.
-						</p>
-					</div>
-					<div className='component_box full-width-mobile'>
-						<img
-							className='image'
-							src={require('../../images/orox-homepage.png')}
-							role='presentation'
-						/>
-						<p className='subtext'>Orox Leather Homepage</p>
-					</div>
-				</section>
-
-				<section className='component_section section_wrap_reverse'>
 					<div className='component_box full-width-mobile'>
 						<img
 							className='image'
 							src={require('../../images/Cerevisiae_heatShock.png')}
 							role='presentation'
 						/>
-						<p className='subtext'>Generalized Visualization of Changes in Yeast Gene Expression to Heat Shock</p>
+						<p className='subtext'>Generalized Visualization of Changes in Yeast Gene Expression to Heat Shock (2011)</p>
 					</div>
 					<div className='component_box info space-top-sm'>
 						<b>
