@@ -146,6 +146,8 @@ code {
 
 .dark-background {
   background: #ddd;
+  padding: 16px;
+  border-radius: 4px;
 }
 
 .show {
