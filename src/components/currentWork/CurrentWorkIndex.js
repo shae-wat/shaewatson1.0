@@ -41,7 +41,7 @@ class Component2 extends Component {
           </div>
           <div className='component_box'>
 						<img
-							className='image'
+							className='image image-dropdown'
 							src={require('../../images/clara_bopo.png')}
 							role='presentation'
 						/>
