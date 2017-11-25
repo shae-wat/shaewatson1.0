@@ -15,22 +15,24 @@ class Component2 extends Component {
       <div className='component_content'>
 
         <section className='component_section'>
-          <div className='component_box info'>
-            <b>
-              Updating the mortgage industry
-            </b>
-            <p>
-              The mortgage process is arduous and has not moved into the
-							new online space created by modern technology. Behind the scenes,
-							processing a loan application is a difficult task to break down and
-							manage amongst a group of loan officers.
-            </p>
-            <p>
-							At Clara I am delivering a UI that makes it easier for
-              people seeking mortgages to understange the mortgage application
-              process while directly interfacing with an internal, task-based
-              mortgage underwriting process.
-            </p>
+          <div className='component_box info image-padding-bottom'>
+						<div className='image-padding-bottom'>
+	            <b>
+	              Updating the mortgage industry
+	            </b>
+	            <p>
+	              The mortgage process is arduous and has not moved into the
+								new online space created by modern technology. Behind the scenes,
+								processing a loan application is a difficult task to break down and
+								manage amongst a group of loan officers.
+	            </p>
+	            <p>
+								At Clara I am delivering a UI that makes it easier for
+	              people seeking mortgages to understange the mortgage application
+	              process while directly interfacing with an internal, task-based
+	              mortgage underwriting process.
+	            </p>
+						</div>
 						<div className='dark-background'>
 							<img
 								className='image'
@@ -45,17 +47,20 @@ class Component2 extends Component {
 							src={require('../../images/clara_bopo.png')}
 							role='presentation'
 						/>
+						<p className='subtext'>Clara Borrower Portal's Best Match Loan UI that I built</p>
 					</div>
         </section>
 
 				<section className='component_section'>
-					<div className='codeblock'>
-						 <code>
-							{`yarn run build:wordpress-affordability-calculator`}
-						</code>
-						 <code>
-							{`<script src="https://s3.com/calculator.js"></script>`}
-						</code>
+					<div className='component_box'>
+						<div className='codeblock'>
+							 <code className="codebox__line">
+								{`yarn run build:wordpress-affordability-calculator`}
+							</code>
+							 <code className="codebox__line">
+								{`<script src="https://s3.com/calculator.js"></script>`}
+							</code>
+						</div>
 					</div>
 					<div className='component_box info'>
 						<b>
@@ -72,7 +77,7 @@ class Component2 extends Component {
 								target='_blank'
 								className='space-around'
 							>
-								marketing page.
+								marketing page
 							</a>
 							.
 						</p>

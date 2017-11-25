@@ -46,8 +46,9 @@ class Component3 extends Component {
 							Orox Leather Branded Website
 						</b>
 						<p>
-							As a front end engineer, I am usually given a design to implement.
-							It is then up to me to format the code implementation in a way that is
+							As a front end engineer, it is my job to bring a given design
+							to life on a webpage.
+							It is up to me to write the code in a way that is
 							simple to extend and change while keeping a consistent
 							experience of the visual design. The solidity of a front end
 							implementation becomes apparent as the site is used on different machines
@@ -63,9 +64,9 @@ class Component3 extends Component {
 								Orox Leather
 							</a>
 							website.
-							Orox sells unique, fine leather products and needed a Shopify
-							theme to reflect their unique and special style. I made changes to the
-							existing theme to match their requested design updates,
+							Orox sells unique, fine leather products and needed a website
+							to reflect their unique and special style. I made changes to the
+							existing Shopify theme to match their requested design updates,
 							making sure my updates would last a long time by writing
 							clean, consistent, and intelligently designed CSS.
 						</p>
@@ -76,7 +77,7 @@ class Component3 extends Component {
 							src={require('../../images/orox-homepage.png')}
 							role='presentation'
 						/>
-						<p className='subtext'>Orox Leather Homepage (June 2017)</p>
+						<p className='subtext'>Browser viewport screenshot of Orox Leather Homepage (October 2017)</p>
 					</div>
 				</section>
 
@@ -94,11 +95,10 @@ class Component3 extends Component {
 							Custom Dropdown Menu
 						</b>
 						<p>
-							As a third party Javascript app, the commenting app I contributed to
-							could be customized to match the colors
-							of the hosting newspaper. Because of this, it was a nice touch
-							that the comments' dropdown menu
-							could also inherit the host site colors.
+							I contibuted to a third party Javascript app that was customizable
+							to match its hosting webpage. Because of this, it was a nice touch
+							that the app's dropdown menu
+							could also inherit the host's site colors to maintain the theme.
 						</p>
 						<div className='dropdown-component'>
 							<DropdownComponent
@@ -119,32 +119,38 @@ class Component3 extends Component {
 							Different views for different device experiences
 						</b>
 						<p>
-							It has always been an expectation in my work to handle page
+							It is an expectation in my work to handle page
 							layout across all viewport sizes.
-							In some cases, the design calls for information to be displayed
+							In some cases, the design calls for elements of the webpage to be displayed
 							differently based on the viewport.
-							In the "Rate Comment" examples, I made a user interface that does just that.
+							For example, when implementing a modal for users to "rate a comment",
+							the user interface needed to behave very different between mobile
+							and desktop views.
 						</p>
 						<p>
 							The mobile user is given an option to click <code>READ MORE</code> to
-							show more text content
-							beneath the article title and username.
-							The desktop view, in contrast, shows the text content beneath the titles by default.
+							show more text content beneath the article title and username, and by
+							default is only shown the headlines.
+						</p>
+						<p>
+							The desktop view, in contrast, shows a snippet of the text content
+							beneath the titles by default, and the <code>READ MORE</code> button
+							is conditionally shown when then text content exceeds a maximum snippet amouunt.
 						</p>
 					</div>
 					<div className='component_box full-width-mobile'>
 						<img
 							className='image'
-							src={require('../../images/ui_desktop.png')}
-							role='presentation'
-						/>
-						<p className='subtext'>Desktop View</p>
-						<img
-							className='image'
 							src={require('../../images/ui_mobile.png')}
 							role='presentation'
 						/>
-						<p className='subtext'>Mobile View</p>
+						<p className='subtext'>Mobile View with all text content hidden behind a button</p>
+						<img
+							className='image'
+							src={require('../../images/ui_desktop.png')}
+							role='presentation'
+						/>
+						<p className='subtext'>Desktop View with text content shown beneath title/username</p>
 					</div>
 				</section>
 
@@ -167,7 +173,7 @@ class Component3 extends Component {
 							expected to re-render on a webpage such as
 							a list of results. On the FlightStats Departures and Arrivals page,
 							the rows of the results table are all React components that render
-							with different colors depending on the flight status.
+							with basic styling depending on information about the flight status.
 						</p>
 						<p>
 							On the departures and arrivals page,
@@ -177,7 +183,7 @@ class Component3 extends Component {
 							flight statuses and airport statistics based on filters
 							prevents information overload for users. Not waiting for a
 							reload builds user confidence, and is possible by triggering a
-							simple and cheap reload of the results on filter selection.
+							simple and cheap re-render of the results when a filter is applied.
 						</p>
 					</div>
 				</section>
@@ -187,12 +193,12 @@ class Component3 extends Component {
 						Slot Machine Game
 					</b>
 					<p>
-						Web content should be playful and delightful.
+						Web content should be playful and delightful!
 						This is achieved by simple design and clever animations when handling time.
 					</p>
 					<p>
 						This Slot Machine component that I made exemplifies the use of CSS
-						animation and design to achieve the game experience.
+						animation and design to achieve a game experience.
 						Click SPIN to start!
 					</p>
 					<SlotMachine
