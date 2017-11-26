@@ -32,6 +32,7 @@ class DropdownComponent extends Component {
             index={this.props.options.indexOf(option)}
             expanded={true}
             handleSelect={this.handleClick}
+            optionHoverColor={this.props.optionHoverColor}
           />
         );
       });
@@ -69,28 +70,67 @@ class DropdownComponent extends Component {
     this.setState({ open: true });
   }
 }
-
-//=====================================
-const DropdownOption = function(props){
-  let optionComponent = classNames('option-component', {
-    ['option-hover']: props.expanded,
-  });
-
-  return (
-    <div
-      id={props.index}
-      className={optionComponent}
-      onClick={props.expanded ? props.handleSelect : props.handleOpenClick}
-    >
-      {props.label}
-    </div>
-  );
+DropdownComponent.propTypes = {
+  options: React.PropTypes.array.isRequired, //elements are objects of form {value: <String>, label: <String>}
+  optionHoverColor: React.PropTypes.string.isRequired,
+  handleSelect: React.PropTypes.func.isRequired,
+  selectedOption: React.PropTypes.number.isRequired,  //selected index in options
+}
+DropdownComponent.defaultProps = {
+  optionHoverColor: '#FFB6C1',
 }
 
-DropdownComponent.propTypes = {
-  options: React.PropTypes.array,          //elements are objects of form {value: <String>, label: <String>}
+
+class DropdownOption extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      hovered: false,
+    };
+  }
+
+  render() {
+    let optionHoverStyle = {
+      cursor: 'pointer',
+      color: '#383838',
+    };
+    if (this.state.hovered){
+      optionHoverStyle = {
+        backgroundColor: this.props.optionHoverColor,
+        color: '#f7f7f7',
+        cursor: 'pointer',
+      };
+    }
+
+    const toggleHover = () => {
+      this.setState({hovered: !this.state.hovered})
+    };
+
+    return (
+      <div
+        id={this.props.index}
+        className={'option-component'}
+        style={optionHoverStyle}
+        onMouseEnter={toggleHover}
+        onMouseLeave={toggleHover}
+        onClick={this.props.expanded ? this.props.handleSelect : this.props.handleOpenClick}
+      >
+        {this.props.label}
+        {!this.props.expanded &&
+          <div className='option-component-closed-caret'>v</div>
+        }
+      </div>
+    );
+  }
+}
+DropdownOption.propTypes = {
+  index: React.PropTypes.number.isRequired,
+  label: React.PropTypes.string.isRequired,
+  expanded: React.PropTypes.bool,
+  optionHoverColor: React.PropTypes.string.isRequired,
   handleSelect: React.PropTypes.func,
-  selectedOption: React.PropTypes.number,  //selected index in options
+  handleOpenClick: React.PropTypes.func,
 }
 
 

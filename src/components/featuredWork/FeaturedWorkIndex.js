@@ -15,6 +15,7 @@ class Component3 extends Component {
 		this.state = {
 			loading: true,
 			selectedDropdownIndex: 0,
+			selectedOptionHoverColor: '#FFB6C1',
 		}
   }
 
@@ -33,8 +34,20 @@ class Component3 extends Component {
 			{value: 'bicycle', label: 'Bicycle'},
 			{value: 'organic', label: 'Organic'},
 		];
+
+		const dropdownColorOptions = [
+			'#babfff',
+			'#1414cc',
+			'#e5c1bf',
+			'#ffb6c1',
+			'#fa225b',
+		];
+
 		let selected = _.get(dropdownOptions[this.state.selectedDropdownIndex], 'label');
-		let dropdownMessage = (<h3>You have selected: {selected}</h3>);
+
+		const selectOptionHoverColor = (selectedColor) => {
+			this.setState({selectedOptionHoverColor: selectedColor})
+		}
 
 
     return (
@@ -84,22 +97,51 @@ class Component3 extends Component {
 				<section className='component_section'>
 					<div className='component_box'>
 						<img
-							className='image image-dropdown'
-							src={require('../../images/react_dropdown_adn.png')}
+							className='image image--BORDERED'
+							src={require('../../images/adn_dropdown_closed.png')}
 							role='presentation'
 						/>
-						<p className='subtext'>Dropdown Component</p>
+						<p className='subtext'>Dropdown Component on site (December 2017)</p>
+						<img
+							className='image image--BORDERED'
+							src={require('../../images/adn_dropdown_open.png')}
+							role='presentation'
+						/>
+						<p className='subtext'>Dropdown Component's Selection bar matches the site theme (December 2017)</p>
 					</div>
 					<div className='component_box info'>
 						<b>
 							Custom Dropdown Menu
 						</b>
-						<p>
+						<p className='image-padding-bottom'>
 							I contibuted to a third party Javascript app that was customizable
 							to match its hosting webpage. Because of this, it was a nice touch
 							that the app's dropdown menu
 							could also inherit the host's site colors to maintain the theme.
 						</p>
+						<h3>You have selected:
+							<span
+								style={{color: this.state.selectedOptionHoverColor, marginLeft: '4px'}}
+							>
+								{selected}
+							</span>
+						</h3>
+						<div className='color-selector'>
+							<p>Select a color:</p>
+							<span className='color-selector--PALLETTE'>
+								{
+									dropdownColorOptions.map(
+										(color) => (
+											<div
+												className='color-selector-box'
+												style={{backgroundColor:color}}
+												onClick={() => selectOptionHoverColor(color)}
+											/>
+										)
+									)
+								}
+							</span>
+						</div>
 						<div className='dropdown-component'>
 							<DropdownComponent
 								options={dropdownOptions}
@@ -107,9 +149,9 @@ class Component3 extends Component {
 									this.setState({ selectedDropdownIndex: index })
 								}}
 								selectedOption={this.state.selectedDropdownIndex}
+								optionHoverColor={this.state.selectedOptionHoverColor}
 							/>
 						</div>
-						{dropdownMessage}
 					</div>
 				</section>
 
