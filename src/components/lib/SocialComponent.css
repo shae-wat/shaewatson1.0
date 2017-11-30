@@ -27,6 +27,13 @@
   cursor: pointer;
 }
 
+.socialComponent__medium {
+	background: url(../../images/social_medium.png);
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
 @media (max-width: 600px){
   .socialComponent {
     align-self: flex-end;
