@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 15px;
-  width: 150px;
+  width: 185px;
 }
 
 .socialComponent__github {
@@ -37,7 +37,7 @@
 @media (max-width: 600px){
   .socialComponent {
     align-self: flex-end;
-    width: 120px;
+    width: 155px;
     margin: 5px;
   }
 }
