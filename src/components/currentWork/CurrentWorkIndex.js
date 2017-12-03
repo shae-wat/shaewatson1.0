@@ -94,6 +94,34 @@ class Component2 extends Component {
 					</div>
 				</section>
 
+				<section className='component_section section_wrap_reverse'>
+					<div className='component_box info'>
+						<b>
+							How to dive into learning Ruby
+						</b>
+						<p>
+							It just so happens that right when I was beginning to learn
+							Ruby in order to provide support for the Clara Ruby on Rails
+							infrastructure, Matz visited the Clara office. Apparently, he
+							was on a tour of businesses around the Bay Area and Silicon Valley
+							and Clara's co-founder Lukasz was connected enough to invite him
+							to a meeting at the Clara office to discuss how Clara relies on Ruby.
+						</p>
+						<p>
+							The best advice given by Matz was that the way to learn
+							Ruby is to start using it to build something.
+						</p>
+					</div>
+					<div className='component_box full-width-mobile'>
+						<img
+							className='image'
+							src={require('../../images/Matz.jpg')}
+							role='presentation'
+						/>
+						<p className='subtext'>Clara Engineering meeting Matz (October 2017)</p>
+					</div>
+				</section>
+
 
       </div>
     );

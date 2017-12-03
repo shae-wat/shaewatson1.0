@@ -2,6 +2,7 @@
 	display: flex;
   flex-direction: row;
   justify-content: space-between;
+	align-items: center;
   margin: 15px;
   width: 185px;
 }
@@ -29,8 +30,9 @@
 
 .socialComponent__medium {
 	background: url(../../images/social_medium.png);
-  width: 35px;
-  height: 35px;
+  width: 33px;
+  height: 33px;
+	border-radius: 33px;
   cursor: pointer;
 }
 
