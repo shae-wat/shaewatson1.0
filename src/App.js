@@ -11,7 +11,7 @@ import Footer from './components/lib/Footer.js';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { activeTab: '1' };
+    this.state = { activeTab: 1 };
   }
 
   render() {

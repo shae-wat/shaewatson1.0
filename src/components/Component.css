@@ -234,6 +234,10 @@ code {
     margin-right: auto;
   }
 
+  .space-top {
+    padding-top: 32px;
+  }
+
   .space-top-sm {
     padding-top: 32px;
   }
@@ -253,7 +257,7 @@ code {
   .component_gist_box,
   .component_gisttext_box_lg,
   .component_gist_box_lg {
-    padding: 16px;
+    padding: 20px;
   }
 
   .full-width-mobile {

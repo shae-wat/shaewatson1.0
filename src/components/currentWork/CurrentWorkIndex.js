@@ -9,7 +9,7 @@ class Component2 extends Component {
   }
 
   render() {
-    if (this.props.activeTab !== '2') return null;
+    if (this.props.activeTab !== 1) return null;
 
     return (
       <div className='component_content'>

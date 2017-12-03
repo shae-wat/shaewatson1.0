@@ -21,6 +21,7 @@
   width: 33%;
   background-color: #3b444b;
   border-radius: 3px;
+  cursor: pointer;
 
   transition: all .3s ease;
 }

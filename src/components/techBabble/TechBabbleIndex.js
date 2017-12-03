@@ -16,7 +16,7 @@ class TechBabbleIndex extends Component {
   }
 
   render() {
-    if (this.props.activeTab !== '3') return null;
+    if (this.props.activeTab !== 3) return null;
 
 		let loaderClass = classNames({
 			['show']: this.state.loading,

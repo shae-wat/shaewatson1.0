@@ -20,7 +20,7 @@ class Component3 extends Component {
   }
 
   render() {
-    if (this.props.activeTab !== '1') return null;
+    if (this.props.activeTab !== 2) return null;
 
 		let loaderClass = classNames({
 			['show']: this.state.loading,
@@ -52,6 +52,39 @@ class Component3 extends Component {
 
     return (
       <div className='component_content'>
+
+				<section className='component_section'>
+					<div className='component_box full-width-mobile'>
+						<img
+							className='image'
+							src={require('../../images/depArr.png')}
+							role='presentation'
+						/>
+						<p className='subtext'>FlightStats Departures and Arrivals App (2016)</p>
+					</div>
+					<div className='component_box info space-top'>
+						<b>
+							Airport Departures and Arrivals Page
+						</b>
+						<p>
+							React elements are cheap to create and can be used to render items
+							expected to re-render on a webpage such as
+							a list of results. On the FlightStats Departures and Arrivals page,
+							the rows of the results table are all React components that render
+							with basic styling depending on information about the flight status.
+						</p>
+						<p>
+							On the departures and arrivals page,
+							several filters can be applied to see a list of relevant departing
+							and arriving flights.
+							The experience of seeing an instantly updated results list of
+							flight statuses and airport statistics based on filters
+							prevents information overload for users. Not waiting for a
+							reload builds user confidence, and is possible by triggering a
+							simple and cheap re-render of the results when a filter is applied.
+						</p>
+					</div>
+				</section>
 
 				<section className='component_section section_wrap_reverse'>
 					<div className='component_box info space-top'>
@@ -186,47 +219,13 @@ class Component3 extends Component {
 							src={require('../../images/ui_mobile.png')}
 							role='presentation'
 						/>
-						<p className='subtext'>Mobile View with all text content hidden behind a button</p>
+						<p className='subtext'>Civil Commenting Mobile View with all text content hidden behind a button (2017)</p>
 						<img
 							className='image'
 							src={require('../../images/ui_desktop.png')}
 							role='presentation'
 						/>
-						<p className='subtext'>Desktop View with text content shown beneath title/username</p>
-					</div>
-				</section>
-
-
-				<section className='component_section'>
-					<div className='component_box full-width-mobile'>
-						<img
-							className='image'
-							src={require('../../images/depArr.png')}
-							role='presentation'
-						/>
-						<p className='subtext'>Departures and Arrivals App (2016)</p>
-					</div>
-					<div className='component_box info space-top'>
-						<b>
-							Airport Departures and Arrivals Page
-						</b>
-						<p>
-							React elements are cheap to create and can be used to render items
-							expected to re-render on a webpage such as
-							a list of results. On the FlightStats Departures and Arrivals page,
-							the rows of the results table are all React components that render
-							with basic styling depending on information about the flight status.
-						</p>
-						<p>
-							On the departures and arrivals page,
-							several filters can be applied to see a list of relevant departing
-							and arriving flights.
-							The experience of seeing an instantly updated results list of
-							flight statuses and airport statistics based on filters
-							prevents information overload for users. Not waiting for a
-							reload builds user confidence, and is possible by triggering a
-							simple and cheap re-render of the results when a filter is applied.
-						</p>
+						<p className='subtext'>Civil Commenting Desktop View with text content shown beneath title/username (2017)</p>
 					</div>
 				</section>
 
