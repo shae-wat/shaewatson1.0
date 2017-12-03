@@ -95,7 +95,7 @@ class Component3 extends Component {
 				</section>
 
 				<section className='component_section'>
-					<div className='component_box'>
+					<div className='component_box full-width-mobile'>
 						<img
 							className='image image--BORDERED'
 							src={require('../../images/adn_dropdown_closed.png')}
@@ -109,7 +109,7 @@ class Component3 extends Component {
 						/>
 						<p className='subtext'>Dropdown Component's Selection bar matches the site theme (December 2017)</p>
 					</div>
-					<div className='component_box info'>
+					<div className='component_box info space-top'>
 						<b>
 							Custom Dropdown Menu
 						</b>

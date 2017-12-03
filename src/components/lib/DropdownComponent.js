@@ -60,13 +60,11 @@ class DropdownComponent extends Component {
   }
 
   handleClick = (e) => {
-    console.log('handleClick');
     this.setState({ open: false });
     this.props.handleSelect(parseInt(e.target.id));
   }
 
   handleOpenClick = () => {
-    console.log('handleOpenClick');
     this.setState({ open: true });
   }
 }
@@ -93,9 +91,8 @@ class DropdownOption extends Component {
   render() {
     let optionHoverStyle = {
       cursor: 'pointer',
-      color: '#383838',
     };
-    if (this.state.hovered){
+    if (this.state.hovered && this.props.expanded){
       optionHoverStyle = {
         backgroundColor: this.props.optionHoverColor,
         color: '#f7f7f7',

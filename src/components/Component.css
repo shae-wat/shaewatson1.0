@@ -271,6 +271,13 @@ code {
   }
 
   .image--BORDERED {
-    max-width: 300px;
+    max-width: 93vw;
+    padding: 0;
+    margin-top: 32px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .image--BORDERED:first-child {
+    margin-top: 0;
   }
 }
