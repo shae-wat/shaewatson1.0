@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/lib/Header.js';
-import Toggle from './components/lib/Toggle.js';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import './App.css'
+import Header from './components/lib/Header.js'
+import Toggle from './components/lib/Toggle.js'
+import CurrentWorkIndex from './components/currentWork/CurrentWorkIndex.js'
+import FeaturedWorkIndex from './components/featuredWork/FeaturedWorkIndex.js'
 import TechBabbleIndex from './components/techBabble/TechBabbleIndex'
-import CurrentWorkIndex from './components/currentWork/CurrentWorkIndex.js';
-import FeaturedWorkIndex from './components/featuredWork/FeaturedWorkIndex.js';
-import Footer from './components/lib/Footer.js';
+
+import Footer from './components/lib/Footer.js'
 
 class App extends Component {
   constructor(props) {
-    super(props);
-    this.state = { activeTab: 1 };
+    super(props)
+    this.state = { activeTab: 1 }
   }
 
   render() {
@@ -39,14 +40,14 @@ class App extends Component {
         />
         <Footer />
       </div>
-    );
+    )
   }
 
   handleToggle = (tab) => {
     this.setState({
       activeTab: tab,
-    });
+    })
   }
 }
 
-export default App;
+export default App

@@ -1,9 +1,9 @@
-import React from 'react';
-import SocialComponent from './SocialComponent.js';
+import React from 'react'
+import SocialComponent from './SocialComponent.js'
 
-import '../../App.css';
+import '../../App.css'
 
-const Header = function(props){
+const Header = props => {
   return (
     <div className="appHeader">
       <div className="headline">
@@ -12,7 +12,7 @@ const Header = function(props){
       </div>
       <SocialComponent />
     </div>
-  );
+  )
 }
 
-export default Header;
+export default Header

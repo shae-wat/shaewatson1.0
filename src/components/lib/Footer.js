@@ -1,7 +1,7 @@
-import React from 'react';
-import SocialComponent from './SocialComponent.js';
+import React from 'react'
+import SocialComponent from './SocialComponent.js'
 
-const Footer = function(props){
+const Footer = () => {
   const appFooter = {
     display: 'flex',
     justifyContent: 'space-between',
@@ -14,7 +14,7 @@ const Footer = function(props){
     <div style={appFooter}>
       <SocialComponent />
     </div>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

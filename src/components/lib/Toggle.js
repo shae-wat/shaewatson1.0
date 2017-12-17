@@ -1,63 +1,65 @@
-import React, { Component, PropTypes } from 'react';
-import classNames from 'classnames';
+import React, { Component, PropTypes } from 'react'
+import classNames from 'classnames'
 
-import './Toggle.css';
+import './Toggle.css'
 
 class Toggle extends Component {
   render() {
     let tabBackground = classNames('tabBackground', {
       ['middleActive']: this.props.tab === 2,
       ['lastActive']: this.props.tab === 3,
-    });
+    })
 
     return (
-      <div className='toggleContainer'>
-        <div className='tabBar'>
+      <div className="toggleContainer">
+        <div className="tabBar">
           <TabButton
             id={1}
             tab={this.props.tab}
-            text='Current Work'
+            text="Current Work"
             handleClick={this.props.handleToggle}
           />
           <TabButton
             id={2}
             tab={this.props.tab}
-            text='Featured Work'
+            text="Featured Work"
             handleClick={this.props.handleToggle}
           />
           <TabButton
             id={3}
             tab={this.props.tab}
-            text='Tech Babble'
+            text="Tech Babble"
             handleClick={this.props.handleToggle}
           />
-          <div className={tabBackground}></div>
+          <div className={tabBackground} />
         </div>
       </div>
-    );
+    )
   }
 }
 
 Toggle.propTypes = {
-  tab: PropTypes.string.isRequired,
+  tab: PropTypes.number.isRequired,
   handleToggle: PropTypes.func.isRequired,
-};
+}
 
-const TabButton = function(props){
-  let isSelected = (props.tab === props.id);
+const TabButton = function(props) {
+  let isSelected = props.tab === props.id
 
   return (
-    <div onClick={()=>props.handleClick(props.id)}
-      className={classNames('tab', {['tabActive']: isSelected})}>
+    <div
+      onClick={() => props.handleClick(props.id)}
+      className={classNames('tab', { ['tabActive']: isSelected })}
+    >
       {props.text}
     </div>
-  );
+  )
 }
 
 TabButton.propTypes = {
-  tab: PropTypes.string.isRequired,
+  tab: PropTypes.number.isRequired,
   text: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
-};
+  id: PropTypes.number.isRequired,
+}
 
-export default Toggle;
+export default Toggle
