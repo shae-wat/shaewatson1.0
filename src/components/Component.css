@@ -159,17 +159,6 @@ code {
   height: auto;
 }
 
-.image--BORDERED {
-  max-width: 570px;
-  padding: 12px;
-  margin-top: 32px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-.image--BORDERED:first-child {
-  margin-top: 0;
-}
-
 .image-padding-top {
   padding-top: 48px;
 }
@@ -265,6 +254,11 @@ code {
     padding-right: 0;
   }
 
+  .full-width-mobile--ALMOST {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
   .chart-container {
     width: 90%;
     height: 90%;
@@ -274,14 +268,4 @@ code {
     padding: 12px 0;
   }
 
-  .image--BORDERED {
-    max-width: 93vw;
-    padding: 0;
-    margin-top: 32px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  .image--BORDERED:first-child {
-    margin-top: 0;
-  }
 }

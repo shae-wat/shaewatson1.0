@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import _ from 'lodash'
+import R from 'ramda'
 
 import './DropdownComponent.css'
 
@@ -16,8 +16,8 @@ class DropdownComponent extends Component {
     let selectedOptionObj = this.props.options[this.props.selectedOption]
     let options = (
       <DropdownOption
-        key={_.get(selectedOptionObj, 'value')}
-        label={_.get(selectedOptionObj, 'label')}
+        key={R.path(['value'], selectedOptionObj)}
+        label={R.path(['label'], selectedOptionObj)}
         handleOpenClick={this.handleOpenClick}
       />
     )

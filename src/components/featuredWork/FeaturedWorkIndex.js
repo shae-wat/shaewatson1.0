@@ -127,46 +127,38 @@ class Component3 extends Component {
         </section>
 
         <section className="component_section">
-          <div className="component_box full-width-mobile">
+          <div className="component_box full-width-mobile--ALMOST space-top">
             <img
-              className="image image--BORDERED"
+              className="image"
               src={require('../../images/adn_dropdown_closed.png')}
               role="presentation"
             />
             <p className="subtext">
-              Dropdown Component on site (December 2017)
-            </p>
-            <img
-              className="image image--BORDERED"
-              src={require('../../images/adn_dropdown_open.png')}
-              role="presentation"
-            />
-            <p className="subtext">
-              Dropdown Component's Selection bar matches the site theme
-              (December 2017)
+              Dropdown Component on Anchorage Daily News (December 2017)
             </p>
           </div>
-          <div className="component_box info space-top">
-            <b>Custom Dropdown Menu</b>
+          <div className="component_box info">
+            <b>Custom Dropdown Menu React Component</b>
             <p className="image-padding-bottom">
-              I contibuted to a third party Javascript app that was customizable
-              to match its hosting webpage. Because of this, it was a nice touch
-              that the app's dropdown menu could also inherit the host's site
-              colors to maintain the theme.
+              I contibuted to a third party Javascript commenting app that could
+              could be customized to match its hosting webpage. Because of this,
+              it was a nice touch to build a dropdown menu that inherited the
+              colors of the site.
             </p>
+            <h4>Here is the color-customizable dropdown menu in action!</h4>
             <h3>
-              You have selected:
+              Currently the option selected is:
               <span
                 style={{
                   color: this.state.selectedOptionHoverColor,
-                  marginLeft: '4px',
+                  marginLeft: '6px',
                 }}
               >
                 {selected}
               </span>
             </h3>
             <div className="color-selector">
-              <p>Select a color:</p>
+              <p>Select color:</p>
               <span className="color-selector--PALLETTE">
                 {dropdownColorOptions.map(color => (
                   <div

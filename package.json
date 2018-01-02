@@ -11,6 +11,7 @@
     "classnames": "^2.2.5",
     "eslint-plugin-prettier": "^2.4.0",
     "prettier": "^1.9.2",
+    "ramda": "^0.25.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-twitter-widgets": "^1.2.0"
