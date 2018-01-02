@@ -8,7 +8,7 @@ const Header = props => {
     <div className="appHeader">
       <div className="headline">
         <img src={props.logo} className="appLogo" alt="logo" />
-        <h1>Shaelyn Watson</h1>
+        <h1>Shae Watson</h1>
       </div>
       <SocialComponent />
     </div>

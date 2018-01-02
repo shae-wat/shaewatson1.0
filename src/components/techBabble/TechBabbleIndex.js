@@ -45,7 +45,7 @@ class TechBabbleIndex extends Component {
           </div>
         </section>
 
-        <section className="component_section">
+        <section className="component_section section_wrap_reverse">
           <div className="component_box info">
             <b>Extend functionality in a controlled way.</b>
             <p>
@@ -76,7 +76,7 @@ class TechBabbleIndex extends Component {
           </div>
         </section>
 
-        <section className="component_section section_wrap_reverse">
+        <section className="component_section">
           <div className="component_box full-width-mobile">
             <img
               className="image"
@@ -107,7 +107,7 @@ class TechBabbleIndex extends Component {
           </div>
         </section>
 
-        <section className="component_section">
+        <section className="component_section section_wrap_reverse">
           <div className="component_box info space-top">
             <b>Do something good with your space on the web.</b>
             <p>
