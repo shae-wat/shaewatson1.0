@@ -54,6 +54,41 @@ class Component3 extends Component {
 
     return (
       <div className="component_content">
+        <section className="component_section section_wrap_reverse">
+          <div className="component_box info">
+            <b>Power Pricing Page</b>
+            <p>
+              PowerPricer is a product I delivered at Clara Lending. It is an
+              admin page designed to be used by loan officers in the context of
+              a loan application. The loan officer enters all the necessary
+              inputs then can work with the borrower to select a loan product.
+            </p>
+            <p>
+              The Power Pricing Page was non-trivial to build since the MVP
+              specifications included interdependent, auto-updating fields.
+              Existing components in the Clara borrower portal app came in super
+              handy, such as the CurrencyInputComponent input field component
+              which does not allow the user to type anything into the field
+              except numbers.
+            </p>
+            <p>
+              The Power Pricing Page was important because it allowed us to
+              connect to our new pricing engine, LenderPrice, while also
+              factoring in Clara-specific variables such as different pricing
+              for certain promotions and limiting inputs to mortgage types we
+              support.
+            </p>
+          </div>
+          <div className="component_box full-width-mobile">
+            <img
+              className="image"
+              src={require('../../images/power-pricer.png')}
+              role="presentation"
+            />
+            <p className="subtext">Power Pricer Page (January 2018)</p>
+          </div>
+        </section>
+
         <section className="component_section">
           <div className="component_box full-width-mobile">
             <img

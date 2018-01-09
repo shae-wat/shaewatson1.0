@@ -17,11 +17,6 @@ class SocialComponent extends Component {
           target="_blank"
         />
         <a
-          className="socialComponent__twitter"
-          href="https://twitter.com/sjw962"
-          target="_blank"
-        />
-        <a
           className="socialComponent__medium"
           href="https://medium.com/@shaewat"
           target="_blank"
