@@ -159,6 +159,15 @@ code {
   height: auto;
 }
 
+.giphy {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: auto;
+}
+
 .image-padding-top {
   padding-top: 48px;
 }
