@@ -54,14 +54,6 @@ class Component3 extends Component {
     return (
       <div className="component_content">
         <section className="component_section section_wrap_reverse">
-          <div className="component_box full-width-mobile">
-            <img
-              className="image"
-              src={require('../../images/power-pricer.png')}
-              role="presentation"
-            />
-            <p className="subtext">Power Pricer Page (January 2018)</p>
-          </div>
           <div className="component_box info space-top">
             <b>Power Pricing Page</b>
             <p>
@@ -78,11 +70,77 @@ class Component3 extends Component {
               mortgage types we support.
             </p>
           </div>
+          <div className="component_box full-width-mobile">
+            <img
+              className="image"
+              src={require('../../images/power-pricer.png')}
+              role="presentation"
+            />
+            <p className="subtext">Power Pricer Page (January 2018)</p>
+          </div>
+        </section>
+
+        <section className="component_section">
+          <div className="component_box full-width-mobile--ALMOST space-top space-bottom">
+            <img
+              className="image"
+              src={require('../../images/adn_dropdown_closed.png')}
+              role="presentation"
+            />
+            <p className="subtext">
+              Dropdown Component on Anchorage Daily News (December 2017)
+            </p>
+          </div>
+          <div className="component_box info space-top-sm">
+            <b>Custom Dropdown Menu React Component</b>
+            <p className="image-padding-bottom">
+              I contibuted to a third party Javascript commenting app that could
+              could be customized to match its hosting webpage. Because of this,
+              it was a nice touch to build a dropdown menu that inherited the
+              colors of the site.
+            </p>
+            <h4>
+              Here is the
+              <span
+                style={{
+                  color: this.state.selectedOptionHoverColor,
+                  marginLeft: '6px',
+                  marginRight: '6px',
+                }}
+              >
+                {'color-customizable'}
+              </span>
+              dropdown menu in action!
+            </h4>
+            <div className="color-selector">
+              <p>Select color:</p>
+              <span className="color-selector--PALLETTE">
+                {dropdownColorOptions.map(color => (
+                  <div
+                    key={color}
+                    className="color-selector-box"
+                    style={{ backgroundColor: color }}
+                    onClick={() => selectOptionHoverColor(color)}
+                  />
+                ))}
+              </span>
+            </div>
+            <div className="dropdown-component">
+              <DropdownComponent
+                options={dropdownOptions}
+                handleSelect={index => {
+                  this.setState({ selectedDropdownIndex: index })
+                }}
+                selectedOption={this.state.selectedDropdownIndex}
+                optionHoverColor={this.state.selectedOptionHoverColor}
+              />
+            </div>
+          </div>
         </section>
 
         <section className="component_section">
           <div className="component_box info space-top">
-            <b>Interdependent Pricing Fields</b>
+            <b>Interdependent Form Input Fields</b>
             <p>
               The Power Pricing Page was non-trivial to build since the
               specifications included interdependent, auto-updating fields.
@@ -111,7 +169,7 @@ class Component3 extends Component {
             <div className="component_gist_box_lg">
               <Gist gist="shae-wat/b943dd0ada21ebd8a916cca672c394fc" />
               <p className="subtext">
-                Sample code of interdependent redux-form fields
+                Sample Code of Interdependent redux-form Fields
               </p>
             </div>
           </div>
@@ -185,109 +243,6 @@ class Component3 extends Component {
             <p className="subtext">
               Browser viewport screenshot of Orox Leather Homepage (October
               2017)
-            </p>
-          </div>
-        </section>
-
-        <section className="component_section">
-          <div className="component_box full-width-mobile--ALMOST space-top space-bottom">
-            <img
-              className="image"
-              src={require('../../images/adn_dropdown_closed.png')}
-              role="presentation"
-            />
-            <p className="subtext">
-              Dropdown Component on Anchorage Daily News (December 2017)
-            </p>
-          </div>
-          <div className="component_box info space-top-sm">
-            <b>Custom Dropdown Menu React Component</b>
-            <p className="image-padding-bottom">
-              I contibuted to a third party Javascript commenting app that could
-              could be customized to match its hosting webpage. Because of this,
-              it was a nice touch to build a dropdown menu that inherited the
-              colors of the site.
-            </p>
-            <h4>
-              Here is the
-              <span
-                style={{
-                  color: this.state.selectedOptionHoverColor,
-                  marginLeft: '6px',
-                  marginRight: '6px',
-                }}
-              >
-                {'color-customizable'}
-              </span>
-              dropdown menu in action!
-            </h4>
-            <div className="color-selector">
-              <p>Select color:</p>
-              <span className="color-selector--PALLETTE">
-                {dropdownColorOptions.map(color => (
-                  <div
-                    key={color}
-                    className="color-selector-box"
-                    style={{ backgroundColor: color }}
-                    onClick={() => selectOptionHoverColor(color)}
-                  />
-                ))}
-              </span>
-            </div>
-            <div className="dropdown-component">
-              <DropdownComponent
-                options={dropdownOptions}
-                handleSelect={index => {
-                  this.setState({ selectedDropdownIndex: index })
-                }}
-                selectedOption={this.state.selectedDropdownIndex}
-                optionHoverColor={this.state.selectedOptionHoverColor}
-              />
-            </div>
-          </div>
-        </section>
-
-        <section className="component_section section_wrap_reverse">
-          <div className="component_box info space-top">
-            <b>Different views for different device experiences</b>
-            <p>
-              It is an expectation in my work to handle page layout across all
-              viewport sizes. In some cases, the design calls for elements of
-              the webpage to be displayed differently based on the viewport. For
-              example, when implementing a modal for users to "rate a comment",
-              the user interface needed to behave very different between mobile
-              and desktop views.
-            </p>
-            <p>
-              The mobile user is given an option to click <code>READ MORE</code>{' '}
-              to show more text content beneath the article title and username,
-              and by default is only shown the headlines.
-            </p>
-            <p>
-              The desktop view, in contrast, shows a snippet of the text content
-              beneath the titles by default, and the <code>READ MORE</code>{' '}
-              button is conditionally shown when then text content exceeds a
-              maximum snippet amouunt.
-            </p>
-          </div>
-          <div className="component_box full-width-mobile">
-            <img
-              className="image"
-              src={require('../../images/ui_mobile.png')}
-              role="presentation"
-            />
-            <p className="subtext">
-              Civil Comments mobile view with all text content hidden behind a
-              button (2017)
-            </p>
-            <img
-              className="image"
-              src={require('../../images/ui_desktop.png')}
-              role="presentation"
-            />
-            <p className="subtext">
-              Civil Comments desktop view with text content shown beneath
-              title/username (2017)
             </p>
           </div>
         </section>

@@ -12,7 +12,7 @@ class Component2 extends Component {
 
     return (
       <div className="component_content">
-        <section className="component_section">
+        <section className="component_section section_wrap_reverse">
           <div className="component_box info image-padding-bottom space-top">
             <div className="image-padding-bottom">
               <b>Updating the mortgage industry</b>

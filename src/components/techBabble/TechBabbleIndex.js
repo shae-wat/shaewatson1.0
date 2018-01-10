@@ -49,7 +49,7 @@ class TechBabbleIndex extends Component {
 
         <section className="component_section section_wrap_reverse">
           <div className="component_box info">
-            <b>Extend functionality in a controlled way.</b>
+            <b>Extend functionality in a controlled way</b>
             <p>
               Sometimes, a lot of functionality is demanded of a component.
               While components should always be refactored into multiple
@@ -90,7 +90,7 @@ class TechBabbleIndex extends Component {
             </p>
           </div>
           <div className="component_box info space-top-sm">
-            <b>Good design is recognizable and intuitive.</b>
+            <b>Good design is recognizable and intuitive</b>
             <p>
               User interfaces simply need to make sense. Like a joke, if you
               have to explain it, it is probably not that good.
@@ -110,8 +110,93 @@ class TechBabbleIndex extends Component {
         </section>
 
         <section className="component_section section_wrap_reverse">
+          <div className="component_box info space-top-sm">
+            <b>Sharing constants with the designer</b>
+            <p>
+              When I first joined Clara Lending's consumer product team, I was
+              introduced to a new concept: variables and functions driving the
+              implementation of spacing in the CSS of the front end.
+            </p>
+            <p>
+              Vertical margins and padding are based on the established vertical
+              rhythm pattern, where everything is a multiple of 4px and based on
+              a <code>rhythm()</code> function where{' '}
+              <code>rhythm() = 24px</code>. Horizontal margins and padding are
+              based on on gutter and column definitions, which our designer
+              defined for us as <code>$grid-column-width: = 96px</code> and{' '}
+              <code>$grid-gutter-width: = 16px</code>.
+            </p>
+            <p>
+              Though I was skeptical at first, I soon found myself breezing
+              through implementing new designs with these horizontal and
+              vertical definitions. Though my meme mocks the complexity when an
+              element has <code>16px</code> padding on all sides, the meme also
+              demonstrates conscious decisions were made when assigning that
+              padding to an element. Sharing CSS constants with the designer
+              drastically improved my developer experience and speed.
+            </p>
+          </div>
+          <div className="component_box full-width-mobile">
+            <img
+              className="image"
+              src={require('../../images/drake_padding.png')}
+              role="presentation"
+            />
+            <p className="subtext">
+              Joke meme I made to poke fun at our way of writing Sassy CSS at
+              Clara Lending
+            </p>
+          </div>
+        </section>
+
+        <section className="component_section">
+          <div className="component_box full-width-mobile">
+            <img
+              className="image"
+              src={require('../../images/ui_mobile.png')}
+              role="presentation"
+            />
+            <p className="subtext">
+              Civil Comments mobile view with all text content hidden behind a
+              button (2017)
+            </p>
+            <img
+              className="image"
+              src={require('../../images/ui_desktop.png')}
+              role="presentation"
+            />
+            <p className="subtext">
+              Civil Comments desktop view with text content shown beneath
+              title/username (2017)
+            </p>
+          </div>
           <div className="component_box info space-top">
-            <b>Sharing the good news.</b>
+            <b>Different views for different device experiences</b>
+            <p>
+              It is an expectation in my work to handle page layout across all
+              viewport sizes. In some cases, the design calls for elements of
+              the webpage to be displayed differently based on the viewport. For
+              example, when implementing a modal for users to "rate a comment",
+              the user interface needed to behave very different between mobile
+              and desktop views.
+            </p>
+            <p>
+              The mobile user is given an option to click <code>READ MORE</code>{' '}
+              to show more text content beneath the article title and username,
+              and by default is only shown the headlines.
+            </p>
+            <p>
+              The desktop view, in contrast, shows a snippet of the text content
+              beneath the titles by default, and the <code>READ MORE</code>{' '}
+              button is conditionally shown when then text content exceeds a
+              maximum snippet amouunt.
+            </p>
+          </div>
+        </section>
+
+        <section className="component_section section_wrap_reverse">
+          <div className="component_box info space-top">
+            <b>Sharing the good news</b>
             <p>
               In Portland, I lead monthly React.js
               <a
