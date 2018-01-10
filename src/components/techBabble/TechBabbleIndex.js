@@ -3,6 +3,8 @@ import classNames from 'classnames'
 import loader from '../../images/loader.gif'
 import { Tweet } from 'react-twitter-widgets'
 import Chart from '../lib/Chart'
+import SlotMachine from '../lib/slot-machine/SlotMachine.js'
+import threeSlots from '../../slots-three.json'
 
 import '../Component.css'
 
@@ -105,6 +107,64 @@ class TechBabbleIndex extends Component {
               it really is.
             </p>
           </div>
+        </section>
+
+        <section className="component_section section_wrap_reverse">
+          <div className="component_box info space-top">
+            <b>Sharing the good news.</b>
+            <p>
+              In Portland, I lead monthly React.js
+              <a
+                href="https://github.com/shae-wat/react-workshops"
+                target="_blank"
+                className="space-around"
+              >
+                workshops
+              </a>
+              for Women Who Code. I ran hands-on React.js workshops for our
+              members and grew the interest and aptitude of the community for
+              Javascript and React development.
+            </p>
+            <p>
+              Workshop projects included demonstrating the use of Chart.js as a
+              React component and making React components display animated CSS.
+            </p>
+            <p>
+              Leading these workshops allowed me to grow in my abilities as a
+              developer from the collaboration and ideas shared by the
+              attendees. I also grew as a leader on the keyboard, learning how
+              to channel my abilities to lead a group of people to providing
+              technical guidance while code-driving.
+            </p>
+          </div>
+          <div className="component_box">
+            <img src={loader} className={loaderClass} role="presentation" />
+            <Tweet
+              tweetId="796537445428830208"
+              className="center-horizontally"
+              options={{
+                width: '100%',
+              }}
+              onLoad={this.removeLoader}
+            />
+          </div>
+        </section>
+
+        <section className="component_section_box info">
+          <b>Slot Machine Game</b>
+          <p>
+            Web content should be playful and delightful! This is achieved by
+            simple design and clever animations when handling time.
+          </p>
+          <p>
+            This Slot Machine component that I made exemplifies the use of CSS
+            animation and design to achieve a game experience. Click SPIN to
+            start!
+          </p>
+          <SlotMachine
+            numSlots={threeSlots.numSlots}
+            slotOptions={threeSlots.slotOptions}
+          />
         </section>
 
         <section className="component_section section_wrap_reverse">

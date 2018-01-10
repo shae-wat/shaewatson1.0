@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
 import _ from 'lodash'
-import SlotMachine from './slot-machine/SlotMachine.js'
 import loader from '../../images/loader.gif'
 import DropdownComponent from '../lib/DropdownComponent.js'
+import Gist from '../lib/EmbeddedGist.js'
 
-import threeSlots from '../../slots-three.json'
 import '../Component.css'
 
 class Component3 extends Component {
@@ -63,7 +62,7 @@ class Component3 extends Component {
             />
             <p className="subtext">Power Pricer Page (January 2018)</p>
           </div>
-          <div className="component_box info">
+          <div className="component_box info space-top">
             <b>Power Pricing Page</b>
             <p>
               PowerPricer is a product I delivered at Clara Lending. It is an
@@ -75,38 +74,46 @@ class Component3 extends Component {
               The Power Pricing Page was important because it allowed us to
               connect to our new pricing engine, LenderPrice, while also
               factoring in Clara-specific variables such as different pricing
-              for certain promotions and limiting inputs to mortgage types we
-              support.
+              for Clara-specific promotions and limiting selectable options to
+              mortgage types we support.
             </p>
           </div>
         </section>
 
         <section className="component_section">
-          <div className="component_box info">
+          <div className="component_box info space-top">
             <b>Interdependent Pricing Fields</b>
             <p>
-              The Power Pricing Page was non-trivial to build since the MVP
+              The Power Pricing Page was non-trivial to build since the
               specifications included interdependent, auto-updating fields.
               Existing components in the Clara borrower portal app came in super
-              handy, such as the CurrencyInputComponent input field component
-              which does not allow the user to type anything into the field
-              except numbers.
+              handy, such as the <code>InputCurrencyField</code> input field
+              which does not allow the user to type non-numeric characters into
+              the input field.
             </p>
-          </div>
-          <div className="component_box full-width-mobile">
+            <p>
+              The best part about the interdependent fields in Clara Lending's
+              Power Pricer is the code propagating the changes of one field to
+              other fields. As clearly defined functions with clearly defined
+              fields to be affected, these updater functions can be extended
+              easily when new cases or constraints emerge.
+            </p>
             <img
-              className="giphy"
-              src={require('../../images/updating-ltv.gif')}
-              role="presentation"
-            />
-            <img
-              className="giphy"
-              src={require('../../images/second-financing-inputs.gif')}
+              className="giphy space-top-sm"
+              src={require('../../images/pricer-interdependent-fields.gif')}
               role="presentation"
             />
             <p className="subtext">
               Power Pricer Interdependent Pricing Fields (January 2018)
             </p>
+          </div>
+          <div className="component_box full-width-mobile">
+            <div className="component_gist_box_lg">
+              <Gist gist="shae-wat/b943dd0ada21ebd8a916cca672c394fc" />
+              <p className="subtext">
+                Sample code of interdependent redux-form fields
+              </p>
+            </div>
           </div>
         </section>
 
@@ -183,7 +190,7 @@ class Component3 extends Component {
         </section>
 
         <section className="component_section">
-          <div className="component_box full-width-mobile--ALMOST space-top">
+          <div className="component_box full-width-mobile--ALMOST space-top space-bottom">
             <img
               className="image"
               src={require('../../images/adn_dropdown_closed.png')}
@@ -193,7 +200,7 @@ class Component3 extends Component {
               Dropdown Component on Anchorage Daily News (December 2017)
             </p>
           </div>
-          <div className="component_box info">
+          <div className="component_box info space-top-sm">
             <b>Custom Dropdown Menu React Component</b>
             <p className="image-padding-bottom">
               I contibuted to a third party Javascript commenting app that could
@@ -201,18 +208,19 @@ class Component3 extends Component {
               it was a nice touch to build a dropdown menu that inherited the
               colors of the site.
             </p>
-            <h4>Here is the color-customizable dropdown menu in action!</h4>
-            <h3>
-              Currently the option selected is:
+            <h4>
+              Here is the
               <span
                 style={{
                   color: this.state.selectedOptionHoverColor,
                   marginLeft: '6px',
+                  marginRight: '6px',
                 }}
               >
-                {selected}
+                {'color-customizable'}
               </span>
-            </h3>
+              dropdown menu in action!
+            </h4>
             <div className="color-selector">
               <p>Select color:</p>
               <span className="color-selector--PALLETTE">
@@ -269,7 +277,7 @@ class Component3 extends Component {
               role="presentation"
             />
             <p className="subtext">
-              Civil Commenting Mobile View with all text content hidden behind a
+              Civil Comments mobile view with all text content hidden behind a
               button (2017)
             </p>
             <img
@@ -278,27 +286,10 @@ class Component3 extends Component {
               role="presentation"
             />
             <p className="subtext">
-              Civil Commenting Desktop View with text content shown beneath
+              Civil Comments desktop view with text content shown beneath
               title/username (2017)
             </p>
           </div>
-        </section>
-
-        <section className="component_section_box info">
-          <b>Slot Machine Game</b>
-          <p>
-            Web content should be playful and delightful! This is achieved by
-            simple design and clever animations when handling time.
-          </p>
-          <p>
-            This Slot Machine component that I made exemplifies the use of CSS
-            animation and design to achieve a game experience. Click SPIN to
-            start!
-          </p>
-          <SlotMachine
-            numSlots={threeSlots.numSlots}
-            slotOptions={threeSlots.slotOptions}
-          />
         </section>
 
         <section className="component_section">

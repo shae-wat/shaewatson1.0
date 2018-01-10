@@ -21,13 +21,6 @@
   cursor: pointer;
 }
 
-.socialComponent__twitter {
-  background: url(../../images/social_twitter.png);
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-}
-
 .socialComponent__medium {
 	background: url(../../images/social_medium.png);
   width: 33px;
