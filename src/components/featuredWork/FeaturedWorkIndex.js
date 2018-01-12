@@ -54,20 +54,19 @@ class Component3 extends Component {
     return (
       <div className="component_content">
         <section className="component_section section_wrap_reverse">
-          <div className="component_box info space-top">
+          <div className="component_box info space-top-sm space-bottom-sm">
             <b>Power Pricing Page</b>
             <p>
-              PowerPricer is a product I delivered at Clara Lending. It is an
+              The Power Pricing Page is a product I delivered at Clara Lending. It is an
               admin page designed to be used by loan officers in the context of
               a loan application. The loan officer enters all the necessary
               inputs then can work with the borrower to select a loan product.
             </p>
             <p>
-              The Power Pricing Page was important because it allowed us to
-              connect to our new pricing engine, LenderPrice, while also
-              factoring in Clara-specific variables such as different pricing
-              for Clara-specific promotions and limiting selectable options to
-              mortgage types we support.
+              This page is important because it allowed the intial connection of the Clara Lending Borrower Portal to a new pricing engine, LenderPrice, while also
+              allowing the factoring in of Clara-specific variables such as different pricing results
+              for Clara Lending promotions and limiting selectable options to supported
+              mortgage configurations.
             </p>
           </div>
           <div className="component_box full-width-mobile">
@@ -91,11 +90,11 @@ class Component3 extends Component {
               Dropdown Component on Anchorage Daily News (December 2017)
             </p>
           </div>
-          <div className="component_box info space-top-sm">
+          <div className="component_box info space-top-sm space-bottom-sm">
             <b>Custom Dropdown Menu React Component</b>
             <p className="image-padding-bottom">
               I contibuted to a third party Javascript commenting app that could
-              could be customized to match its hosting webpage. Because of this,
+              could be customized to match its hosting webpage, which are mostly newspapers. Because of this,
               it was a nice touch to build a dropdown menu that inherited the
               colors of the site.
             </p>
@@ -146,15 +145,15 @@ class Component3 extends Component {
               specifications included interdependent, auto-updating fields.
               Existing components in the Clara borrower portal app came in super
               handy, such as the <code>InputCurrencyField</code> input field
-              which does not allow the user to type non-numeric characters into
+              which disallows the user from entering non-numeric characters into
               the input field.
             </p>
             <p>
               The best part about the interdependent fields in Clara Lending's
               Power Pricer is the code propagating the changes of one field to
               other fields. As clearly defined functions with clearly defined
-              fields to be affected, these updater functions can be extended
-              easily when new cases or constraints emerge.
+              fields to be affected, these updater functions are extended easily
+              when new cases or constraints emerge.
             </p>
             <img
               className="giphy space-top-sm"

@@ -113,6 +113,10 @@ code {
   padding-bottom: 100px;
 }
 
+.space-bottom-sm {
+  padding-bottom: 45px;
+}
+
 .codeblock {
   display: flex;
   flex-direction: column;

@@ -118,22 +118,23 @@ class TechBabbleIndex extends Component {
               implementation of spacing in the CSS of the front end.
             </p>
             <p>
-              Vertical margins and padding are based on the established vertical
+              Vertical margins and padding are based on an established vertical
               rhythm pattern, where everything is a multiple of 4px and based on
-              a <code>rhythm()</code> function where{' '}
-              <code>rhythm() = 24px</code>. Horizontal margins and padding are
-              based on on gutter and column definitions, which our designer
-              defined for us as <code>$grid-column-width: = 96px</code> and{' '}
-              <code>$grid-gutter-width: = 16px</code>.
+              a <code>rhythm</code> function where <code>rhythm() = 24px</code>.
+              Horizontal margins and padding are based on on gutter and column
+              definitions, which our designer defined for us as{' '}
+              <code>$grid-column-width = 96px</code> and{' '}
+              <code>$grid-gutter-width = 16px</code>.
             </p>
             <p>
               Though I was skeptical at first, I soon found myself breezing
               through implementing new designs with these horizontal and
               vertical definitions. Though my meme mocks the complexity when an
               element has <code>16px</code> padding on all sides, the meme also
-              demonstrates conscious decisions were made when assigning that
-              padding to an element. Sharing CSS constants with the designer
-              drastically improved my developer experience and speed.
+              demonstrates conscious design decisions were made when assigning
+              that padding to an element. Sharing CSS constants and therefore
+              design understanding with the Clara Lending designer drastically
+              improved my developer experience and speed.
             </p>
           </div>
           <div className="component_box full-width-mobile">
@@ -170,7 +171,7 @@ class TechBabbleIndex extends Component {
               title/username (2017)
             </p>
           </div>
-          <div className="component_box info space-top">
+          <div className="component_box info space-bottom-sm">
             <b>Different views for different device experiences</b>
             <p>
               It is an expectation in my work to handle page layout across all
@@ -218,8 +219,8 @@ class TechBabbleIndex extends Component {
               Leading these workshops allowed me to grow in my abilities as a
               developer from the collaboration and ideas shared by the
               attendees. I also grew as a leader on the keyboard, learning how
-              to channel my abilities to lead a group of people to providing
-              technical guidance while code-driving.
+              to lead a group of people while providing technical guidance and
+              code-driving.
             </p>
           </div>
           <div className="component_box">
