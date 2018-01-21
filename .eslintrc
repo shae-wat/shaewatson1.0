@@ -1,6 +1,5 @@
 {
   "extends": [
-    # "eslint-config-clara",
     "eslint-config-prettier",
     "eslint-config-prettier/react"
   ],
