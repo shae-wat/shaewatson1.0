@@ -20,9 +20,9 @@ class App extends Component {
       <div className="App">
         <Header logo={logo} />
         <Toggle tab={this.state.activeTab} handleToggle={this.handleToggle} />
-        <TechBabbleIndex activeTab={this.state.activeTab} />
         <CurrentWorkIndex activeTab={this.state.activeTab} />
         <FeaturedWorkIndex activeTab={this.state.activeTab} />
+        <TechBabbleIndex activeTab={this.state.activeTab} />
         <Toggle tab={this.state.activeTab} handleToggle={this.handleToggle} />
         <Footer />
       </div>

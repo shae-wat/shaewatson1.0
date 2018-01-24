@@ -9,7 +9,11 @@ class CurrentWorkIndex extends Component {
   }
 
   render() {
-    if (this.props.activeTab !== 1) return null
+    if (this.props.activeTab !== 1) {
+      return null
+    } else {
+      window.scrollTo(0, 0)
+    }
 
     return (
       <div className="component_content">

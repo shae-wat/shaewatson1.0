@@ -15,7 +15,11 @@ class FeaturedWorkIndex extends Component {
   }
 
   render() {
-    if (this.props.activeTab !== 2) return null
+    if (this.props.activeTab !== 2) {
+      return null
+    } else {
+      window.scrollTo(0, 0)
+    }
 
     const dropdownOptions = [
       { value: 'farm', label: 'Farm to Table' },
