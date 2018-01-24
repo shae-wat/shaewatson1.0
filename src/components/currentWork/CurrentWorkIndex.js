@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 import '../Component.css'
 
-class Component2 extends Component {
+class CurrentWorkIndex extends Component {
   constructor(props) {
     super(props)
   }
@@ -50,7 +51,7 @@ class Component2 extends Component {
         </section>
 
         <section className="component_section">
-          <div className="component_box">
+          <div className="component_box space-top">
             <div className="codeblock">
               <code className="codebox__line">
                 {`yarn run build:wordpress-affordability-calculator`}
@@ -122,4 +123,8 @@ class Component2 extends Component {
   }
 }
 
-export default Component2
+CurrentWorkIndex.propTypes = {
+  activeTab: PropTypes.number.isRequired,
+}
+
+export default CurrentWorkIndex

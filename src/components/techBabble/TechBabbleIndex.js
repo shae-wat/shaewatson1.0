@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import loader from '../../images/loader.gif'
 import { Tweet } from 'react-twitter-widgets'
 import Chart from '../lib/Chart'
 import SlotMachine from '../lib/slot-machine/SlotMachine.js'
 import threeSlots from '../../slots-three.json'
+import Gist from '../lib/EmbeddedGist.js'
 
 import '../Component.css'
 
@@ -195,6 +197,43 @@ class TechBabbleIndex extends Component {
           </div>
         </section>
 
+        <section className="component_section">
+          <div className="component_box info space-top">
+            <b>Interdependent Form Input Fields</b>
+            <p>
+              The Power Pricing Page was non-trivial to build since the
+              specifications included interdependent, auto-updating fields.
+              Existing components in the Clara borrower portal app came in super
+              handy, such as the <code>InputCurrencyField</code> input field
+              which disallows the user from entering non-numeric characters into
+              the input field.
+            </p>
+            <p>
+              The best part about the interdependent fields in Clara Lending's
+              Power Pricer is the code propagating the changes of one field to
+              other fields. As clearly defined functions with clearly defined
+              fields to be affected, these updater functions are extended easily
+              when new cases or constraints emerge.
+            </p>
+            <img
+              className="giphy space-top-sm"
+              src={require('../../images/pricer-interdependent-fields.gif')}
+              role="presentation"
+            />
+            <p className="subtext">
+              Power Pricer Interdependent Pricing Fields (January 2018)
+            </p>
+          </div>
+          <div className="component_box full-width-mobile">
+            <div className="component_gist_box_lg">
+              <Gist gist="shae-wat/b943dd0ada21ebd8a916cca672c394fc" />
+              <p className="subtext">
+                Sample Code of Interdependent redux-form Fields
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className="component_section section_wrap_reverse">
           <div className="component_box info space-top">
             <b>Sharing the good news</b>
@@ -283,6 +322,10 @@ class TechBabbleIndex extends Component {
       loading: false,
     })
   }
+}
+
+TechBabbleIndex.propTypes = {
+  activeTab: PropTypes.number.isRequired,
 }
 
 export default TechBabbleIndex

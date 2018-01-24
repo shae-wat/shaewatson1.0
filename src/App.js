@@ -18,32 +18,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header
-          logo={logo}
-        />
-        <Toggle
-          tab={this.state.activeTab}
-          handleToggle={this.handleToggle}
-        />
-        <TechBabbleIndex
-          activeTab={this.state.activeTab}
-        />
-        <CurrentWorkIndex
-          activeTab={this.state.activeTab}
-        />
-        <FeaturedWorkIndex
-          activeTab={this.state.activeTab}
-        />
-        <Toggle
-          tab={this.state.activeTab}
-          handleToggle={this.handleToggle}
-        />
+        <Header logo={logo} />
+        <Toggle tab={this.state.activeTab} handleToggle={this.handleToggle} />
+        <TechBabbleIndex activeTab={this.state.activeTab} />
+        <CurrentWorkIndex activeTab={this.state.activeTab} />
+        <FeaturedWorkIndex activeTab={this.state.activeTab} />
+        <Toggle tab={this.state.activeTab} handleToggle={this.handleToggle} />
         <Footer />
       </div>
     )
   }
 
-  handleToggle = (tab) => {
+  handleToggle = tab => {
     this.setState({
       activeTab: tab,
     })

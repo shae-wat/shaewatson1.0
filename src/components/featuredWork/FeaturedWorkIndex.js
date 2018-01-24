@@ -1,18 +1,14 @@
 import React, { Component } from 'react'
-import classNames from 'classnames'
-import _ from 'lodash'
-import loader from '../../images/loader.gif'
+import PropTypes from 'prop-types'
 import DropdownComponent from '../lib/DropdownComponent.js'
-import Gist from '../lib/EmbeddedGist.js'
 
 import '../Component.css'
 
-class Component3 extends Component {
+class FeaturedWorkIndex extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      loading: true,
       selectedDropdownIndex: 0,
       selectedOptionHoverColor: '#FFB6C1',
     }
@@ -20,11 +16,6 @@ class Component3 extends Component {
 
   render() {
     if (this.props.activeTab !== 2) return null
-
-    let loaderClass = classNames({
-      ['show']: this.state.loading,
-      ['hide']: !this.state.loading,
-    })
 
     const dropdownOptions = [
       { value: 'farm', label: 'Farm to Table' },
@@ -42,11 +33,6 @@ class Component3 extends Component {
       '#fa225b',
     ]
 
-    let selected = _.get(
-      dropdownOptions[this.state.selectedDropdownIndex],
-      'label',
-    )
-
     const selectOptionHoverColor = selectedColor => {
       this.setState({ selectedOptionHoverColor: selectedColor })
     }
@@ -57,15 +43,17 @@ class Component3 extends Component {
           <div className="component_box info space-top-sm space-bottom-sm">
             <b>Power Pricing Page</b>
             <p>
-              The Power Pricing Page is a product I delivered at Clara Lending. It is an
-              admin page designed to be used by loan officers in the context of
-              a loan application. The loan officer enters all the necessary
+              The Power Pricing Page is a product I delivered at Clara Lending.
+              It is an admin page designed to be used by loan officers in the
+              context of a loan application. The loan officer enters all the
               inputs then can work with the borrower to select a loan product.
             </p>
             <p>
-              This page is important because it allowed the intial connection of the Clara Lending Borrower Portal to a new pricing engine, LenderPrice, while also
-              allowing the factoring in of Clara-specific variables such as different pricing results
-              for Clara Lending promotions and limiting selectable options to supported
+              This page is important because it allowed the intial connection of
+              the Clara Lending Borrower Portal to a new pricing engine,
+              LenderPrice, while also allowing the factoring in of
+              Clara-specific variables such as different pricing results for
+              Clara Lending promotions and limiting selectable options to
               mortgage configurations.
             </p>
           </div>
@@ -94,9 +82,9 @@ class Component3 extends Component {
             <b>Custom Dropdown Menu React Component</b>
             <p className="image-padding-bottom">
               I contibuted to a third party Javascript commenting app that could
-              could be customized to match its hosting webpage, which are mostly newspapers. Because of this,
-              it was a nice touch to build a dropdown menu that inherited the
-              colors of the site.
+              could be customized to match its hosting webpage, which are mostly
+              newspapers. Because of this, it was a nice touch to build a
+              dropdown menu that inherited the colors of the site.
             </p>
             <h4>
               Here is the
@@ -133,43 +121,6 @@ class Component3 extends Component {
                 selectedOption={this.state.selectedDropdownIndex}
                 optionHoverColor={this.state.selectedOptionHoverColor}
               />
-            </div>
-          </div>
-        </section>
-
-        <section className="component_section">
-          <div className="component_box info space-top">
-            <b>Interdependent Form Input Fields</b>
-            <p>
-              The Power Pricing Page was non-trivial to build since the
-              specifications included interdependent, auto-updating fields.
-              Existing components in the Clara borrower portal app came in super
-              handy, such as the <code>InputCurrencyField</code> input field
-              which disallows the user from entering non-numeric characters into
-              the input field.
-            </p>
-            <p>
-              The best part about the interdependent fields in Clara Lending's
-              Power Pricer is the code propagating the changes of one field to
-              other fields. As clearly defined functions with clearly defined
-              fields to be affected, these updater functions are extended easily
-              when new cases or constraints emerge.
-            </p>
-            <img
-              className="giphy space-top-sm"
-              src={require('../../images/pricer-interdependent-fields.gif')}
-              role="presentation"
-            />
-            <p className="subtext">
-              Power Pricer Interdependent Pricing Fields (January 2018)
-            </p>
-          </div>
-          <div className="component_box full-width-mobile">
-            <div className="component_gist_box_lg">
-              <Gist gist="shae-wat/b943dd0ada21ebd8a916cca672c394fc" />
-              <p className="subtext">
-                Sample Code of Interdependent redux-form Fields
-              </p>
             </div>
           </div>
         </section>
@@ -288,12 +239,10 @@ class Component3 extends Component {
       </div>
     )
   }
-
-  removeLoader = () => {
-    this.setState({
-      loading: false,
-    })
-  }
 }
 
-export default Component3
+FeaturedWorkIndex.propTypes = {
+  activeTab: PropTypes.number.isRequired,
+}
+
+export default FeaturedWorkIndex
