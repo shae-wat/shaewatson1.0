@@ -1,5 +1,5 @@
-Personal website project
+Personal website project (pre-2020)
 
-Built using React
+Built with React v15
 
-Deployed using Firebase
+
